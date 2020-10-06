@@ -77,10 +77,11 @@ func main() {
 
 # 𝗠𝘆 𝗦𝘁𝗮𝘁𝘀
 
-![Github stats](https://github-readme-stats.vercel.app/api?username=sysrex&show_icons=true&hide_border=true)
+![Github stats](https://github-readme-stats.vercel.app/api?username=sysrex&show_icons=true&hide_border=true&theme=dracula)
 
 # 𝗪𝗵𝗮𝘁 𝘄𝗶𝗹𝗹 𝗶 𝗱𝗼 𝘁𝗵𝗶𝘀 𝘄𝗲𝗲𝗸
 
 - I definitely have to do this dynamic, there is no way I will remmeber to update it.
 
 ---
+
