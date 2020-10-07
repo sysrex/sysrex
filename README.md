@@ -38,7 +38,7 @@ func main() {
       </td>
       <td width="25%" align="center">
         <span>Docker</span><br><br><br>
-        <img height="64px" src="https://cdn.svgporn.com/logos/docker.svg">
+        <img height="64px" src="https://cdn.svgporn.com/logos/docker-icon.svg">
       </td>
       <td width="25%" align="center">
         <span>Kubernetes</span><br><br><br>
@@ -49,18 +49,36 @@ func main() {
         <img height="64px" src="https://cdn.svgporn.com/logos/aws.svg">
       </td>
     </tr>
+        <tr valign="top">
+          <td width="25%" align="center">
+            <span>Prometheus</span><br><br><br>
+            <img height="64px" src="https://cdn.svgporn.com/logos/prometheus.svg">
+          </td>
+          <td width="25%" align="center">
+            <span>𝗚rafana</span><br><br><br>
+            <img height="64px" src="https://cdn.svgporn.com/logos/grafana.svg">
+          </td>
+          <td width="25%" align="center">
+            <span>Cloudwatch</span><br><br><br>
+            <img height="64px" src="https://cdn.svgporn.com/logos/aws-cloudwatch.svg">
+          </td>
+         <td width="25%" align="center">
+            <span>Jenkins</span><br><br><br>
+            <img height="64px" src="https://cdn.svgporn.com/logos/jenkins.svg">
+         </td>
+        </tr>
     <tr valign="top">
       <td width="25%" align="center">
         <span>Golang</span><br><br><br>
-        <img height="64px" src="https://cdn.worldvectorlogo.com/logos/gopher.svg">
+        <img height="64px" src="https://cdn.svgporn.com/logos/gopher.svg">
       </td>
       <td width="25%" align="center">
         <span>𝗚𝗶𝘁</span><br><br><br>
         <img height="64px" src="https://cdn.svgporn.com/logos/git-icon.svg">
       </td>
       <td width="25%" align="center">
-        <span>Jenkins</span><br><br><br>
-        <img height="64px" src="https://cdn.svgporn.com/logos/jenkins.svg">
+        <span>Github</span><br><br><br>
+        <img height="64px" src="https://cdn.svgporn.com/logos/github-icon.svg">
       </td>
      <td width="25%" align="center">
         <span>Intellij</span><br><br><br>
@@ -79,9 +97,6 @@ func main() {
 
 ![Github stats](https://github-readme-stats.vercel.app/api?username=sysrex&show_icons=true&hide_border=true&theme=dracula)
 
-# 𝗪𝗵𝗮𝘁 𝘄𝗶𝗹𝗹 𝗶 𝗱𝗼 𝘁𝗵𝗶𝘀 𝘄𝗲𝗲𝗸
-
-- I definitely have to do this dynamic, there is no way I will remmeber to update it.
-
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sysrex&theme=dracula)](https://github.com/sysrex/github-readme-stats)
 ---
 
