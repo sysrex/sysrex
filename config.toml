@@ -1,3 +1,57 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://sysrex.tech" # Hostname (and path) to the root.
+title = "sysrex" # Site title.
+theme = "hugo-coder" # Set the theme.
+languagecode = "en" # The site’s language code used to generate RSS.
+defaultcontentlanguage = "en" # The default content language.
+
+paginate = 20 # Default number of pages per page in pagination.
+
+pygmentsstyle = "dracula"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsuseclasses = false
+
+googleAnalytics = "UA-150829109-1"
+
+[params] # theme parameters
+author = "sysrex" # Author's name.
+info = "SITE RELIABILITY ENGINEER" # Author's job title or info.
+description = "geeky blog" # Site description.
+keywords = "blog,developer,sre" # Site keywords.
+avatarurl = "images/gopherotti.png" # Contain the path of the optionnal avatar in the static folder.
+
+footercontent = "I hope you enjoyed it." # Add footer content
+fixedbarContent = "Do you want to send me an email?→" # Add fixedbar content
+fixedbarContentAfter = "Write to→mail at sysrex.tech" # Add fixedbar content after click
+
+# Whether you want to hide copyright and credits in the footer.
+hideCredits = false
+hideCopyright = false
+
+# Custom CSS
+custom_css = ["css/custom_style.css"]
+
+# Alignment of Mobile Menu items
+itemscentered = true
+
+# RTL support
+rtl = false
+
+# Bottom sns share
+snsShare = true # new add
+# Popular sns share
+# if you want add sns. please message!
+enableTwitterShare = true  # new add
+
+thumbnail = "images/tn.png" # default sns thumbnail
+
+# Multilanguage mode
+langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
+# Social links
+
+# Menu links
+[[menu.main]]
+name = "Blog"
+weight = 1
+url  = "posts"
