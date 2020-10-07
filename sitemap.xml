@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://sysrex.tech/posts/welcome-gopherotti/</loc>
+    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sysrex.tech/tags/misc/</loc>
+    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sysrex.tech/posts/</loc>
+    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sysrex.tech/</loc>
+    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sysrex.tech/tags/</loc>
+    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sysrex.tech/categories/</loc>
+  </url>
+  
+</urlset>
