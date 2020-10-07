@@ -93,10 +93,8 @@ func main() {
 - 💻 [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/)
 
 
-# 𝗠𝘆 𝗦𝘁𝗮𝘁𝘀
+# S𝘁𝗮𝘁𝘀
 
 ![Github stats](https://github-readme-stats.vercel.app/api?username=sysrex&show_icons=true&hide_border=true&theme=dracula)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sysrex&theme=dracula)](https://github.com/sysrex/github-readme-stats)
 ---
 
