@@ -11,7 +11,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsuseclasses = false
 
-googleAnalytics = "UA-150829109-1"
+googleAnalytics = "UA-179970173-1"
 
 [params] # theme parameters
 author = "sysrex" # Author's name.
