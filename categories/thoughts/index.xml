@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on sysrex</title>
+    <link>https://www.sysrex.tech/categories/thoughts/</link>
+    <description>Recent content in Thoughts on sysrex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://www.sysrex.tech/categories/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recent reported vulnerabilites</title>
+      <link>https://www.sysrex.tech/posts/vulnerabilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sysrex.tech/posts/vulnerabilities/</guid>
+      <description>&lt;p&gt;List of recently reported vulnerabilties. Last update can be spotted by the date.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
