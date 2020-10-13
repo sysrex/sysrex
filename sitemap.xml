@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.sysrex.tech/posts/cloud-init-docker-and-compose-debian/</loc>
+    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/tags/configs/</loc>
+    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/posts/</loc>
+    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/</loc>
+    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/tags/</loc>
+    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/posts/welcome-gopherotti/</loc>
     <lastmod>2019-10-24T14:16:40+01:00</lastmod>
   </url>
@@ -13,18 +38,8 @@
   </url>
   
   <url>
-    <loc>https://www.sysrex.tech/posts/</loc>
-    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/</loc>
-    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/tags/</loc>
-    <lastmod>2019-10-24T14:16:40+01:00</lastmod>
+    <loc>https://www.sysrex.tech/uses/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
