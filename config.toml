@@ -55,3 +55,9 @@ langseparator = "|" # Separates menus from language selectors when site is multi
 name = "Blog"
 weight = 1
 url  = "posts"
+
+# Menu links
+[[menu.main]]
+name = "Uses"
+weight = 1
+url  = "uses"
