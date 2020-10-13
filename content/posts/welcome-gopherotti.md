@@ -7,7 +7,7 @@ draft: false
 ---
 
 
-I always wanted my own gopher so after a bit of thought, I present to you *Gopherotti*.
+I was after getting my own gopher for a while and after giving it much thought, I present to you *Gopherotti*.
 
 
 ![Gopherotti](/images/gopherotti.png)
