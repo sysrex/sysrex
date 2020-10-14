@@ -83,6 +83,11 @@
   </url>
   
   <url>
+    <loc>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</loc>
+    <lastmod>2019-08-02T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/tags/eks/</loc>
     <lastmod>2019-08-02T14:16:40+01:00</lastmod>
   </url>

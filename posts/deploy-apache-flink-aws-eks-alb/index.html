@@ -7,27 +7,27 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="sysrex">
-    <meta name="description" content="How to create an EKS Cluster with role assume">
+    <meta name="description" content="How to deploy Apache Flink on AWS EKS with ALB ingress">
     <meta name="keywords" content="blog,developer,sre">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Create EKS Cluster with Role Assume"/>
-<meta name="twitter:description" content="How to create an EKS Cluster with role assume"/>
+<meta name="twitter:title" content="Deploy Apache Flink on AWS EKS"/>
+<meta name="twitter:description" content="How to deploy Apache Flink on AWS EKS with ALB ingress"/>
 
-    <meta property="og:title" content="Create EKS Cluster with Role Assume" />
-<meta property="og:description" content="How to create an EKS Cluster with role assume" />
+    <meta property="og:title" content="Deploy Apache Flink on AWS EKS" />
+<meta property="og:description" content="How to deploy Apache Flink on AWS EKS with ALB ingress" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/" />
+<meta property="og:url" content="https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/" />
 <meta property="article:published_time" content="2019-08-02T14:16:40+01:00" />
 <meta property="article:modified_time" content="2019-08-02T14:16:40+01:00" />
 
 
     <title>
-  Create EKS Cluster with Role Assume · sysrex
+  Deploy Apache Flink on AWS EKS · sysrex
 </title>
 
     
-      <link rel="canonical" href="https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/">
+      <link rel="canonical" href="https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -112,7 +112,7 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Create EKS Cluster with Role Assume</h1>
+          <h1 class="title">Deploy Apache Flink on AWS EKS</h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -139,29 +139,32 @@
 
       <div>
         
-        <p>When creating an EKS Cluster you need to specify a role that is automatically granted system:masters permissions in the cluster&rsquo;s RBAC configuration. The role has be to created in the account where EKS will be created. If you like me are using <em>Assume Role</em> form another account in order to avoid creating a local account the AWS account just create the role as you would normally do and then:</p>
-<p><img src="/images/trust_relationship.png" alt="Trust Relationship"></p>
-<p>The policy JSON has to be edited like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
-  <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
-    {
-      <span style="color:#ff79c6">&#34;Effect&#34;</span>: <span style="color:#f1fa8c">&#34;Allow&#34;</span>,
-      <span style="color:#ff79c6">&#34;Principal&#34;</span>: {
-        <span style="color:#ff79c6">&#34;Service&#34;</span>: <span style="color:#f1fa8c">&#34;eks.amazonaws.com&#34;</span>
-      },
-      <span style="color:#ff79c6">&#34;Action&#34;</span>: <span style="color:#f1fa8c">&#34;sts:AssumeRole&#34;</span>
-    },
-    {
-      <span style="color:#ff79c6">&#34;Effect&#34;</span>: <span style="color:#f1fa8c">&#34;Allow&#34;</span>,
-      <span style="color:#ff79c6">&#34;Principal&#34;</span>: {
-        <span style="color:#ff79c6">&#34;AWS&#34;</span>: <span style="color:#f1fa8c">&#34;arn:aws:iam::&lt;account:/role&gt;&#34;</span>
-      },
-      <span style="color:#ff79c6">&#34;Action&#34;</span>: <span style="color:#f1fa8c">&#34;sts:AssumeRole&#34;</span>
-    }
-  ]
-}</code></pre></div>
-
+        <p>First thing is first, we will use the <code>eksctl</code> tool to create the EKS Cluster</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+---
+<span style="color:#ff79c6">apiVersion</span>: eksctl.io/v1alpha5
+<span style="color:#ff79c6">kind</span>: ClusterConfig
+<span style="color:#ff79c6">metadata</span>:
+  <span style="color:#ff79c6">name</span>: eks-flink-demo
+  <span style="color:#ff79c6">region</span>: eu-west-2
+<span style="color:#6272a4"># traits of worker nodes</span>
+<span style="color:#ff79c6">nodeGroups</span>:
+  - <span style="color:#ff79c6">name</span>: eks-flink-workers
+    <span style="color:#ff79c6">instanceType</span>: m5.large
+    <span style="color:#ff79c6">desiredCapacity</span>: <span style="color:#bd93f9">5</span>
+    <span style="color:#ff79c6">minSize</span>: <span style="color:#bd93f9">3</span>
+    <span style="color:#ff79c6">maxSize</span>: <span style="color:#bd93f9">15</span>
+    <span style="color:#ff79c6">iam</span>:
+      <span style="color:#6272a4"># polices added to worker node role</span>
+      <span style="color:#ff79c6">withAddonPolicies</span>:
+        <span style="color:#6272a4"># allows read/write to zones in Route53</span>
+        <span style="color:#ff79c6">externalDNS</span>: <span style="color:#ff79c6">true</span>
+        <span style="color:#6272a4"># required for ALB-ingress</span>
+        <span style="color:#ff79c6">albIngress</span>: <span style="color:#ff79c6">true</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eksctl create cluster <span style="color:#f1fa8c">\
+</span><span style="color:#f1fa8c"></span>  --configfile eks-flink-demo.yaml <span style="color:#f1fa8c">\
+</span><span style="color:#f1fa8c"></span>  --kubeconfig eks_flink_demo_kubeconfig.yaml
+</code></pre></div>
       </div>
 
 
