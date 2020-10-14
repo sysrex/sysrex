@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Deploy Apache Flink on AWS EKS</title>
+      <link>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</link>
+      <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</guid>
+      <description>How to deploy Apache Flink on AWS EKS with ALB ingress</description>
+    </item>
+    
+    <item>
       <title>Jenkins on debian 10</title>
       <link>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</link>
       <pubDate>Thu, 11 Jun 2020 09:16:40 +0100</pubDate>
@@ -68,15 +77,6 @@
       
       <guid>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</guid>
       <description>How to create an EKS Cluster with role assume</description>
-    </item>
-    
-    <item>
-      <title>Deploy Apache Flink on AWS EKS</title>
-      <link>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</link>
-      <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</guid>
-      <description>How to deploy Apache Flink on AWS EKS with ALB ingress</description>
     </item>
     
     <item>
