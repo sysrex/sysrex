@@ -1,8 +1,8 @@
 ---
-title: "Create EKS Cluster with Role Assumption"
+title: "Create EKS Cluster with Role Assume"
 date: 2019-08-02T14:16:40+01:00
 tags: ["AWS", "EKS"]
-summary: "How to create an EKS Cluster with role assumption"
+summary: "How to create an EKS Cluster with role assume"
 draft: false
 ---
 
