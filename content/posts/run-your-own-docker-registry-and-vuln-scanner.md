@@ -10,7 +10,7 @@ draft: false
 For a while now I wanted to run my own docker registry so when I stumbled across  [Jessie Frazelle's](https://r.j3ss.co)...
 I knew that's what I wanted to build.
 
-!![Registry](/images/reg.png)
+![Registry](/images/reg.png)
 
 
 So here's my unpolished docker-compose file (I still have to review it for security and probably add nginx as container)
