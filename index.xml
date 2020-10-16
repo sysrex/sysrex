@@ -6,7 +6,16 @@
     <description>Recent content on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2020 11:42:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2020 11:57:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running your own docker registry</title>
+      <link>https://www.sysrex.tech/posts/run-your-own-docker-registry-and-vuln-scanner/</link>
+      <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/posts/run-your-own-docker-registry-and-vuln-scanner/</guid>
+      <description>How to run your own docker registry with clair vulnerability scanner</description>
+    </item>
+    
     <item>
       <title>Cloud init script to install docker and docker compose debian 10</title>
       <link>https://www.sysrex.tech/posts/cloud-init-docker-and-compose-debian/</link>

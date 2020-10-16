@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.sysrex.tech/tags/docker/</loc>
+    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/posts/</loc>
+    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/posts/run-your-own-docker-registry-and-vuln-scanner/</loc>
+    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/tags/scanner/</loc>
+    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/</loc>
+    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/tags/</loc>
+    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/posts/cloud-init-docker-and-compose-debian/</loc>
     <lastmod>2020-10-13T11:42:40+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.sysrex.tech/tags/configs/</loc>
-    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/posts/</loc>
-    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/</loc>
-    <lastmod>2020-10-13T11:42:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/tags/</loc>
     <lastmod>2020-10-13T11:42:40+01:00</lastmod>
   </url>
   

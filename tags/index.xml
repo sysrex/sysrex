@@ -6,7 +6,25 @@
     <description>Recent content in Tags on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2020 11:42:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2020 11:57:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>https://www.sysrex.tech/tags/docker/</link>
+      <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scanner</title>
+      <link>https://www.sysrex.tech/tags/scanner/</link>
+      <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/tags/scanner/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>configs</title>
       <link>https://www.sysrex.tech/tags/configs/</link>
