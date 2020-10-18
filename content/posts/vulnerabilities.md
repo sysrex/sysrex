@@ -14,4 +14,4 @@ List of recently reported vulnerabilties. Last update can be spotted by the date
 #  CVE
 
 
-Pull from the rust API
+Pull from the go gin API
