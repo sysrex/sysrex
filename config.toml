@@ -29,7 +29,7 @@ hideCredits = false
 hideCopyright = false
 
 # Custom CSS
-custom_css = ["css/custom_style.css"]
+custom_css = [""]
 
 # Alignment of Mobile Menu items
 itemscentered = true
