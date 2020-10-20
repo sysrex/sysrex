@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.sysrex.tech/uses/</loc>
+    <lastmod>2020-10-20T19:12:38+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/tags/docker/</loc>
     <lastmod>2020-10-16T11:57:40+01:00</lastmod>
   </url>
@@ -180,11 +185,6 @@
   <url>
     <loc>https://www.sysrex.tech/posts/set-up-ssh-keys/</loc>
     <lastmod>2011-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/uses/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

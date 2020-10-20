@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Fri, 16 Oct 2020 11:57:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Uses</title>
+      <link>https://www.sysrex.tech/uses/</link>
+      <pubDate>Tue, 20 Oct 2020 19:12:38 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/uses/</guid>
+      <description>Hardware  🖥 2 x LG 27&amp;quot; Ultrafine 5k 💻 Apple MacBook Pro 15&amp;quot; 2019 Octa Core with 32GB RAM ⌨️ Apple Keyboard 🖱 Apple mouse 🎧 Apple AirPods 🎧 Jabra Evolve 30 II 📱 Apple iPad Pro 11&amp;quot; + Magic Pen 📱 Apple iPhone XR 64GB  Programming  📝 LensApp 📝 JetBrains IntelliJ 📝 neovim  Software  💌 Gmail 📅 Google Calendar 🗒 Notion 💬 Slack #️⃣ iTerm 2 🐚 OhMyZsh 🔠 Fira Code 🔑 Bitwarden 🐳 Docker 🍹 Bartender 🍺 Brew  </description>
+    </item>
+    
+    <item>
       <title>Running your own docker registry</title>
       <link>https://www.sysrex.tech/posts/run-your-own-docker-registry-and-vuln-scanner/</link>
       <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
@@ -183,15 +192,6 @@ Installing Dependencies The only dependency we really need is the build-essentia
       <description>Having to type in a password in order to SSH into your server every single time is tedious and not the way to go. I will show you how to set up SSH keys so that you can elimate an extra step from your workflow.
 Generating keys On your local maching, generate a new SSH key with the command:
 # Generate new key. ssh-keygen -t rsa When asked for the file to save the key in, enter:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.sysrex.tech/uses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sysrex.tech/uses/</guid>
-      <description>Test page </description>
     </item>
     
     <item>
