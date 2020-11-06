@@ -97,6 +97,6 @@ func main() {
 
 ![Github stats](https://github-readme-stats.vercel.app/api?username=sysrex&show_icons=true&hide_border=true&theme=dracula)
 ---
-![Build Status](https://github.com/sysrex/sysrex/workflows/build/badge.svg?branch=main)
+![Build Status](https://github.com/sysrex/sysrex/workflows/pages/badge.svg?branch=main)
 ---
 
