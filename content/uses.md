@@ -43,12 +43,12 @@ type: page
 * 📱 Apple iPhone XR 64GB
 
 ## Programming
-* 📝 [LensApp](https://k8slens.dev)
+* ⚗️ [LensApp](https://k8slens.dev)
 * 📝 [JetBrains IntelliJ](https://www.jetbrains.com/idea/)
 * 📝 [neovim](https://github.com/neovim/neovim)
 
 ## Software
-* 💌 [Gmail](https://gmail.com)
+* ✉️ [Gmail](https://gmail.com)
 * 📅 [Google Calendar](https://calendar.google.com)
 * 🗒 [Notion](https://www.notion.so/)
 * 💬 [Slack](https://slack.com/)
