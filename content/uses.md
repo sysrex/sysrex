@@ -42,10 +42,15 @@ type: page
 * 📱 Apple iPad Pro 11" + Magic Pen
 * 📱 Apple iPhone XR 64GB
 
+## Office Setup
+* 🪑 [Dota Secret Labs Chair](https://secretlab.co.uk/collections/titan-series?utm_source=google&utm_medium=cpc&utm_content=dota2_chair&utm_campaign=uk-s-generic-exact&gclid=CjwKCAiA17P9BRB2EiwAMvwNyBKh-v1gdynkLkTqhytsiG9KTe643XokN7heqArkrOlCNOX_gY4a7RoCDy0QAvD_BwE#titan_2020-dota2)
+* 🏢 Ikea Alex / Linnmon 
+
 ## Programming
 * ⚗️ [LensApp](https://k8slens.dev)
-* 📝 [JetBrains IntelliJ](https://www.jetbrains.com/idea/)
+* 🆚 [Visual Studio Code](https://code.visualstudio.com/)
 * 📝 [neovim](https://github.com/neovim/neovim)
+* :octocat: [GitKraken](https://www.gitkraken.com/)
 
 ## Software
 * ✉️ [Gmail](https://gmail.com)
@@ -59,3 +64,4 @@ type: page
 * 🐳 [Docker](https://www.docker.com/)
 * 🍹 [Bartender](https://www.macbartender.com/)
 * 🍺 [Brew](https://brew.sh/)
+* 💨 [Dash](https://kapeli.com/dash)
