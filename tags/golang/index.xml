@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on sysrex</title>
+    <link>https://www.sysrex.tech/tags/golang/</link>
+    <description>Recent content in Golang on sysrex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 06 Jun 2020 14:16:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go variables</title>
+      <link>https://www.sysrex.tech/golang/go-variables/</link>
+      <pubDate>Sat, 06 Jun 2020 14:16:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/golang/go-variables/</guid>
+      <description>Just a small overview of the go variables</description>
+    </item>
+    
+  </channel>
+</rss>

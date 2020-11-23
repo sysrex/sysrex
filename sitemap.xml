@@ -63,8 +63,28 @@
   </url>
   
   <url>
+    <loc>https://www.sysrex.tech/golang/</loc>
+    <lastmod>2020-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/golang/golang-env-structs/</loc>
+    <lastmod>2020-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</loc>
     <lastmod>2020-06-11T09:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/golang/go-variables/</loc>
+    <lastmod>2020-06-06T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/tags/golang/</loc>
+    <lastmod>2020-06-06T14:16:40+01:00</lastmod>
   </url>
   
   <url>
@@ -95,16 +115,6 @@
   <url>
     <loc>https://www.sysrex.tech/tags/misc/</loc>
     <lastmod>2019-10-24T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/tags/go/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/posts/go-variables/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
@@ -155,11 +165,6 @@
   <url>
     <loc>https://www.sysrex.tech/posts/add-swap-ec2/</loc>
     <lastmod>2016-03-04T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/posts/golang-env-structs/</loc>
-    <lastmod>2015-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>

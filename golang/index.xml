@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golangs on sysrex</title>
+    <link>https://www.sysrex.tech/golang/</link>
+    <description>Recent content in Golangs on sysrex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.sysrex.tech/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parse environment variables to structs in Go</title>
+      <link>https://www.sysrex.tech/golang/golang-env-structs/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sysrex.tech/golang/golang-env-structs/</guid>
+      <description>In Go, it&amp;rsquo;s dead simple to get the value from an environment variable:
+fmt.Println(os.Getenv(&amp;#34;HOME&amp;#34;)) But, sometimes you have default values&amp;hellip; so you would have to do something like this:
+home := os.Getenv(&amp;#34;HOME&amp;#34;) if home == &amp;#34;&amp;#34; { home = &amp;#34;THE DEFAULT HOME&amp;#34; } fmt.Println(home) If you need those values in a lot of places, you would end up creating a function for each one or something like that.
+I found this to be extremely boring.</description>
+    </item>
+    
+    <item>
+      <title>Go variables</title>
+      <link>https://www.sysrex.tech/golang/go-variables/</link>
+      <pubDate>Sat, 06 Jun 2020 14:16:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/golang/go-variables/</guid>
+      <description>Just a small overview of the go variables</description>
+    </item>
+    
+  </channel>
+</rss>
