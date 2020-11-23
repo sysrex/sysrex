@@ -63,28 +63,28 @@
   </url>
   
   <url>
-    <loc>https://www.sysrex.tech/golang/</loc>
-    <lastmod>2020-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/golang/golang-env-structs/</loc>
-    <lastmod>2020-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</loc>
     <lastmod>2020-06-11T09:16:40+01:00</lastmod>
   </url>
   
   <url>
+    <loc>https://www.sysrex.tech/golang/</loc>
+    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/golang/golang-env-structs/</loc>
+    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/golang/go-variables/</loc>
-    <lastmod>2020-06-06T14:16:40+01:00</lastmod>
+    <lastmod>2020-06-01T14:16:40+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.sysrex.tech/tags/golang/</loc>
-    <lastmod>2020-06-06T14:16:40+01:00</lastmod>
+    <lastmod>2020-06-01T14:16:40+01:00</lastmod>
   </url>
   
   <url>
