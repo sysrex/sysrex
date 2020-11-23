@@ -1,6 +1,6 @@
 ---
 title: "Go variables"
-date: 2020-06-06T14:16:40+01:00
+date: 2020-06-01T14:16:40+01:00
 tags: ["Golang"]
 summary: "Just a small overview of the go variables"
 draft: false
