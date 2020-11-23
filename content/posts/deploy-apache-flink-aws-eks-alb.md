@@ -42,13 +42,13 @@ Once the cluster is up and running we will need to start adding the required dep
 
 1. First lets add the oidc integration for the service account used by the controller
 ```bash
-eksctl --profile sysrex --region=eu-west-2-1 utils associate-iam-oidc-provider --cluster eks-flink-demo --approve
+eksctl --profile sysrex  utils associate-iam-oidc-provider --cluster eks-flink-demo --approve --region=eu-west-2
 ```
 
 2. We will then create an IAM policy that will give access to the pod with the ALB Ingress Controller
 to create and manage the ALB
 ```bash
-aws --profile sysrex --region=eu-west-2 iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/iam-policy.json
+aws --profile sysrex iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/iam-policy.json --region=eu-west-2
 ```
 If this fails for you as it did for me a couple of times, I just:
 ```bash
@@ -56,13 +56,13 @@ wget https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controlle
 ```
 and then run it from local like this:
 ```bash
-aws --profile sysrex --region=eu-west-2 iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document file://iam-policy.json
+aws --profile sysrex iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document file://iam-policy.json --region=eu-west-2
 ```
 
 3. And now we create the ingress role, you will need the ARN of the IAM policy created in the previous step
 
 ```bash
-eksctl --profile sysrex --region=eu-west-2 create iamserviceaccount --name alb-ingress-controller --namespace kube-system --override-existing-serviceaccounts --approve --cluster eks-alb-testing --attach-policy-arn arn:aws:iam::*********:policy/ALBIngressControllerIAMPolicy
+eksctl --profile sysrex create iamserviceaccount --name alb-ingress-controller --namespace kube-system --override-existing-serviceaccounts --approve --cluster eks-alb-testing --attach-policy-arn arn:aws:iam::*********:policy/ALBIngressControllerIAMPolicy --region=eu-west-2
 ```
 
 4. Create the ALB Service Ingress Account 
@@ -70,7 +70,7 @@ eksctl --profile sysrex --region=eu-west-2 create iamserviceaccount --name alb-i
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/rbac-role.yaml
 ```
-you can checl if the account has been created with:
+you can check if the account has been created with:
 
 ```bash
 kubectl -n kube-system get serviceaccounts | grep alb

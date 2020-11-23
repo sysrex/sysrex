@@ -58,6 +58,12 @@ url  = "posts"
 
 # Menu links
 [[menu.main]]
+name = "Golang"
+weight = 1
+url  = "golang"
+
+# Menu links
+[[menu.main]]
 name = "Uses"
 weight = 1
 url  = "uses"
