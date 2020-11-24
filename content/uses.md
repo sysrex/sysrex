@@ -50,7 +50,7 @@ type: page
 * ⚗️ [LensApp](https://k8slens.dev)
 * 🆚 [Visual Studio Code](https://code.visualstudio.com/)
 * 📝 [neovim](https://github.com/neovim/neovim)
-* :octocat: [GitKraken](https://www.gitkraken.com/)
+* 📝 [GitKraken](https://www.gitkraken.com/)
 
 ## Software
 * ✉️ [Gmail](https://gmail.com)
