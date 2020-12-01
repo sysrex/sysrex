@@ -63,6 +63,16 @@
   </url>
   
   <url>
+    <loc>https://www.sysrex.tech/posts/get-apiversion-in-k8s/</loc>
+    <lastmod>2020-06-12T19:19:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/tags/kubernetes/</loc>
+    <lastmod>2020-06-12T19:19:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</loc>
     <lastmod>2020-06-11T09:16:40+01:00</lastmod>
   </url>
@@ -89,11 +99,6 @@
   
   <url>
     <loc>https://www.sysrex.tech/posts/k3s-raspberry-pi/</loc>
-    <lastmod>2019-11-24T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/tags/kubernetes/</loc>
     <lastmod>2019-11-24T14:16:40+01:00</lastmod>
   </url>
   
