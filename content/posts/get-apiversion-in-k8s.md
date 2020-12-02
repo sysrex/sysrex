@@ -15,7 +15,7 @@ The format is `api_group/version` (unless you are working with resource in the c
 
 We will run `kubectl api-resources`:
 
-```
+```bash
 ➜  ~ kubectl api-resources
 NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
 bindings                                                                      true         Binding
@@ -39,7 +39,7 @@ In the third column, `APIGROUP`. If, for example, you're creating a manifest for
 
 Because we now know the `APIGROUP` we will just get the version by using grep.
 
-```
+```bash
 $ kubectl api-versions | grep -E "^apps/"
 apps/v1
 ```
