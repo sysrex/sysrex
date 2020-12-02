@@ -145,24 +145,24 @@
 <p>The format is <code>api_group/version</code> (unless you are working with resource in the core API group, in which case you omit the <code>api_group</code> portion).</p>
 <h2 id="lets-find-the-api-group">Let&rsquo;s find the api group</h2>
 <p>We will run <code>kubectl api-resources</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">➜  ~ kubectl api-resources
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  ~ kubectl api-resources
 NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
-bindings                                                                      true         Binding
-componentstatuses                 cs                                          false        ComponentStatus
-configmaps                        cm                                          true         ConfigMap
-endpoints                         ep                                          true         Endpoints
-events                            ev                                          true         Event
-limitranges                       limits                                      true         LimitRange
-namespaces                        ns                                          false        Namespace
-nodes                             no                                          false        Node
-persistentvolumeclaims            pvc                                         true         PersistentVolumeClaim
-persistentvolumes                 pv                                          false        PersistentVolume
-pods                              po                                          true         Pod
+bindings                                                                      <span style="color:#8be9fd;font-style:italic">true</span>         Binding
+componentstatuses                 cs                                          <span style="color:#8be9fd;font-style:italic">false</span>        ComponentStatus
+configmaps                        cm                                          <span style="color:#8be9fd;font-style:italic">true</span>         ConfigMap
+endpoints                         ep                                          <span style="color:#8be9fd;font-style:italic">true</span>         Endpoints
+events                            ev                                          <span style="color:#8be9fd;font-style:italic">true</span>         Event
+limitranges                       limits                                      <span style="color:#8be9fd;font-style:italic">true</span>         LimitRange
+namespaces                        ns                                          <span style="color:#8be9fd;font-style:italic">false</span>        Namespace
+nodes                             no                                          <span style="color:#8be9fd;font-style:italic">false</span>        Node
+persistentvolumeclaims            pvc                                         <span style="color:#8be9fd;font-style:italic">true</span>         PersistentVolumeClaim
+persistentvolumes                 pv                                          <span style="color:#8be9fd;font-style:italic">false</span>        PersistentVolume
+pods                              po                                          <span style="color:#8be9fd;font-style:italic">true</span>         Pod
 </code></pre></div><p><em>Output truncated to avoid the really long output</em></p>
 <p>In the third column, <code>APIGROUP</code>. If, for example, you&rsquo;re creating a manifest for a new <code>Deployment</code> you could <code>grep</code> the output of <code>kubectl api-resources</code> and see that the API group is <code>apps</code>.</p>
 <h2 id="glets-find-the-api-group-version">GLet&rsquo;s find the API group version</h2>
 <p>Because we now know the <code>APIGROUP</code> we will just get the version by using grep.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ kubectl api-versions | grep -E &#34;^apps/&#34;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl api-versions | grep -E <span style="color:#f1fa8c">&#34;^apps/&#34;</span>
 apps/v1
 </code></pre></div><p>The result is the version we need.</p>
 <h2 id="result">Result</h2>
