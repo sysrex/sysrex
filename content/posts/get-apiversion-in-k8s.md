@@ -48,7 +48,7 @@ The result is the version we need.
 
 ## Result
 
-We are not ready to put the `apiVersion` for the `Deployment` in the cluster.
+We are now ready to put the `apiVersion` for the `Deployment` in the cluster.
 
 ```yaml
 kind: Deployment
