@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="sysrex">
+    <meta name="description" content="Installing and setup golang on mac Big Sur">
+    <meta name="keywords" content="blog,developer,sre">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install go on mac"/>
+<meta name="twitter:description" content="Installing and setup golang on mac Big Sur"/>
+
+    <meta property="og:title" content="Install go on mac" />
+<meta property="og:description" content="Installing and setup golang on mac Big Sur" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.sysrex.tech/golang/installing-go-on-mac/" />
+
+
+
+    <title>
+  Install go on mac · sysrex
+</title>
+
+    
+      <link rel="canonical" href="https://www.sysrex.tech/golang/installing-go-on-mac/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.9836c03fe5c87d102278a33e86d0591ef36c89b1e17e8e547ebf84c05cee010e.css" integrity="sha256-mDbAP&#43;XIfRAieKM&#43;htBZHvNsibHhfo5Ufr&#43;EwFzuAQ4=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      sysrex
+    </a>
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </span>
+      
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/golang">Golang</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/uses">Uses</a>
+            </li>
+          
+        
+        
+        
+          <li class="navigation-item separator">
+            <span>|</span>
+          </li>
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Install go on mac</h1>
+    </header>
+
+    <h1 id="installation">Installation</h1>
+<p>I use brew to install the latest version of mac:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">brew install golang
+</code></pre></div><p>Then we check the installation:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ /usr/local/go/bin/go version
+ go version go1.15.6 darwin/amd64
+</code></pre></div><h1 id="setting-up-gopath-and-gobin">Setting up GOPATH and GOBIN</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ grep -q <span style="color:#f1fa8c">&#39;^export PATH=/usr/local/go/bin:$PATH&#39;</span> ~/.zshrc <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export PATH=/usr/local/go/bin:$PATH&#39;</span> &gt;&gt; ~/.zshrc
+$ grep -q <span style="color:#f1fa8c">&#39;^export GOPATH=~/go&#39;</span> ~/.zshrc <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export GOPATH=~/go&#39;</span> &gt;&gt; ~/.zshrc
+$ grep -q <span style="color:#f1fa8c">&#39;^export GOBIN=$GOPATH/bin&#39;</span> ~/.zshrc <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export GOBIN=$GOPATH/bin&#39;</span> &gt;&gt; ~/.zshrc
+ 
+$ tail -n3 ~/.zshrc
+<span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">PATH</span><span style="color:#ff79c6">=</span>/usr/local/go/bin:<span style="color:#8be9fd;font-style:italic">$PATH</span>
+<span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">GOPATH</span><span style="color:#ff79c6">=</span>~/go
+<span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">GOBIN</span><span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">$GOPATH</span>/bin
+</code></pre></div><p>Now let&rsquo;s check out installation</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ go version
+go version go1.15.6 darwin/amd64
+
+$ go env GOPATH
+/Users/user/go
+
+$ <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#8be9fd;font-style:italic">$GOPATH</span>
+/Users/user/go
+
+$ <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#8be9fd;font-style:italic">$GOBIN</span>
+/Users/user/go/bin
+
+$ go env
+<span style="color:#8be9fd;font-style:italic">GO111MODULE</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOARCH</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;amd64&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOBIN</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/Users/user/go/bin&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOCACHE</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/Users/user/Library/Caches/go-build&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOENV</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/Users/user/Library/Application Support/go/env&#34;</span>
+...
+<span style="color:#8be9fd;font-style:italic">GOPROXY</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://proxy.golang.org,direct&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOROOT</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/usr/local/go&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOSUMDB</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;sum.golang.org&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOTMPDIR</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;&#34;</span>
+<span style="color:#8be9fd;font-style:italic">GOTOOLDIR</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/usr/local/go/pkg/tool/darwin_amd64&#34;</span>
+...
+</code></pre></div>
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>I hope you enjoyed it.</p>
+      
+      
+        ©
+        
+        2021
+         sysrex 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-179970173-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    
+
+    
+
+  </body>
+
+</html>
