@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.sysrex.tech/tags/golang/</loc>
+    <lastmod>2021-01-04T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/golang/</loc>
+    <lastmod>2021-01-04T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/golang/installing-go-on-mac/</loc>
+    <lastmod>2021-01-04T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/</loc>
+    <lastmod>2021-01-04T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.sysrex.tech/tags/</loc>
+    <lastmod>2021-01-04T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.sysrex.tech/uses/</loc>
     <lastmod>2020-10-20T19:12:38+01:00</lastmod>
   </url>
@@ -24,16 +49,6 @@
   
   <url>
     <loc>https://www.sysrex.tech/tags/scanner/</loc>
-    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/</loc>
-    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/tags/</loc>
     <lastmod>2020-10-16T11:57:40+01:00</lastmod>
   </url>
   
@@ -78,22 +93,12 @@
   </url>
   
   <url>
-    <loc>https://www.sysrex.tech/golang/</loc>
-    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.sysrex.tech/golang/golang-env-structs/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.sysrex.tech/golang/go-variables/</loc>
-    <lastmod>2020-06-01T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/tags/golang/</loc>
     <lastmod>2020-06-01T14:16:40+01:00</lastmod>
   </url>
   
@@ -203,10 +208,6 @@
   
   <url>
     <loc>https://www.sysrex.tech/tags/cve/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.sysrex.tech/golang/installing-go-on-mac/</loc>
   </url>
   
   <url>
