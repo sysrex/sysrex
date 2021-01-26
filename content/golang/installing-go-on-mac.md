@@ -1,6 +1,6 @@
 ---
 title: "Install go on mac"
-date: 2021-01-4T14:16:40+01:00
+date: 2021-01-04T14:16:40+01:00
 tags: ["Golang"]
 summary: "Installing and setup golang on mac Big Sur"
 draft: false
