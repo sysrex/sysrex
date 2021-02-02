@@ -1,6 +1,6 @@
 ---
 title: "Go pointers"
-date: 2021-01-7T10:31:42+01:00
+date: 2021-01-07T10:31:42+01:00
 tags: ["Golang"]
 summary: "Just a small overview of the go pointers"
 draft: false
