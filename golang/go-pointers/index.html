@@ -7,24 +7,26 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="sysrex">
-    <meta name="description" content="geeky blog">
+    <meta name="description" content="Just a small overview of the go pointers">
     <meta name="keywords" content="blog,developer,sre">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Golang"/>
-<meta name="twitter:description" content="geeky blog"/>
+<meta name="twitter:title" content="Go pointers"/>
+<meta name="twitter:description" content="Just a small overview of the go pointers"/>
 
-    <meta property="og:title" content="Golang" />
-<meta property="og:description" content="geeky blog" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.sysrex.tech/tags/golang/" />
-<meta property="og:updated_time" content="2021-01-04T14:16:40+01:00" />
+    <meta property="og:title" content="Go pointers" />
+<meta property="og:description" content="Just a small overview of the go pointers" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.sysrex.tech/golang/go-pointers/" />
 
 
-    <title>Tag: Golang · sysrex</title>
+
+    <title>
+  Go pointers · sysrex
+</title>
 
     
-      <link rel="canonical" href="https://www.sysrex.tech/tags/golang/">
+      <link rel="canonical" href="https://www.sysrex.tech/golang/go-pointers/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -53,7 +55,6 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    <link rel="alternate" type="application/rss+xml" href="/tags/golang/index.xml" title="sysrex" />
     
 
     <meta name="generator" content="Hugo 0.80.0" />
@@ -110,36 +111,31 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Tag: Golang</h1>
-  
-  <ul>
-    
-    <li>
-      <span class="date">January 4, 2021</span>
-      <a class="title" href="/golang/installing-go-on-mac/">Install go on mac</a>
-    </li>
-    
-    <li>
-      <span class="date">June 1, 2020</span>
-      <a class="title" href="/golang/go-variables/">Go variables</a>
-    </li>
-    
-    <li>
-      <span class="date">January 1, 0001</span>
-      <a class="title" href="/golang/go-pointers/">Go pointers</a>
-    </li>
-    
-  </ul>
-  
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Go pointers</h1>
+    </header>
 
+    <p>Go supports pointers, allowing you to pass references to values and records within your program.</p>
+<p>The <code>&amp;</code> syntax gives the memory address of the variable, while the <code>*</code> gives the value fo the variable.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ff79c6">package</span> main
+<span style="color:#ff79c6">import</span> <span style="color:#f1fa8c">&#34;fmt&#34;</span>
 
+<span style="color:#8be9fd;font-style:italic">var</span> i <span style="color:#8be9fd">int</span> = <span style="color:#bd93f9">4</span>
 
-
-
-
+<span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">main</span>() {
+	fmt.<span style="color:#50fa7b">Println</span>(i)
+	fmt.<span style="color:#50fa7b">Println</span>(<span style="color:#ff79c6">&amp;</span>i)
+}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">$ <span style="color:#ff79c6">go</span> run pointers.<span style="color:#ff79c6">go</span>
+<span style="color:#bd93f9">4</span>
+<span style="color:#bd93f9">0x53e108</span>
+</code></pre></div>
+  </article>
 </section>
 
+  
 
       </div>
 
