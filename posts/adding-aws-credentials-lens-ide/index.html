@@ -7,26 +7,28 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="sysrex">
-    <meta name="description" content="geeky blog">
+    <meta name="description" content="How to add aws credentials to lens ide">
     <meta name="keywords" content="blog,developer,sre">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="geeky blog"/>
+<meta name="twitter:title" content="Adding aws credentials to lens ide"/>
+<meta name="twitter:description" content="How to add aws credentials to lens ide"/>
 
-    <meta property="og:title" content="Posts" />
-<meta property="og:description" content="geeky blog" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.sysrex.tech/posts/" />
-<meta property="og:updated_time" content="2020-10-16T11:57:40+01:00" />
+    <meta property="og:title" content="Adding aws credentials to lens ide" />
+<meta property="og:description" content="How to add aws credentials to lens ide" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-01-15T20:11:30&#43;01:00" />
+<meta property="article:modified_time" content="2020-01-15T20:11:30&#43;01:00" />
+
 
 
     <title>
-  Posts · sysrex
+  Adding aws credentials to lens ide · sysrex
 </title>
 
     
-      <link rel="canonical" href="https://www.sysrex.tech/posts/">
+      <link rel="canonical" href="https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -55,10 +57,9 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="sysrex" />
     
 
-    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="generator" content="Hugo 0.81.0" />
   </head>
 
   
@@ -112,73 +113,60 @@
 
       <div class="content">
         
-  <section class="container list">
-    <h1 class="title"> Posts </h1>
-    
-    <ul><li>
-  <span class="date">April 11, 2019</span>
-  <a class="title" href="/posts/ec2backup-python-lambda/">EC2 backup with lambda</a>
-</li>
-<li>
-  <span class="date">February 7, 2019</span>
-  <a class="title" href="/posts/build-docker-to-ecr-with-travis/">Build docker to ECR with travis</a>
-</li>
-<li>
-  <span class="date">January 19, 2018</span>
-  <a class="title" href="/posts/jenkins-declarative-pipeline-example/">Jenkins declarative pipeline</a>
-</li>
-<li>
-  <span class="date">March 4, 2016</span>
-  <a class="title" href="/posts/add-swap-ec2/">Adding swap to ec2</a>
-</li>
-<li>
-  <span class="date">August 4, 2012</span>
-  <a class="title" href="/posts/using-speedtest-cli-linuxservers/">Checking your internet connection with speedtest-cli </a>
-</li>
-<li>
-  <span class="date">January 1, 0001</span>
-  <a class="title" href="/posts/vulnerabilities/">Recent reported vulnerabilites</a>
-</li>
-</ul>
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Adding aws credentials to lens ide</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2020-01-15T20:11:30&#43;01:00'>
+                January 15, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/aws/">AWS</a>
+      <span class="separator">•</span>
+    <a href="/tags/kubernetes/">Kubernetes</a></div>
 
-    
+        </div>
+      </header>
 
+      <div>
+        
+        <p>I am managing several K8s clusters and I regularly switch between them, in order to keep connected on all of them at the same time I am adding the kubeconfig with env variables to avoid switching profiles in <a href="https://k8slens.dev">LensApp</a></p>
+<h3 id="run-the-following-commands">Run the following commands</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">env</span>:
+    - <span style="color:#ff79c6">name</span>: AWS_ACCESS_KEY_ID
+      <span style="color:#ff79c6">value</span>: my-key-id
+    - <span style="color:#ff79c6">name</span>: AWS_SECRET_ACCESS_KEY
+      <span style="color:#ff79c6">value</span>: my-key-secret</code></pre></div>
+<p>Add the above code block and paste the kubeconfig as text into <a href="https://k8slens.dev">LensApp</a>.</p>
 
-
-
-
-<ul class="pagination">
-  
-    
-    <li><a href="/posts/">&laquo;</a></li>
-    
-    <li class="hidden"><a href="/posts/">&lsaquo;</a></li>
-  
-  
-    
-    
-      
-    
-    
-      
-      <li><a href="/posts/">1</a></li>
-      
-    
-  
-    
-    
-      
-    
-    
-      
-      <li>2</li>
-      
-    
-  
-  
-</ul>
+      </div>
 
 
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
   </section>
 
       </div>
@@ -207,7 +195,7 @@
 
     
       
-      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
     
 
     

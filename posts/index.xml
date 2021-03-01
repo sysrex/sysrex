@@ -53,6 +53,15 @@
     </item>
     
     <item>
+      <title>Adding aws credentials to lens ide</title>
+      <link>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</link>
+      <pubDate>Wed, 15 Jan 2020 20:11:30 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</guid>
+      <description>How to add aws credentials to lens ide</description>
+    </item>
+    
+    <item>
       <title>K3s Raspberry pi</title>
       <link>https://www.sysrex.tech/posts/k3s-raspberry-pi/</link>
       <pubDate>Sun, 24 Nov 2019 14:16:40 +0100</pubDate>

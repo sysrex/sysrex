@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Adding aws credentials to lens ide</title>
+      <link>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</link>
+      <pubDate>Wed, 15 Jan 2020 20:11:30 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</guid>
+      <description>How to add aws credentials to lens ide</description>
+    </item>
+    
+    <item>
       <title>Terraform with Remote S3 and Locking state</title>
       <link>https://www.sysrex.tech/posts/terraform-remote-s3/</link>
       <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
