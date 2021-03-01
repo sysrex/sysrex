@@ -23,8 +23,8 @@ func main() {
 ```
 
 
-```go
-$ go run pointers.go
+```zsh
+go run pointers.go
 4
 0x53e108
 ```

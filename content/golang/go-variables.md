@@ -19,7 +19,7 @@ func main() {
 ```
 
 
-```go
-$ go run variables.go
+```zsh
+go run variables.go
 variable
 ```
