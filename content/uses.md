@@ -33,35 +33,40 @@ type: page
 </style>
 
 ## Hardware
-* 🖥 2 x [LG 27" Ultrafine 5k](https://www.apple.com/uk/shop/product/HMUB2B/A/lg-ultrafine-5k-display)
-* 💻 Apple MacBook Pro 15" 2019 Octa Core with 32GB RAM
-* ⌨️ Apple Keyboard
-* 🖱 Apple mouse
-* 🎧 Apple AirPods
-* 🎧 [Jabra Evolve 30 II](https://www.jabra.co.uk/supportpages/jabra-evolve-30-ii#/#5399-823-389)
-* 📱 Apple iPad Pro 11" + Magic Pen
-* 📱 Apple iPhone XR 64GB
+* 2 x [LG 27" Ultrafine 5k](https://www.apple.com/uk/shop/product/HMUB2B/A/lg-ultrafine-5k-display)
+* Apple MacBook Pro 16" 2020 Octa Core with 32GB RAM
+* Apple Keyboard
+* Apple mouse
+* Apple AirPods
+* [Jabra Evolve 30 II](https://www.jabra.co.uk/supportpages/jabra-evolve-30-ii#/#5399-823-389)
+* Apple iPad Pro 11" + Magic Pen
+* Apple iPhone XR 64GB
 
 ## Office Setup
-* 🪑 [Dota Secret Labs Chair](https://secretlab.co.uk/collections/titan-series?utm_source=google&utm_medium=cpc&utm_content=dota2_chair&utm_campaign=uk-s-generic-exact&gclid=CjwKCAiA17P9BRB2EiwAMvwNyBKh-v1gdynkLkTqhytsiG9KTe643XokN7heqArkrOlCNOX_gY4a7RoCDy0QAvD_BwE#titan_2020-dota2)
-* 🏢 Ikea Alex / Linnmon 
+* [Dota Secret Labs Chair](https://secretlab.co.uk/collections/titan-series?utm_source=google&utm_medium=cpc&utm_content=dota2_chair&utm_campaign=uk-s-generic-exact&gclid=CjwKCAiA17P9BRB2EiwAMvwNyBKh-v1gdynkLkTqhytsiG9KTe643XokN7heqArkrOlCNOX_gY4a7RoCDy0QAvD_BwE#titan_2020-dota2)
+* Ikea Alex / Linnmon 
 
-## Programming
-* ⚗️ [LensApp](https://k8slens.dev)
-* 🆚 [Visual Studio Code](https://code.visualstudio.com/)
-* 📝 [neovim](https://github.com/neovim/neovim)
-* 📝 [GitKraken](https://www.gitkraken.com/)
+## Weapons of choice
+* [LensApp](https://k8slens.dev)
+* [JetBrains Goland](https://www.jetbrains.com/go/)
+* [Neovim](https://github.com/neovim/neovim)
 
 ## Software
-* ✉️ [Gmail](https://gmail.com)
-* 📅 [Google Calendar](https://calendar.google.com)
-* 🗒 [Notion](https://www.notion.so/)
-* 💬 [Slack](https://slack.com/)
-* #️⃣ [iTerm 2](https://iterm2.com/)
-* 🐚 [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)
-* 🔠 [Fira Code](https://github.com/tonsky/FiraCode)
-* 🔑 [Bitwarden](https://bitwarden.com/)
-* 🐳 [Docker](https://www.docker.com/)
-* 🍹 [Bartender](https://www.macbartender.com/)
-* 🍺 [Brew](https://brew.sh/)
-* 💨 [Dash](https://kapeli.com/dash)
+* [Gmail](https://gmail.com)
+* [Omnifocus](https://www.omnigroup.com/omnifocus/)
+* [Notion](https://www.notion.so/)
+* [Slack](https://slack.com/)
+* [iTerm 2](https://iterm2.com/)
+* [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)
+* [SF Mono](https://developer.apple.com/fonts/)
+* [Bitwarden](https://bitwarden.com/)
+* [Docker](https://www.docker.com/)
+* [Bartender](https://www.macbartender.com/)
+* [Brew](https://brew.sh/)
+* [Dash](https://kapeli.com/dash)
+
+## Most of my day goes to
+* [AWS](https://aws.amazon.com)
+* [Kubernetes](https://kubernetes.io/)
+* [Argo CD](https://argoproj.github.io/argo-cd/)
+* [Istio](https://istio.io/)
