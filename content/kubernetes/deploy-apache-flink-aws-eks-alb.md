@@ -1,7 +1,7 @@
 ---
 title: "Deploy Apache Flink on AWS EKS"
 date: 2020-08-15T12:31:40+01:00
-tags: ["AWS", "EKS"]
+tags: ["AWS", "EKS", "Big Data"]
 summary: "How to deploy Apache Flink on AWS EKS with ALB ingress"
 draft: false
 ---
