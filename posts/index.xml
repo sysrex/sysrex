@@ -62,15 +62,6 @@
     </item>
     
     <item>
-      <title>Gopherotti avatar</title>
-      <link>https://www.sysrex.tech/posts/welcome-gopherotti/</link>
-      <pubDate>Thu, 24 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/posts/welcome-gopherotti/</guid>
-      <description>PResenting my new gopherotti avatar</description>
-    </item>
-    
-    <item>
       <title>Deploy Hugo with Travis on a VPS</title>
       <link>https://www.sysrex.tech/posts/deploy-hugo-travis/</link>
       <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
