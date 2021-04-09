@@ -7,28 +7,24 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="sysrex">
-    <meta name="description" content="How to add swap to an EC2 instance">
+    <meta name="description" content="geeky blog">
     <meta name="keywords" content="aws, kubernetes,sre">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Adding swap to ec2"/>
-<meta name="twitter:description" content="How to add swap to an EC2 instance"/>
+<meta name="twitter:title" content="Big Data"/>
+<meta name="twitter:description" content="geeky blog"/>
 
-    <meta property="og:title" content="Adding swap to ec2" />
-<meta property="og:description" content="How to add swap to an EC2 instance" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.sysrex.tech/posts/add-swap-ec2/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2016-03-04T14:16:40&#43;01:00" />
-<meta property="article:modified_time" content="2016-03-04T14:16:40&#43;01:00" />
+    <meta property="og:title" content="Big Data" />
+<meta property="og:description" content="geeky blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.sysrex.tech/tags/big-data/" />
 
 
 
-    <title>
-  Adding swap to ec2 · sysrex
-</title>
+    <title>Tag: Big Data · sysrex</title>
 
     
-      <link rel="canonical" href="https://www.sysrex.tech/posts/add-swap-ec2/">
+      <link rel="canonical" href="https://www.sysrex.tech/tags/big-data/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -57,6 +53,7 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
+    <link rel="alternate" type="application/rss+xml" href="/tags/big-data/index.xml" title="sysrex" />
     
 
     <meta name="generator" content="Hugo 0.82.0" />
@@ -117,59 +114,26 @@
 
       <div class="content">
         
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">Adding swap to ec2</h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2016-03-04T14:16:40&#43;01:00'>
-                March 4, 2016
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              One-minute read
-            </span>
-          </div>
-          
-          <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="/tags/aws/">AWS</a></div>
-
-        </div>
-      </header>
-
-      <div>
-        
-        <h3 id="run-the-following-commands">Run the following commands</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo /bin/dd <span style="color:#ff79c6">if</span><span style="color:#ff79c6">=</span>/dev/zero <span style="color:#8be9fd;font-style:italic">of</span><span style="color:#ff79c6">=</span>/var/swap.1 <span style="color:#8be9fd;font-style:italic">bs</span><span style="color:#ff79c6">=</span>1M <span style="color:#8be9fd;font-style:italic">count</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1024</span>
-sudo /sbin/mkswap /var/swap.1
-sudo chmod <span style="color:#bd93f9">600</span> /var/swap.1
-sudo /sbin/swapon /var/swap.1</code></pre></div>
-<h3 id="and-then-add-the-line-in-your-etcfstab">And then add the line in your /etc/fstab</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/var/swap.1   swap    swap    defaults        <span style="color:#bd93f9">0</span>   <span style="color:#bd93f9">0</span></code></pre></div>
-<p>and that&rsquo;s all folks, now you should run <em>free -m</em> and see the results.</p>
-
-      </div>
-
-
-      <footer>
-        
-
-
-        
-        
-        
-      </footer>
-    </article>
-
+  <section class="container list">
+  <h1 class="title">Tag: Big Data</h1>
+  
+  <ul>
     
-  </section>
+    <li>
+      <span class="date">August 15, 2020</span>
+      <a class="title" href="/kubernetes/deploy-apache-flink-aws-eks-alb/">Deploy Apache Flink on AWS EKS</a>
+    </li>
+    
+  </ul>
+  
+
+
+
+
+
+
+</section>
+
 
       </div>
 

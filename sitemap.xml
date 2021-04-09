@@ -44,10 +44,16 @@
     <loc>https://www.sysrex.tech/tags/aws/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</loc>
+    <loc>https://www.sysrex.tech/tags/big-data/</loc>
+    <lastmod>2020-08-15T12:31:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/tags/eks/</loc>
+    <lastmod>2020-08-15T12:31:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/kubernetes/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/posts/get-apiversion-in-k8s/</loc>
@@ -68,7 +74,7 @@
     <loc>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</loc>
     <lastmod>2020-01-15T20:11:30+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.tech/posts/k3s-raspberry-pi/</loc>
+    <loc>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</loc>
     <lastmod>2019-11-24T14:16:40+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/tags/terraform/</loc>
@@ -83,7 +89,7 @@
     <loc>https://www.sysrex.tech/tags/misc/</loc>
     <lastmod>2019-10-24T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</loc>
+    <loc>https://www.sysrex.tech/kubernetes/create-eks-cluster-with-assume-role/</loc>
     <lastmod>2019-08-02T14:16:40+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/posts/deploy-hugo-travis/</loc>

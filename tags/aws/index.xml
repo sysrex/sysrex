@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 15 Aug 2020 12:31:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy Apache Flink on AWS EKS</title>
-      <link>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</link>
+      <link>https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/</link>
       <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</guid>
+      <guid>https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/</guid>
       <description>How to deploy Apache Flink on AWS EKS with ALB ingress</description>
     </item>
     
@@ -45,10 +45,10 @@
     
     <item>
       <title>Create EKS Cluster with Role Assume</title>
-      <link>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</link>
+      <link>https://www.sysrex.tech/kubernetes/create-eks-cluster-with-assume-role/</link>
       <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</guid>
+      <guid>https://www.sysrex.tech/kubernetes/create-eks-cluster-with-assume-role/</guid>
       <description>How to create an EKS Cluster with role assume</description>
     </item>
     

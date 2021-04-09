@@ -26,15 +26,6 @@
     </item>
     
     <item>
-      <title>Deploy Apache Flink on AWS EKS</title>
-      <link>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</link>
-      <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</guid>
-      <description>How to deploy Apache Flink on AWS EKS with ALB ingress</description>
-    </item>
-    
-    <item>
       <title>Get the apiVersion in Kubernetes</title>
       <link>https://www.sysrex.tech/posts/get-apiversion-in-k8s/</link>
       <pubDate>Fri, 12 Jun 2020 19:19:40 +0100</pubDate>
@@ -62,15 +53,6 @@
     </item>
     
     <item>
-      <title>K3s Raspberry pi</title>
-      <link>https://www.sysrex.tech/posts/k3s-raspberry-pi/</link>
-      <pubDate>Sun, 24 Nov 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/posts/k3s-raspberry-pi/</guid>
-      <description>Installing Kubernetes K3s on Raspberry Pi Cluster</description>
-    </item>
-    
-    <item>
       <title>Terraform with Remote S3 and Locking state</title>
       <link>https://www.sysrex.tech/posts/terraform-remote-s3/</link>
       <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
@@ -86,15 +68,6 @@
       
       <guid>https://www.sysrex.tech/posts/welcome-gopherotti/</guid>
       <description>PResenting my new gopherotti avatar</description>
-    </item>
-    
-    <item>
-      <title>Create EKS Cluster with Role Assume</title>
-      <link>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</link>
-      <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</guid>
-      <description>How to create an EKS Cluster with role assume</description>
     </item>
     
     <item>

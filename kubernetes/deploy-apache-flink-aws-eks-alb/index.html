@@ -8,7 +8,7 @@
 
     <meta name="author" content="sysrex">
     <meta name="description" content="How to deploy Apache Flink on AWS EKS with ALB ingress">
-    <meta name="keywords" content="blog,developer,sre">
+    <meta name="keywords" content="aws, kubernetes,sre">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Deploy Apache Flink on AWS EKS"/>
@@ -17,7 +17,7 @@
     <meta property="og:title" content="Deploy Apache Flink on AWS EKS" />
 <meta property="og:description" content="How to deploy Apache Flink on AWS EKS with ALB ingress" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/" /><meta property="article:section" content="kubernetes" />
 <meta property="article:published_time" content="2020-08-15T12:31:40&#43;01:00" />
 <meta property="article:modified_time" content="2020-08-15T12:31:40&#43;01:00" />
 
@@ -28,7 +28,7 @@
 </title>
 
     
-      <link rel="canonical" href="https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/">
+      <link rel="canonical" href="https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.81.0" />
+    <meta name="generator" content="Hugo 0.82.0" />
   </head>
 
   
@@ -95,6 +95,10 @@
             </li>
           
             <li class="navigation-item">
+              <a class="navigation-link" href="/kubernetes">Kubernetes</a>
+            </li>
+          
+            <li class="navigation-item">
               <a class="navigation-link" href="/uses">Uses</a>
             </li>
           
@@ -113,38 +117,13 @@
 
       <div class="content">
         
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">Deploy Apache Flink on AWS EKS</h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2020-08-15T12:31:40&#43;01:00'>
-                August 15, 2020
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              3-minute read
-            </span>
-          </div>
-          
-          <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
-    <a href="/tags/aws/">AWS</a>
-      <span class="separator">•</span>
-    <a href="/tags/eks/">EKS</a></div>
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Deploy Apache Flink on AWS EKS</h1>
+    </header>
 
-        </div>
-      </header>
-
-      <div>
-        
-        <p>First thing is first, we will use the <code>eksctl</code> tool to create the EKS Cluster</p>
+    <p>First thing is first, we will use the <code>eksctl</code> tool to create the EKS Cluster</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 ---
 <span style="color:#ff79c6">apiVersion</span>: eksctl.io/v1alpha5
@@ -240,21 +219,10 @@ kubernetes                      ClusterIP      172.20.0.1       &lt;none&gt;    
   <span style="color:#ff79c6">type</span>: LoadBalancer
 </code></pre></div><p>and that&rsquo;s all folks, run <code>kubectl get svc</code> and you will see the endpoint of the ALB created.</p>
 
-      </div>
+  </article>
+</section>
 
-
-      <footer>
-        
-
-
-        
-        
-        
-      </footer>
-    </article>
-
-    
-  </section>
+  
 
       </div>
 
@@ -300,7 +268,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
     
 
