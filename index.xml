@@ -110,15 +110,6 @@ I found this to be extremely boring.</description>
     </item>
     
     <item>
-      <title>K3s Raspberry pi</title>
-      <link>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</link>
-      <pubDate>Sun, 24 Nov 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</guid>
-      <description>Installing Kubernetes K3s on Raspberry Pi Cluster</description>
-    </item>
-    
-    <item>
       <title>Terraform with Remote S3 and Locking state</title>
       <link>https://www.sysrex.tech/posts/terraform-remote-s3/</link>
       <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
