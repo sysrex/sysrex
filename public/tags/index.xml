@@ -6,10 +6,15 @@
     <description>Recent content in Tags on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2020 11:57:40 +0100</lastBuildDate>
-    
-	<atom:link href="https://www.sysrex.tech/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 07 Jan 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang</title>
+      <link>https://www.sysrex.tech/tags/golang/</link>
+      <pubDate>Thu, 07 Jan 2021 10:31:42 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/tags/golang/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>docker</title>
@@ -48,6 +53,15 @@
     </item>
     
     <item>
+      <title>Big Data</title>
+      <link>https://www.sysrex.tech/tags/big-data/</link>
+      <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>EKS</title>
       <link>https://www.sysrex.tech/tags/eks/</link>
       <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
@@ -57,20 +71,11 @@
     </item>
     
     <item>
-      <title>kubernetes</title>
+      <title>Kubernetes</title>
       <link>https://www.sysrex.tech/tags/kubernetes/</link>
       <pubDate>Fri, 12 Jun 2020 19:19:40 +0100</pubDate>
       
       <guid>https://www.sysrex.tech/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://www.sysrex.tech/tags/golang/</link>
-      <pubDate>Mon, 01 Jun 2020 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -80,15 +85,6 @@
       <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
       
       <guid>https://www.sysrex.tech/tags/terraform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>misc</title>
-      <link>https://www.sysrex.tech/tags/misc/</link>
-      <pubDate>Thu, 24 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/tags/misc/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,24 @@
     <description>Recent content on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2020 11:57:40 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jan 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go pointers</title>
+      <link>https://www.sysrex.tech/golang/go-pointers/</link>
+      <pubDate>Thu, 07 Jan 2021 10:31:42 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/golang/go-pointers/</guid>
+      <description>Just a small overview of the go pointers</description>
+    </item>
     
-	<atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Install go on mac</title>
+      <link>https://www.sysrex.tech/golang/installing-go-on-mac/</link>
+      <pubDate>Mon, 04 Jan 2021 14:16:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/golang/installing-go-on-mac/</guid>
+      <description>Installing and setup golang on mac Big Sur</description>
+    </item>
     
     <item>
       <title>Uses</title>
@@ -17,7 +31,7 @@
       <pubDate>Tue, 20 Oct 2020 19:12:38 +0100</pubDate>
       
       <guid>https://www.sysrex.tech/uses/</guid>
-      <description>Hardware  🖥 2 x LG 27&amp;rdquo; Ultrafine 5k 💻 Apple MacBook Pro 15&amp;rdquo; 2019 Octa Core with 32GB RAM ⌨️ Apple Keyboard 🖱 Apple mouse 🎧 Apple AirPods 🎧 Jabra Evolve 30 II 📱 Apple iPad Pro 11&amp;rdquo; + Magic Pen 📱 Apple iPhone XR 64GB  Office Setup  🪑 Dota Secret Labs Chair 🏢 Ikea Alex / Linnmon  Programming  ⚗️ LensApp 🆚 Visual Studio Code 📝 neovim 📝 GitKraken  Software  ✉️ Gmail 📅 Google Calendar 🗒 Notion 💬 Slack #️⃣ iTerm 2 🐚 OhMyZsh 🔠 Fira Code 🔑 Bitwarden 🐳 Docker 🍹 Bartender 🍺 Brew 💨 Dash  </description>
+      <description>Hardware  2 x LG 27&amp;quot; Ultrafine 5k Apple MacBook Pro 16&amp;quot; 2020 Octa Core with 32GB RAM Apple Keyboard Apple mouse Apple AirPods Jabra Evolve 30 II Apple iPad Pro 11&amp;quot; + Magic Pen Apple iPhone XR 64GB  Office Setup  Dota Secret Labs Chair Ikea Alex / Linnmon  Weapons of choice  LensApp JetBrains Goland Neovim  Software  Gmail Omnifocus Notion Slack iTerm 2 OhMyZsh SF Mono Bitwarden Docker Bartender Brew Dash  Most of my day goes to  AWS Kubernetes Argo CD Istio  </description>
     </item>
     
     <item>
@@ -40,10 +54,10 @@
     
     <item>
       <title>Deploy Apache Flink on AWS EKS</title>
-      <link>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</link>
+      <link>https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/</link>
       <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/deploy-apache-flink-aws-eks-alb/</guid>
+      <guid>https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/</guid>
       <description>How to deploy Apache Flink on AWS EKS with ALB ingress</description>
     </item>
     
@@ -87,12 +101,12 @@ I found this to be extremely boring.</description>
     </item>
     
     <item>
-      <title>K3s Raspberry pi</title>
-      <link>https://www.sysrex.tech/posts/k3s-raspberry-pi/</link>
-      <pubDate>Sun, 24 Nov 2019 14:16:40 +0100</pubDate>
+      <title>Adding aws credentials to lens ide</title>
+      <link>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</link>
+      <pubDate>Wed, 15 Jan 2020 20:11:30 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/k3s-raspberry-pi/</guid>
-      <description>Installing Kubernetes K3s on Raspberry Pi Cluster</description>
+      <guid>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</guid>
+      <description>How to add aws credentials to lens ide</description>
     </item>
     
     <item>
@@ -105,20 +119,11 @@ I found this to be extremely boring.</description>
     </item>
     
     <item>
-      <title>Gopherotti avatar</title>
-      <link>https://www.sysrex.tech/posts/welcome-gopherotti/</link>
-      <pubDate>Thu, 24 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://www.sysrex.tech/posts/welcome-gopherotti/</guid>
-      <description>PResenting my new gopherotti avatar</description>
-    </item>
-    
-    <item>
       <title>Create EKS Cluster with Role Assume</title>
-      <link>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</link>
+      <link>https://www.sysrex.tech/kubernetes/create-eks-cluster-with-assume-role/</link>
       <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/create-eks-cluster-with-assume-role/</guid>
+      <guid>https://www.sysrex.tech/kubernetes/create-eks-cluster-with-assume-role/</guid>
       <description>How to create an EKS Cluster with role assume</description>
     </item>
     

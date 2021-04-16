@@ -3,3 +3,7 @@
     font-weight: 400;
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
+
+p, li, a, section {
+    font-family: "San Francisco";
+}

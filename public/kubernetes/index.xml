@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EKS on sysrex</title>
-    <link>https://www.sysrex.tech/tags/eks/</link>
-    <description>Recent content in EKS on sysrex</description>
+    <title>Kubernetes on sysrex</title>
+    <link>https://www.sysrex.tech/kubernetes/</link>
+    <description>Recent content in Kubernetes on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Aug 2020 12:31:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/tags/eks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Aug 2020 12:31:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy Apache Flink on AWS EKS</title>
       <link>https://www.sysrex.tech/kubernetes/deploy-apache-flink-aws-eks-alb/</link>
