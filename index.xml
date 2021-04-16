@@ -6,7 +6,16 @@
     <description>Recent content on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Jan 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 09:16:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K3s Raspberry pi</title>
+      <link>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</link>
+      <pubDate>Mon, 12 Apr 2021 09:16:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</guid>
+      <description>Installing Kubernetes K3s on Raspberry Pi Cluster</description>
+    </item>
+    
     <item>
       <title>Go pointers</title>
       <link>https://www.sysrex.tech/golang/go-pointers/</link>
