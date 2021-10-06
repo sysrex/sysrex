@@ -18,8 +18,8 @@
 <meta property="og:description" content="Installing Kubernetes K3s on Raspberry Pi Cluster" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/" /><meta property="article:section" content="kubernetes" />
-<meta property="article:published_time" content="2021-04-12T09:16:40&#43;01:00" />
-<meta property="article:modified_time" content="2021-04-12T09:16:40&#43;01:00" />
+<meta property="article:published_time" content="2021-04-12T09:16:40+01:00" />
+<meta property="article:modified_time" content="2021-04-12T09:16:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -134,23 +134,23 @@
 <li>Micro SD Card (128gb each)</li>
 </ul>
 <p>After installing Raspi OS, I always expand the filesystem, set the hostname and add the folloring at the end of <code>/boot/cmdline.txt</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8be9fd;font-style:italic">cgroup_enable</span><span style="color:#ff79c6">=</span>cpuset <span style="color:#8be9fd;font-style:italic">cgroup_memory</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span> <span style="color:#8be9fd;font-style:italic">cgroup_enable</span><span style="color:#ff79c6">=</span>memory
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8be9fd;font-style:italic">cgroup_enable</span><span style="color:#ff79c6">=</span>cpuset <span style="color:#8be9fd;font-style:italic">cgroup_memory</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span> <span style="color:#8be9fd;font-style:italic">cgroup_enable</span><span style="color:#ff79c6">=</span>memory
 </code></pre></div><p>Then I just reboot and then use k3sup to prepare  my cluster.
 It is important to mention, that you need to have your ssh key in the nodes and setup passwordless sudo for the user pi.</p>
 <p>From my machine I use the k3sup binary and I run on the master node:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
 <span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">IP</span><span style="color:#ff79c6">=</span>192.168.0.100
 k3sup install --ip <span style="color:#8be9fd;font-style:italic">$IP</span> --user pi
 
 </code></pre></div><p>Then on the worker nodes:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
 <span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">SERVER_IP</span><span style="color:#ff79c6">=</span>192.168.0.100
 <span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">USER</span><span style="color:#ff79c6">=</span>pi
 
 k3sup install --ip <span style="color:#8be9fd;font-style:italic">$SERVER_IP</span> --user <span style="color:#8be9fd;font-style:italic">$USER</span>
 
 </code></pre></div><p>See it in action</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜ ~ kubectl get nodes
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜ ~ kubectl get nodes
 NAME      STATUS   ROLES    AGE   VERSION
 master    Ready    master   15h   v1.19.9+k3s1
 worker0   Ready    &lt;none&gt;   11h   v1.19.9+k3s1

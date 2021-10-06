@@ -18,8 +18,8 @@
 <meta property="og:description" content="Just a small overview of the go pointers" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/golang/go-pointers/" /><meta property="article:section" content="golang" />
-<meta property="article:published_time" content="2021-01-07T10:31:42&#43;01:00" />
-<meta property="article:modified_time" content="2021-01-07T10:31:42&#43;01:00" />
+<meta property="article:published_time" content="2021-01-07T10:31:42+01:00" />
+<meta property="article:modified_time" content="2021-01-07T10:31:42+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -125,7 +125,7 @@
 
     <p>Go supports pointers, allowing you to pass references to values and records within your program.</p>
 <p>The <code>&amp;</code> syntax gives the memory address of the variable, while the <code>*</code> gives the value fo the variable.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ff79c6">package</span> main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ff79c6">package</span> main
 <span style="color:#ff79c6">import</span> <span style="color:#f1fa8c">&#34;fmt&#34;</span>
 
 <span style="color:#8be9fd;font-style:italic">var</span> i <span style="color:#8be9fd">int</span> = <span style="color:#bd93f9">4</span>
@@ -134,7 +134,7 @@
 	fmt.<span style="color:#50fa7b">Println</span>(i)
 	fmt.<span style="color:#50fa7b">Println</span>(<span style="color:#ff79c6">&amp;</span>i)
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">go run pointers.go
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">go run pointers.go
 <span style="color:#bd93f9">4</span>
 0x53e108
 </code></pre></div>

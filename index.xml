@@ -6,7 +6,16 @@
     <description>Recent content on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Apr 2021 09:16:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Aug 2021 09:12:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubectl Cheat Sheet</title>
+      <link>https://www.sysrex.tech/kubernetes/kubectl-cheat-sheet/</link>
+      <pubDate>Thu, 12 Aug 2021 09:12:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/kubernetes/kubectl-cheat-sheet/</guid>
+      <description>Kubectl Cheat Sheet</description>
+    </item>
+    
     <item>
       <title>K3s Raspberry pi</title>
       <link>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</link>

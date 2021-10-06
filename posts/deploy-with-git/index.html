@@ -18,8 +18,8 @@
 <meta property="og:description" content="Setting up git hooks for effortless deployment." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/posts/deploy-with-git/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2014-03-14T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2014-03-14T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2014-03-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-03-14T00:00:00+00:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -127,12 +127,12 @@
 <p>In this example we&rsquo;ll be deploying the <em>production</em> branch but it can be whatever branch name you want, and our site name will be called <em>foo</em>.</p>
 <h2 id="on-the-server">On the server</h2>
 <p>Initialize an empty git repo. This will act as the mediator.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p /opt/git/foo.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p /opt/git/foo.git
 <span style="color:#8be9fd;font-style:italic">cd</span> /opt/git/tracfone.git
 git init --bare <span style="color:#6272a4"># no source files, only version control</span>
 </code></pre></div><p>Create a <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks"><code>post-receive</code></a> hook which gets called after a <em>push</em> is complete.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /opt/git/foo.git/hooks/post-receive
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">#!/bin/bash
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /opt/git/foo.git/hooks/post-receive
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">#!/bin/bash
 </span><span style="color:#ff79c6"></span>
 <span style="color:#8be9fd;font-style:italic">SITE_NAME</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Foo&#34;</span>
 <span style="color:#8be9fd;font-style:italic">SITE_PATH</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/var/www/foo.com&#34;</span>
@@ -183,21 +183,21 @@ git init --bare <span style="color:#6272a4"># no source files, only version cont
 <span style="color:#8be9fd;font-style:italic">exec</span> git-update-server-info
 </code></pre></div><p>(<a href="https://gist.github.com/miguelmota/9595095">hook gist</a>)</p>
 <p>Make sure to make the hook executable.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod u+rwx /opt/git/foo.git/hooks/post-receive
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod u+rwx /opt/git/foo.git/hooks/post-receive
 </code></pre></div><h2 id="on-the-client">On the client</h2>
 <p>Add the remote url.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote add production ssh://&lt;username@&lt;server ip&gt;/opt/git/foo.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote add production ssh://&lt;username@&lt;server ip&gt;/opt/git/foo.git
 </code></pre></div><p>Push the <em>production</em> branch.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push production +production:refs/heads/production
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push production +production:refs/heads/production
 
 <span style="color:#6272a4"># Afterwards you can simply do</span>
 git push production
 </code></pre></div><p>It&rsquo;s also possible to deploy to multiple servers, just add the remote urls in <code>.git/config</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">[</span>remote <span style="color:#f1fa8c">&#34;production&#34;</span><span style="color:#ff79c6">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">[</span>remote <span style="color:#f1fa8c">&#34;production&#34;</span><span style="color:#ff79c6">]</span>
   <span style="color:#8be9fd;font-style:italic">url</span> <span style="color:#ff79c6">=</span> ssh://&lt;username&gt;@&lt;server <span style="color:#bd93f9">1</span> ip&gt;/opt/git/foo.git
   <span style="color:#8be9fd;font-style:italic">url</span> <span style="color:#ff79c6">=</span> ssh://&lt;username&gt;@&lt;server <span style="color:#bd93f9">2</span> ip&gt;/opt/git/foo.git
 </code></pre></div><p>By default git will push all branches to the remotes but we can have it push the current branch only.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global push.default current
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global push.default current
 </code></pre></div><h2 id="conclusion">Conclusion</h2>
 <p>Git hooks can help automate your deployment process. Checkout the list of client and server-side <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks">Git hooks</a> available.</p>
 

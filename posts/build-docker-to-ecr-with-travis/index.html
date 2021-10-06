@@ -18,8 +18,8 @@
 <meta property="og:description" content="How to build docker containers and deploy them to ECR with Travis CI" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/posts/build-docker-to-ecr-with-travis/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-02-07T14:19:40&#43;01:00" />
-<meta property="article:modified_time" content="2019-02-07T14:19:40&#43;01:00" />
+<meta property="article:published_time" content="2019-02-07T14:19:40+01:00" />
+<meta property="article:modified_time" content="2019-02-07T14:19:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -147,7 +147,7 @@
       <div>
         
         <p>You will need an AWS IAM Policy for the Travis user that looks pretty much like this <em>I strongly suggest you use a different user for this</em></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
     <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
     <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
         {
@@ -183,10 +183,10 @@
     ]
 }</code></pre></div>
 <p>Next you will encrypt the created credentials in the .travis.yml file</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">travis encrypt <span style="color:#8be9fd;font-style:italic">AWS_ACCESS_KEY_ID</span><span style="color:#ff79c6">=</span>super_secret --add
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">travis encrypt <span style="color:#8be9fd;font-style:italic">AWS_ACCESS_KEY_ID</span><span style="color:#ff79c6">=</span>super_secret --add
 travis encrypt <span style="color:#8be9fd;font-style:italic">AWS_SECRET_ACCESS_KEY</span><span style="color:#ff79c6">=</span>super_secret --add</code></pre></div>
 <p>Then your travis file should look like this</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">dist</span>: xenial
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">dist</span>: xenial
 <span style="color:#ff79c6">language</span>: minimal
 <span style="color:#ff79c6">services</span>:
   - docker

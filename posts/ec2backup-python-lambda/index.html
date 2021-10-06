@@ -18,8 +18,8 @@
 <meta property="og:description" content="Create ec2 backup with lambda and python functions" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/posts/ec2backup-python-lambda/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-04-11T19:16:40&#43;01:00" />
-<meta property="article:modified_time" content="2019-04-11T19:16:40&#43;01:00" />
+<meta property="article:published_time" content="2019-04-11T19:16:40+01:00" />
+<meta property="article:modified_time" content="2019-04-11T19:16:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -166,7 +166,7 @@
 <p>Write access to CloudWatch Logs</p>
 </li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
    <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
    <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
        {
@@ -200,7 +200,7 @@
 <h3 id="lambda">Lambda</h3>
 <p>Now, navigate to the AWS Lambda Management Console. Then select Create Function &gt; Author from Scratch. Name your function, choose Python 3.6 as the runtime, finally for roles select Choose an Existing Role (and select the role we made earlier).</p>
 <h3 id="python-36-script-to-be-added-to-the-function-gist-here-githubhttpsgistgithubcomsysrexf07d012797c681f69410150e094c7296">Python 3.6 script to be added to the function, gist here: <a href="https://gist.github.com/sysrex/f07d012797c681f69410150e094c7296">(Github)</a></h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">import</span> collections
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">import</span> collections
 <span style="color:#ff79c6">import</span> datetime
 <span style="color:#ff79c6">import</span> time
 <span style="color:#ff79c6">import</span> sys
@@ -229,7 +229,7 @@ all_regions <span style="color:#ff79c6">=</span> [region[<span style="color:#f1f
     deleted_size_counter <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
 
   <span style="color:#ff79c6">for</span> region_name <span style="color:#ff79c6">in</span> all_regions:
-      <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;Instances in EC2 Region {0}:&#39;</span><span style="color:#ff79c6">.</span>format(region_name))
+      <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#39;Instances in EC2 Region </span><span style="color:#f1fa8c">{0}</span><span style="color:#f1fa8c">:&#39;</span><span style="color:#ff79c6">.</span>format(region_name))
       ec2 <span style="color:#ff79c6">=</span> boto3<span style="color:#ff79c6">.</span>resource(<span style="color:#f1fa8c">&#39;ec2&#39;</span>, region_name<span style="color:#ff79c6">=</span>region_name)
 
       <span style="color:#6272a4"># We only want to look through instances with the following tag key value pair: auto_snapshot : true</span>
@@ -246,14 +246,14 @@ all_regions <span style="color:#ff79c6">=</span> [region[<span style="color:#f1f
               <span style="color:#ff79c6">if</span> tag[<span style="color:#f1fa8c">&#39;Key&#39;</span>] <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#39;Name&#39;</span>:
                   name <span style="color:#ff79c6">=</span> tag[<span style="color:#f1fa8c">&#39;Value&#39;</span>]
 
-          <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;Found tagged instance </span><span style="color:#f1fa8c">\&#39;</span><span style="color:#f1fa8c">{1}</span><span style="color:#f1fa8c">\&#39;</span><span style="color:#f1fa8c">, id: {0}, state: {2}&#39;</span><span style="color:#ff79c6">.</span>format(i<span style="color:#ff79c6">.</span>id, name, i<span style="color:#ff79c6">.</span>state[<span style="color:#f1fa8c">&#39;Name&#39;</span>]))
+          <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#39;Found tagged instance </span><span style="color:#f1fa8c">\&#39;</span><span style="color:#f1fa8c">{1}</span><span style="color:#f1fa8c">\&#39;</span><span style="color:#f1fa8c">, id: </span><span style="color:#f1fa8c">{0}</span><span style="color:#f1fa8c">, state: </span><span style="color:#f1fa8c">{2}</span><span style="color:#f1fa8c">&#39;</span><span style="color:#ff79c6">.</span>format(i<span style="color:#ff79c6">.</span>id, name, i<span style="color:#ff79c6">.</span>state[<span style="color:#f1fa8c">&#39;Name&#39;</span>]))
 
           vols <span style="color:#ff79c6">=</span> i<span style="color:#ff79c6">.</span>volumes<span style="color:#ff79c6">.</span>all()  <span style="color:#6272a4"># Iterate through each instance&#39;s volumes</span>
           <span style="color:#ff79c6">for</span> v <span style="color:#ff79c6">in</span> vols:
-              <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;{0} is attached to volume {1}, proceeding to snapshot&#39;</span><span style="color:#ff79c6">.</span>format(name, v<span style="color:#ff79c6">.</span>id))
+              <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">{0}</span><span style="color:#f1fa8c"> is attached to volume </span><span style="color:#f1fa8c">{1}</span><span style="color:#f1fa8c">, proceeding to snapshot&#39;</span><span style="color:#ff79c6">.</span>format(name, v<span style="color:#ff79c6">.</span>id))
               volume_ids<span style="color:#ff79c6">.</span>extend(v<span style="color:#ff79c6">.</span>id)
               snapshot <span style="color:#ff79c6">=</span> v<span style="color:#ff79c6">.</span>create_snapshot(
-                  Description <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;AutoSnapshot of {0}, on volume {1} - Created {2}&#39;</span><span style="color:#ff79c6">.</span>format(name, v<span style="color:#ff79c6">.</span>id, today_string),
+                  Description <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;AutoSnapshot of </span><span style="color:#f1fa8c">{0}</span><span style="color:#f1fa8c">, on volume </span><span style="color:#f1fa8c">{1}</span><span style="color:#f1fa8c"> - Created </span><span style="color:#f1fa8c">{2}</span><span style="color:#f1fa8c">&#39;</span><span style="color:#ff79c6">.</span>format(name, v<span style="color:#ff79c6">.</span>id, today_string),
                   )
               snapshot<span style="color:#ff79c6">.</span>create_tags(  <span style="color:#6272a4"># Add the following tags to the new snapshot</span>
                   Tags <span style="color:#ff79c6">=</span> [
@@ -271,11 +271,11 @@ all_regions <span style="color:#ff79c6">=</span> [region[<span style="color:#f1f
                       },
                        {
                           <span style="color:#f1fa8c">&#39;Key&#39;</span>: <span style="color:#f1fa8c">&#39;Name&#39;</span>,
-                          <span style="color:#f1fa8c">&#39;Value&#39;</span>: <span style="color:#f1fa8c">&#39;{} autosnap&#39;</span><span style="color:#ff79c6">.</span>format(name)
+                          <span style="color:#f1fa8c">&#39;Value&#39;</span>: <span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">{}</span><span style="color:#f1fa8c"> autosnap&#39;</span><span style="color:#ff79c6">.</span>format(name)
                       }
                   ]
               )
-              <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;Snapshot completed&#39;</span>)
+              <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#39;Snapshot completed&#39;</span>)
               snapshot_counter <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
               snap_size_counter <span style="color:#ff79c6">+=</span> snapshot<span style="color:#ff79c6">.</span>volume_size
 
@@ -288,28 +288,28 @@ all_regions <span style="color:#ff79c6">=</span> [region[<span style="color:#f1f
               )
 
 
-              <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;Checking for out of date snapshots for instance {0}...&#39;</span><span style="color:#ff79c6">.</span>format(name))
+              <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#39;Checking for out of date snapshots for instance </span><span style="color:#f1fa8c">{0}</span><span style="color:#f1fa8c">...&#39;</span><span style="color:#ff79c6">.</span>format(name))
               <span style="color:#ff79c6">for</span> snap <span style="color:#ff79c6">in</span> snapshots:
-                  can_delete <span style="color:#ff79c6">=</span> False
+                  can_delete <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">False</span>
                   <span style="color:#ff79c6">for</span> tag <span style="color:#ff79c6">in</span> snap<span style="color:#ff79c6">.</span>tags: <span style="color:#6272a4"># Use these if statements to get each snapshot&#39;s</span>
                                         <span style="color:#6272a4"># cleated on date, name and auto_snap tag</span>
                       <span style="color:#ff79c6">if</span> tag[<span style="color:#f1fa8c">&#39;Key&#39;</span>] <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#39;CreatedOn&#39;</span>:
                           created_on_string <span style="color:#ff79c6">=</span> tag[<span style="color:#f1fa8c">&#39;Value&#39;</span>]
                       <span style="color:#ff79c6">if</span> tag[<span style="color:#f1fa8c">&#39;Key&#39;</span>] <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#39;auto_snap&#39;</span>:
                           <span style="color:#ff79c6">if</span> tag[<span style="color:#f1fa8c">&#39;Value&#39;</span>] <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#39;true&#39;</span>:
-                              can_delete <span style="color:#ff79c6">=</span> True
+                              can_delete <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">True</span>
                       <span style="color:#ff79c6">if</span> tag[<span style="color:#f1fa8c">&#39;Key&#39;</span>] <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#39;Name&#39;</span>:
                           name <span style="color:#ff79c6">=</span> tag[<span style="color:#f1fa8c">&#39;Value&#39;</span>]
                   created_on <span style="color:#ff79c6">=</span> datetime<span style="color:#ff79c6">.</span>datetime<span style="color:#ff79c6">.</span>strptime(created_on_string, <span style="color:#f1fa8c">&#39;%Y/%m/</span><span style="color:#f1fa8c">%d</span><span style="color:#f1fa8c">&#39;</span>)<span style="color:#ff79c6">.</span>date()
 
-                  <span style="color:#ff79c6">if</span> created_on <span style="color:#ff79c6">&lt;=</span> deletion_date <span style="color:#ff79c6">and</span> can_delete <span style="color:#ff79c6">==</span> True:
-                      <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;Snapshot id {0}, ({1}) from {2} is {3} or more days old... deleting&#39;</span><span style="color:#ff79c6">.</span>format(snap<span style="color:#ff79c6">.</span>id, name, created_on_string, delete_after_days))
+                  <span style="color:#ff79c6">if</span> created_on <span style="color:#ff79c6">&lt;=</span> deletion_date <span style="color:#ff79c6">and</span> can_delete <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">True</span>:
+                      <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#39;Snapshot id </span><span style="color:#f1fa8c">{0}</span><span style="color:#f1fa8c">, (</span><span style="color:#f1fa8c">{1}</span><span style="color:#f1fa8c">) from </span><span style="color:#f1fa8c">{2}</span><span style="color:#f1fa8c"> is </span><span style="color:#f1fa8c">{3}</span><span style="color:#f1fa8c"> or more days old... deleting&#39;</span><span style="color:#ff79c6">.</span>format(snap<span style="color:#ff79c6">.</span>id, name, created_on_string, delete_after_days))
                       deleted_size_counter <span style="color:#ff79c6">+=</span> snap<span style="color:#ff79c6">.</span>volume_size
                       snap<span style="color:#ff79c6">.</span>delete()
                       deletion_counter <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
 
-  <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;   Made {0} snapshots totalling {1} GB</span><span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span><span style="color:#f1fa8c">        Deleted {2} snapshots totalling {3} GB&#39;</span><span style="color:#ff79c6">.</span>format(snapshot_counter, snap_size_counter, deletion_counter, deleted_size_counter))
+  <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#39;   Made </span><span style="color:#f1fa8c">{0}</span><span style="color:#f1fa8c"> snapshots totalling </span><span style="color:#f1fa8c">{1}</span><span style="color:#f1fa8c"> GB</span><span style="color:#f1fa8c">\
+</span><span style="color:#f1fa8c"></span><span style="color:#f1fa8c">        Deleted </span><span style="color:#f1fa8c">{2}</span><span style="color:#f1fa8c"> snapshots totalling </span><span style="color:#f1fa8c">{3}</span><span style="color:#f1fa8c"> GB&#39;</span><span style="color:#ff79c6">.</span>format(snapshot_counter, snap_size_counter, deletion_counter, deleted_size_counter))
   <span style="color:#ff79c6">return</span></code></pre></div>
 <p>This is just an improvement and personal notes to:
 <a href="http://blog.keyrus.co.uk/backup_ec2_instances_automatic_snapshots.html">(Keyrus Blog)</a></p>

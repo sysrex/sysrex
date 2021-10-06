@@ -18,8 +18,8 @@
 <meta property="og:description" content="Installing and setup golang on mac Big Sur" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/golang/installing-go-on-mac/" /><meta property="article:section" content="golang" />
-<meta property="article:published_time" content="2021-01-04T14:16:40&#43;01:00" />
-<meta property="article:modified_time" content="2021-01-04T14:16:40&#43;01:00" />
+<meta property="article:published_time" content="2021-01-04T14:16:40+01:00" />
+<meta property="article:modified_time" content="2021-01-04T14:16:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -125,12 +125,12 @@
 
     <h1 id="installation">Installation</h1>
 <p>I use brew to install the latest version of mac:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">brew install golang
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">brew install golang
 </code></pre></div><p>Then we check the installation:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ /usr/local/go/bin/go version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ /usr/local/go/bin/go version
  go version go1.15.6 darwin/amd64
 </code></pre></div><h1 id="setting-up-gopath-and-gobin">Setting up GOPATH and GOBIN</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ grep -q <span style="color:#f1fa8c">&#39;^export PATH=/usr/local/go/bin:$PATH&#39;</span> ~/.zshrc <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export PATH=/usr/local/go/bin:$PATH&#39;</span> &gt;&gt; ~/.zshrc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ grep -q <span style="color:#f1fa8c">&#39;^export PATH=/usr/local/go/bin:$PATH&#39;</span> ~/.zshrc <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export PATH=/usr/local/go/bin:$PATH&#39;</span> &gt;&gt; ~/.zshrc
 $ grep -q <span style="color:#f1fa8c">&#39;^export GOPATH=~/go&#39;</span> ~/.zshrc <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export GOPATH=~/go&#39;</span> &gt;&gt; ~/.zshrc
 $ grep -q <span style="color:#f1fa8c">&#39;^export GOBIN=$GOPATH/bin&#39;</span> ~/.zshrc <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#39;export GOBIN=$GOPATH/bin&#39;</span> &gt;&gt; ~/.zshrc
  
@@ -139,7 +139,7 @@ $ tail -n3 ~/.zshrc
 <span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">GOPATH</span><span style="color:#ff79c6">=</span>~/go
 <span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">GOBIN</span><span style="color:#ff79c6">=</span><span style="color:#8be9fd;font-style:italic">$GOPATH</span>/bin
 </code></pre></div><p>Now let&rsquo;s check out installation</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ go version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">$ go version
 go version go1.15.6 darwin/amd64
 
 $ go env GOPATH

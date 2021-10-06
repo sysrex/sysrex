@@ -18,8 +18,8 @@
 <meta property="og:description" content="Terraform with AWS and remote state bucket" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/posts/terraform-remote-s3/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-11-04T14:16:40&#43;01:00" />
-<meta property="article:modified_time" content="2019-11-04T14:16:40&#43;01:00" />
+<meta property="article:published_time" content="2019-11-04T14:16:40+01:00" />
+<meta property="article:modified_time" content="2019-11-04T14:16:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -152,11 +152,11 @@
 this generally is created in the .terraform directory and contains information about the infrastructure and configuration that terraform is managing. It is generally accepted that when multiple people work on the same project it&rsquo;s better to store this state file remotely so that more members of the team can access it to make changes to the infrastructure, I would dare to add even if you use multiple computers this is a wise thing to do.</p>
 <p>The state file contains information about what real resources exist for each object defined in the terraform config files. For example, if you have a DNS zone resource created in your terraform config, then the state file contains info about the actual resource that was created on AWS.</p>
 <p>Here is an example of creating a DNS zone with Terraform:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">resource</span> <span style="color:#f1fa8c">&#34;aws_route53_zone&#34;</span> <span style="color:#f1fa8c">&#34;example_dns_zone&#34;</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">resource</span> <span style="color:#f1fa8c">&#34;aws_route53_zone&#34;</span> <span style="color:#f1fa8c">&#34;example_dns_zone&#34;</span> {
   <span style="color:#50fa7b">name</span> = <span style="color:#f1fa8c">&#34;domain.com&#34;</span>
 }</code></pre></div>
 <p>And this is how a state file looks like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#f1fa8c">&#34;aws_route53_zone.example_dns_zone&#34;</span><span style="color:#ff79c6">:</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#f1fa8c">&#34;aws_route53_zone.example_dns_zone&#34;</span><span style="color:#ff79c6">:</span> {
     <span style="color:#f1fa8c">&#34;type&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;aws_route53_zone&#34;</span>,
     <span style="color:#f1fa8c">&#34;primary&#34;</span><span style="color:#ff79c6">:</span> {
        <span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Z2D2ARTZHH4NUA&#34;</span>,
@@ -168,10 +168,10 @@ this generally is created in the .terraform directory and contains information a
 <h3 id="store-state-remotely-in-s3">Store State Remotely in S3</h3>
 <p>If you are working on a team, then its best to store the terraform state file remotely so that many people can access it. In order to setup terraform to store state remotely you need two things: an s3 bucket to store the state file in and an terraform s3 backend resource.</p>
 <p>You can create an s3 bucket in a terraform config like so:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">provider</span> <span style="color:#f1fa8c">&#34;aws&#34;</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">provider</span> <span style="color:#f1fa8c">&#34;aws&#34;</span> {
   <span style="color:#50fa7b">region</span> = <span style="color:#f1fa8c">&#34;us-west-2&#34;</span>
 }</code></pre></div>
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">resource</span> <span style="color:#f1fa8c">&#34;aws_s3_bucket&#34;</span> <span style="color:#f1fa8c">&#34;terraform-state-storage-s3&#34;</span> {
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">resource</span> <span style="color:#f1fa8c">&#34;aws_s3_bucket&#34;</span> <span style="color:#f1fa8c">&#34;terraform-state-storage-s3&#34;</span> {
     <span style="color:#50fa7b">bucket</span> = <span style="color:#f1fa8c">&#34;terraform-remote-state-storage-s3&#34;</span>
  
     versioning {
@@ -189,7 +189,7 @@ this generally is created in the .terraform directory and contains information a
 <!-- raw HTML omitted --></p>
 <p>Then create the s3 backend resource like so:</p>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform">terraform {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform">terraform {
  backend “s3” {
  <span style="color:#50fa7b">encrypt</span> = <span style="color:#ff79c6">true</span>
  <span style="color:#50fa7b">bucket</span> = <span style="color:#f1fa8c">&#34;terraform-remote-state-storage-s3&#34;</span>
@@ -201,7 +201,7 @@ this generally is created in the .terraform directory and contains information a
 <p>If the state file is stored remotely so that many people can access it, then you risk multiple people attempting to make changes to the same file at the exact same time. So we need to provide a mechanism that will “lock” the state if its currently in-use by another user. We can accomplish this by creating a dynamoDB table for terraform to use.</p>
 <p>Create the dynamoDB table like this:<br>
 <!-- raw HTML omitted --></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">resource</span> <span style="color:#f1fa8c">&#34;aws_dynamodb_table&#34;</span> <span style="color:#f1fa8c">&#34;dynamodb-terraform-state-lock&#34;</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform"><span style="color:#ff79c6">resource</span> <span style="color:#f1fa8c">&#34;aws_dynamodb_table&#34;</span> <span style="color:#f1fa8c">&#34;dynamodb-terraform-state-lock&#34;</span> {
   <span style="color:#50fa7b">name</span> = <span style="color:#f1fa8c">&#34;terraform-state-lock-dynamo&#34;</span>
   <span style="color:#50fa7b">hash_key</span> = <span style="color:#f1fa8c">&#34;LockID&#34;</span>
   <span style="color:#50fa7b">read_capacity</span> = <span style="color:#bd93f9">20</span>
@@ -219,7 +219,7 @@ this generally is created in the .terraform directory and contains information a
 <!-- raw HTML omitted -->
 <p>You will need to modify the Terraform S3 backend resource and add in the dynamoDB table:</p>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform">terraform {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform">terraform {
  backend “s3” {
  <span style="color:#50fa7b">encrypt</span> = <span style="color:#ff79c6">true</span>
  <span style="color:#50fa7b">bucket</span> = <span style="color:#f1fa8c">&#34;terraform-remote-state-storage-s3&#34;</span>
@@ -231,9 +231,9 @@ this generally is created in the .terraform directory and contains information a
 <!-- raw HTML omitted -->
 <p>Once you’ve created the S3 bucket and dynamoDB table, along with the backend S3 resource referencing those, then you can run your terraform configs like normal with terraform plan and terraform apply commands and the state file will show up in the s3 bucket. After those commands, if you inspect .terraform/terraform.tfstate, you will see that it contains the location of the state file now instead of the actual state file.<br>
 <!-- raw HTML omitted --></p>
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat .terraform/terraform.tfstate</code></pre></div><br>
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat .terraform/terraform.tfstate</code></pre></div><br>
 <!-- raw HTML omitted --></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-terraform" data-lang="terraform">{
     <span style="color:#f1fa8c">&#34;version&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#bd93f9">3</span>,
     <span style="color:#f1fa8c">&#34;backend&#34;</span><span style="color:#ff79c6">:</span> {
         <span style="color:#f1fa8c">&#34;type&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;s3&#34;</span>,

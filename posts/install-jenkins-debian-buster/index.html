@@ -18,8 +18,8 @@
 <meta property="og:description" content="Install Jenkins on debian 10 buster" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/posts/install-jenkins-debian-buster/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-06-11T09:16:40&#43;01:00" />
-<meta property="article:modified_time" content="2020-06-11T09:16:40&#43;01:00" />
+<meta property="article:published_time" content="2020-06-11T09:16:40+01:00" />
+<meta property="article:modified_time" content="2020-06-11T09:16:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -147,17 +147,17 @@
       <div>
         
         <h3 id="update-packages-and-then-install-the-default-jdk">Update packages and then install the default jdk</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> sudo apt upgrade -y
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update <span style="color:#ff79c6">&amp;&amp;</span> sudo apt upgrade -y
 sudo apt install default-jdk</code></pre></div>
 <h3 id="were-here-using-wget-to-pull-the-key-for-the-debian-repository-this-command-will-return-ok">We&rsquo;re here using wget to pull the key for the debian repository. This command will return OK.</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget -qO - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget -qO - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -</code></pre></div>
 <h3 id="add-the-app-debian-repository">Add the app debian repository</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo sh -c <span style="color:#f1fa8c">&#39;echo deb http://pkg.jenkins.io/debian-stable binary/ &gt; /etc/apt/sources.list.d/jenkins.list&#39;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo sh -c <span style="color:#f1fa8c">&#39;echo deb http://pkg.jenkins.io/debian-stable binary/ &gt; /etc/apt/sources.list.d/jenkins.list&#39;</span></code></pre></div>
 <h3 id="update-packages-cache-and-then-proceed-with-the-installation">Update packages cache and then proceed with the installation.</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
 sudo apt install jenkins</code></pre></div>
 <h3 id="enable-jenkins-to-start-after-reboot">Enable jenkins to start after reboot</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl <span style="color:#8be9fd;font-style:italic">enable</span> --now jenkins</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl <span style="color:#8be9fd;font-style:italic">enable</span> --now jenkins</code></pre></div>
 
       </div>
 

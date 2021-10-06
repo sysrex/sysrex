@@ -18,8 +18,8 @@
 <meta property="og:description" content="How to create an EKS Cluster with role assume" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/kubernetes/create-eks-cluster-with-assume-role/" /><meta property="article:section" content="kubernetes" />
-<meta property="article:published_time" content="2019-08-02T14:16:40&#43;01:00" />
-<meta property="article:modified_time" content="2019-08-02T14:16:40&#43;01:00" />
+<meta property="article:published_time" content="2019-08-02T14:16:40+01:00" />
+<meta property="article:modified_time" content="2019-08-02T14:16:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -126,7 +126,7 @@
     <p>When creating an EKS Cluster you need to specify a role that is automatically granted system:masters permissions in the cluster&rsquo;s RBAC configuration. The role has be to created in the account where EKS will be created. If you like me are using <em>Assume Role</em> form another account in order to avoid creating a local account the AWS account just create the role as you would normally do and then:</p>
 <p><img src="/images/trust_relationship.png" alt="Trust Relationship"></p>
 <p>The policy JSON has to be edited like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
   <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
   <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
     {

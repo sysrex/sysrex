@@ -18,8 +18,8 @@
 <meta property="og:description" content="How to get the apiVersion in Kubernetes" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.sysrex.tech/posts/get-apiversion-in-k8s/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-06-12T19:19:40&#43;01:00" />
-<meta property="article:modified_time" content="2020-06-12T19:19:40&#43;01:00" />
+<meta property="article:published_time" content="2020-06-12T19:19:40+01:00" />
+<meta property="article:modified_time" content="2020-06-12T19:19:40+01:00" />
 
 
 
@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.82.0" />
+    <meta name="generator" content="Hugo 0.88.1" />
   </head>
 
   
@@ -150,7 +150,7 @@
 <p>The format is <code>api_group/version</code> (unless you are working with resource in the core API group, in which case you omit the <code>api_group</code> portion).</p>
 <h2 id="lets-find-the-api-group">Let&rsquo;s find the api group</h2>
 <p>We will run <code>kubectl api-resources</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  ~ kubectl api-resources
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  ~ kubectl api-resources
 NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
 bindings                                                                      <span style="color:#8be9fd;font-style:italic">true</span>         Binding
 componentstatuses                 cs                                          <span style="color:#8be9fd;font-style:italic">false</span>        ComponentStatus
@@ -167,12 +167,12 @@ pods                              po                                          <s
 <p>In the third column, <code>APIGROUP</code>. If, for example, you&rsquo;re creating a manifest for a new <code>Deployment</code> you could <code>grep</code> the output of <code>kubectl api-resources</code> and see that the API group is <code>apps</code>.</p>
 <h2 id="glets-find-the-api-group-version">GLet&rsquo;s find the API group version</h2>
 <p>Because we now know the <code>APIGROUP</code> we will just get the version by using grep.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl api-versions | grep -E <span style="color:#f1fa8c">&#34;^apps/&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl api-versions | grep -E <span style="color:#f1fa8c">&#34;^apps/&#34;</span>
 apps/v1
 </code></pre></div><p>The result is the version we need.</p>
 <h2 id="result">Result</h2>
 <p>We are now ready to put the <code>apiVersion</code> for the <code>Deployment</code> in the cluster.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">kind</span>: Deployment
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">kind</span>: Deployment
 <span style="color:#ff79c6">apiVersion</span>: apps/v1
 ...
 </code></pre></div><p>No more guessing the API version!</p>
