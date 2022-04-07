@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -132,74 +132,74 @@ Minimize the use of imperative commands</p>
 <p>You should learn how to use these commands, but they shouldn’t be a regular part of your prod workflows. That will lead to a flaky system.</p>
 <p>Basic Getting of Details</p>
 <p>You can k get any Kubernetes API Resource.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k get pods
-$ k get nodes
-$ k get services
-</code></pre></div><h1 id="you-can-sort-too">You can sort too</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k get pods --sort-by<span style="color:#ff79c6">=</span>.status.startTime
-</code></pre></div><h1 id="get-with-a-label-selector">Get with a label selector</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k get pods -l <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span>kombucha-service
-</code></pre></div><h1 id="watch-over-time">Watch over time</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k get pods -l <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span>kombucha-service --watch
-</code></pre></div><h1 id="view-the-events">View the events</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k get events
-</code></pre></div><h1 id="describe-the-pod">Describe the pod</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k describe pod &lt;pod-name&gt;
-</code></pre></div><p>Describing the pod can help you figure out why it crashed. Perhaps you’re trying to inject a config map that doesn’t exist into its environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods
+</span></span><span style="display:flex;"><span>$ k get nodes
+</span></span><span style="display:flex;"><span>$ k get services
+</span></span></code></pre></div><h1 id="you-can-sort-too">You can sort too</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods --sort-by<span style="color:#ff79c6">=</span>.status.startTime
+</span></span></code></pre></div><h1 id="get-with-a-label-selector">Get with a label selector</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods -l <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span>kombucha-service
+</span></span></code></pre></div><h1 id="watch-over-time">Watch over time</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods -l <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span>kombucha-service --watch
+</span></span></code></pre></div><h1 id="view-the-events">View the events</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get events
+</span></span></code></pre></div><h1 id="describe-the-pod">Describe the pod</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k describe pod &lt;pod-name&gt;
+</span></span></code></pre></div><p>Describing the pod can help you figure out why it crashed. Perhaps you’re trying to inject a config map that doesn’t exist into its environment.</p>
 <p>Furthermore, they often have abbreviations. To see what resources you can get and their abbreviations, use the api-resources command. This is helpful as well with custom resources.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k api-resources
-NAME                              SHORTNAMES          APIGROUP                       NAMESPACED   KIND
-bindings                                                                             <span style="color:#8be9fd;font-style:italic">true</span>         Binding
-componentstatuses                 cs                                                 <span style="color:#8be9fd;font-style:italic">false</span>        ComponentStatus
-configmaps                        cm                                                 <span style="color:#8be9fd;font-style:italic">true</span>         ConfigMap
-endpoints                         ep                                                 <span style="color:#8be9fd;font-style:italic">true</span>         Endpoints
-events                            ev                                                 <span style="color:#8be9fd;font-style:italic">true</span>         Event
-limitranges                       limits                                             <span style="color:#8be9fd;font-style:italic">true</span>         LimitRange
-.
-.
-.
-csidrivers                                            storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        CSIDriver
-csinodes                                              storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        CSINode
-storageclasses                    sc                  storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        StorageClass
-volumeattachments                                     storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        VolumeAttachment
-</code></pre></div><p>If you’re unsure what some resource is, use k explain.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ k explain deployment
-KIND:     Deployment
-VERSION:  apps/v1
-
-DESCRIPTION:
-Deployment enables declarative updates <span style="color:#ff79c6">for</span> Pods and ReplicaSets.
-
-FIELDS:
-apiVersion	&lt;string&gt;
-APIVersion defines the versioned schema of this representation of an
-object. Servers should convert recognized schemas to the latest internal
-value, and may reject unrecognized values. More info:
-&lt;https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources&gt;
-
-kind	&lt;string&gt;
-Kind is a string value representing the REST resource this object
-represents. Servers may infer this from the endpoint the client submits
-requests to. Cannot be updated. In CamelCase. More info:
-&lt;https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds&gt;
-
-metadata	&lt;Object&gt;
-Standard object metadata.
-
-spec	&lt;Object&gt;
-Specification of the desired behavior of the Deployment.
-
-status	&lt;Object&gt;
-Most recently observed status of the Deployment.
-</code></pre></div><p>Troubleshooting
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k api-resources
+</span></span><span style="display:flex;"><span>NAME                              SHORTNAMES          APIGROUP                       NAMESPACED   KIND
+</span></span><span style="display:flex;"><span>bindings                                                                             <span style="color:#8be9fd;font-style:italic">true</span>         Binding
+</span></span><span style="display:flex;"><span>componentstatuses                 cs                                                 <span style="color:#8be9fd;font-style:italic">false</span>        ComponentStatus
+</span></span><span style="display:flex;"><span>configmaps                        cm                                                 <span style="color:#8be9fd;font-style:italic">true</span>         ConfigMap
+</span></span><span style="display:flex;"><span>endpoints                         ep                                                 <span style="color:#8be9fd;font-style:italic">true</span>         Endpoints
+</span></span><span style="display:flex;"><span>events                            ev                                                 <span style="color:#8be9fd;font-style:italic">true</span>         Event
+</span></span><span style="display:flex;"><span>limitranges                       limits                                             <span style="color:#8be9fd;font-style:italic">true</span>         LimitRange
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>csidrivers                                            storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        CSIDriver
+</span></span><span style="display:flex;"><span>csinodes                                              storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        CSINode
+</span></span><span style="display:flex;"><span>storageclasses                    sc                  storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        StorageClass
+</span></span><span style="display:flex;"><span>volumeattachments                                     storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        VolumeAttachment
+</span></span></code></pre></div><p>If you’re unsure what some resource is, use k explain.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k explain deployment
+</span></span><span style="display:flex;"><span>KIND:     Deployment
+</span></span><span style="display:flex;"><span>VERSION:  apps/v1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>DESCRIPTION:
+</span></span><span style="display:flex;"><span>Deployment enables declarative updates <span style="color:#ff79c6">for</span> Pods and ReplicaSets.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>FIELDS:
+</span></span><span style="display:flex;"><span>apiVersion	&lt;string&gt;
+</span></span><span style="display:flex;"><span>APIVersion defines the versioned schema of this representation of an
+</span></span><span style="display:flex;"><span>object. Servers should convert recognized schemas to the latest internal
+</span></span><span style="display:flex;"><span>value, and may reject unrecognized values. More info:
+</span></span><span style="display:flex;"><span>&lt;https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>kind	&lt;string&gt;
+</span></span><span style="display:flex;"><span>Kind is a string value representing the REST resource this object
+</span></span><span style="display:flex;"><span>represents. Servers may infer this from the endpoint the client submits
+</span></span><span style="display:flex;"><span>requests to. Cannot be updated. In CamelCase. More info:
+</span></span><span style="display:flex;"><span>&lt;https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>metadata	&lt;Object&gt;
+</span></span><span style="display:flex;"><span>Standard object metadata.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>spec	&lt;Object&gt;
+</span></span><span style="display:flex;"><span>Specification of the desired behavior of the Deployment.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>status	&lt;Object&gt;
+</span></span><span style="display:flex;"><span>Most recently observed status of the Deployment.
+</span></span></code></pre></div><p>Troubleshooting
 Getting Logs</p>
 <h1 id="follow-the-logs-of-a-pod">Follow the logs of a pod</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ k logs -f &lt;pod-name&gt; -c &lt;container-name&gt;
-</code></pre></div><h1 id="for-only-the-tail-use---tailn">For only the tail, use <code>--tail=n</code></h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ k logs &lt;pod-name&gt; -c &lt;container-name&gt; --tail=50
-</code></pre></div><h1 id="multiple-pods-at-once">Multiple pods at once</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ k logs -l foo=bar
-</code></pre></div><p>⭐ Debugging DNS and Services</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs -f &lt;pod-name&gt; -c &lt;container-name&gt;
+</span></span></code></pre></div><h1 id="for-only-the-tail-use---tailn">For only the tail, use <code>--tail=n</code></h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs &lt;pod-name&gt; -c &lt;container-name&gt; --tail=50
+</span></span></code></pre></div><h1 id="multiple-pods-at-once">Multiple pods at once</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs -l foo=bar
+</span></span></code></pre></div><p>⭐ Debugging DNS and Services</p>
 <p>This first tip is in the Debugging DNS Resolution article in the docs, but here is a quick imperative command to get the same result.</p>
 <h1 id="run-a-pod-with-dns-debugging-utilities">Run a pod with DNS debugging utilities</h1>
 <p>$ k run dnsutils &ndash;image=gcr.io/kubernetes-e2e-test-images/dnsutils:1.3 &ndash; sleep 3600</p>
@@ -218,13 +218,13 @@ NAME                                READY   STATUS    RESTARTS   AGE
 alex-echo-server-7c47c5698c-zfhwg   1/1     Running   0          20h</p>
 <p>What image is the pod running?</p>
 <h1 id="what-image-is-the-pod-running">What image is the pod running?</h1>
-<p>$ k get pod dnsutils -o jsonpath='{ .spec.containers[*].image }'
+<p>$ k get pod dnsutils -o jsonpath=&rsquo;{ .spec.containers[*].image }'
 gcr.io/kubernetes-e2e-test-images/dnsutils:1.3</p>
 <h1 id="same-thing-for-a-cron-job">Same thing, for a cron job</h1>
-<p>$ k get cj <!-- raw HTML omitted --> -o jsonpath='{ .spec.jobTemplate.spec.template.spec.containers[*].image }'</p>
+<p>$ k get cj <!-- raw HTML omitted --> -o jsonpath=&rsquo;{ .spec.jobTemplate.spec.template.spec.containers[*].image }'</p>
 <p>Decode and Copy a Secret</p>
 <h1 id="decode-and-copy-a-secret">Decode and copy a secret</h1>
-<p>$ k get secrets <!-- raw HTML omitted --> -o jsonpath='{ .data.<!-- raw HTML omitted --> }' | base64 &ndash;decode | pbcopy</p>
+<p>$ k get secrets <!-- raw HTML omitted --> -o jsonpath=&rsquo;{ .data.<!-- raw HTML omitted --> }&rsquo; | base64 &ndash;decode | pbcopy</p>
 <p>Metrics / Monitoring</p>
 <h1 id="is-something-hogging-resources">Is something hogging resources?</h1>
 <p>$ k top pods &ndash;all-namespaces &ndash;sort-by=memory
@@ -245,7 +245,7 @@ hi!</p>
 <p>$ k node-shell <!-- raw HTML omitted --> &ndash; echo 123</p>
 <p>Once you’ve started a shell session on a pod or node, curl, nslookup, ping, and env are useful.
 What is the pod’s IP?</p>
-<p>$ k get pod nginx -o=jsonpath='{ .status.podIPs[0].ip }'
+<p>$ k get pod nginx -o=jsonpath=&rsquo;{ .status.podIPs[0].ip }'
 10.11.151.203</p>
 <p>Validate Kubernetes Resources</p>
 <p>I’ve seen a lot of time wasted from people struggling to write YAML.</p>
@@ -380,7 +380,7 @@ Sometimes when going between gcloud users and different Kubernetes contexts, kub
       
         ©
         
-        2021
+        2022
          sysrex 
       
       
@@ -395,7 +395,7 @@ Sometimes when going between gcloud users and different Kubernetes contexts, kub
 
     
       
-      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      <script src="/js/dark-mode.min.1d139a81392167c6a37135df59f9fd95747abba988ba33c1a557c573776cb197.js"></script>
     
 
     

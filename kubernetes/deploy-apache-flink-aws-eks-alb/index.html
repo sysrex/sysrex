@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -124,100 +124,100 @@
     </header>
 
     <p>First thing is first, we will use the <code>eksctl</code> tool to create the EKS Cluster</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
----
-<span style="color:#ff79c6">apiVersion</span>: eksctl.io/v1alpha5
-<span style="color:#ff79c6">kind</span>: ClusterConfig
-<span style="color:#ff79c6">metadata</span>:
-  <span style="color:#ff79c6">name</span>: eks-flink-demo
-  <span style="color:#ff79c6">region</span>: eu-west-2
-<span style="color:#6272a4"># traits of worker nodes</span>
-<span style="color:#ff79c6">nodeGroups</span>:
-  - <span style="color:#ff79c6">name</span>: eks-flink-workers
-    <span style="color:#ff79c6">instanceType</span>: m5.large
-    <span style="color:#ff79c6">desiredCapacity</span>: <span style="color:#bd93f9">5</span>
-    <span style="color:#ff79c6">minSize</span>: <span style="color:#bd93f9">3</span>
-    <span style="color:#ff79c6">maxSize</span>: <span style="color:#bd93f9">15</span>
-    <span style="color:#ff79c6">iam</span>:
-      <span style="color:#6272a4"># polices added to worker node role</span>
-      <span style="color:#ff79c6">withAddonPolicies</span>:
-        <span style="color:#6272a4"># allows read/write to zones in Route53</span>
-        <span style="color:#ff79c6">externalDNS</span>: <span style="color:#ff79c6">true</span>
-        <span style="color:#6272a4"># required for ALB-ingress</span>
-        <span style="color:#ff79c6">albIngress</span>: <span style="color:#ff79c6">true</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eksctl create cluster <span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span>  --configfile eks-flink-demo.yaml <span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span>  --kubeconfig eks_flink_demo_kubeconfig.yaml
-</code></pre></div><p>Once the cluster is up and running we will need to start adding the required dependencies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">apiVersion</span>: eksctl.io/v1alpha5
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">kind</span>: ClusterConfig
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">name</span>: eks-flink-demo
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">region</span>: eu-west-2
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># traits of worker nodes</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">nodeGroups</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">name</span>: eks-flink-workers
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">instanceType</span>: m5.large
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">desiredCapacity</span>: <span style="color:#bd93f9">5</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">minSize</span>: <span style="color:#bd93f9">3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">maxSize</span>: <span style="color:#bd93f9">15</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">iam</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#6272a4"># polices added to worker node role</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">withAddonPolicies</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4"># allows read/write to zones in Route53</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">externalDNS</span>: <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4"># required for ALB-ingress</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">albIngress</span>: <span style="color:#ff79c6">true</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>eksctl create cluster <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>  --configfile eks-flink-demo.yaml <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>  --kubeconfig eks_flink_demo_kubeconfig.yaml
+</span></span></code></pre></div><p>Once the cluster is up and running we will need to start adding the required dependencies:</p>
 <ol>
 <li>First lets add the oidc integration for the service account used by the controller</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eksctl --profile sysrex  utils associate-iam-oidc-provider --cluster eks-flink-demo --approve --region<span style="color:#ff79c6">=</span>eu-west-2
-</code></pre></div><ol start="2">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>eksctl --profile sysrex  utils associate-iam-oidc-provider --cluster eks-flink-demo --approve --region<span style="color:#ff79c6">=</span>eu-west-2
+</span></span></code></pre></div><ol start="2">
 <li>We will then create an IAM policy that will give access to the pod with the ALB Ingress Controller
 to create and manage the ALB</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws --profile sysrex iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/iam-policy.json --region<span style="color:#ff79c6">=</span>eu-west-2
-</code></pre></div><p>If this fails for you as it did for me a couple of times, I just:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/iam-policy.json
-</code></pre></div><p>and then run it from local like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws --profile sysrex iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document file://iam-policy.json --region<span style="color:#ff79c6">=</span>eu-west-2
-</code></pre></div><ol start="3">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws --profile sysrex iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/iam-policy.json --region<span style="color:#ff79c6">=</span>eu-west-2
+</span></span></code></pre></div><p>If this fails for you as it did for me a couple of times, I just:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/iam-policy.json
+</span></span></code></pre></div><p>and then run it from local like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws --profile sysrex iam create-policy --policy-name ALBIngressControllerIAMPolicy --policy-document file://iam-policy.json --region<span style="color:#ff79c6">=</span>eu-west-2
+</span></span></code></pre></div><ol start="3">
 <li>And now we create the ingress role, you will need the ARN of the IAM policy created in the previous step</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eksctl --profile sysrex create iamserviceaccount --name alb-ingress-controller --namespace kube-system --override-existing-serviceaccounts --approve --cluster eks-alb-testing --attach-policy-arn arn:aws:iam::*********:policy/ALBIngressControllerIAMPolicy --region<span style="color:#ff79c6">=</span>eu-west-2
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>eksctl --profile sysrex create iamserviceaccount --name alb-ingress-controller --namespace kube-system --override-existing-serviceaccounts --approve --cluster eks-alb-testing --attach-policy-arn arn:aws:iam::*********:policy/ALBIngressControllerIAMPolicy --region<span style="color:#ff79c6">=</span>eu-west-2
+</span></span></code></pre></div><ol start="4">
 <li>Create the ALB Service Ingress Account</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/rbac-role.yaml
-</code></pre></div><p>you can check if the account has been created with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl -n kube-system get serviceaccounts | grep alb
-</code></pre></div><ol start="5">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/rbac-role.yaml
+</span></span></code></pre></div><p>you can check if the account has been created with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl -n kube-system get serviceaccounts | grep alb
+</span></span></code></pre></div><ol start="5">
 <li>Start the ALB Ingress Controller</li>
 </ol>
 <p>I usually get the example and edit it to fit my needs:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/alb-ingress-controller.yaml
-</code></pre></div><p>Inside you will need the following added under spec:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">...
-    <span style="color:#ff79c6">spec</span>:
-      <span style="color:#ff79c6">containers</span>:
-        - <span style="color:#ff79c6">name</span>: alb-ingress-controller
-          <span style="color:#ff79c6">args</span>:
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/v1.1.4/docs/examples/alb-ingress-controller.yaml
+</span></span></code></pre></div><p>Inside you will need the following added under spec:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">containers</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ff79c6">name</span>: alb-ingress-controller
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">args</span>:
+</span></span></code></pre></div><ul>
 <li>&ndash;cluster-name=eks-flink-demo</li>
 <li>&ndash;aws-vpc-id=vpc-xxxxxxxxxx</li>
 <li>&ndash;aws-region=eu-west-2</li>
 </ul>
 <p>now, let&rsquo;s apply it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl apply -f alb-ingress-controller.yaml
-</code></pre></div><p>and get the logs:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">kubectl logs -n kube-system deployment.apps/alb-ingress-controller
-</code></pre></div><ol start="6">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f alb-ingress-controller.yaml
+</span></span></code></pre></div><p>and get the logs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl logs -n kube-system deployment.apps/alb-ingress-controller
+</span></span></code></pre></div><ol start="6">
 <li>Now for the Flink Deployment itself:</li>
 </ol>
 <p>we will apply all the configurations pulled from their website at <a href="https://ci.apache.org/projects/flink/flink-docs-release-1.11/ops/deployment/kubernetes.html">Apache Flink</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">flink-configuration-configmap.yaml
-jobmanager-rest-service.yaml
-jobmanager-service.yaml
-jobmanager-session-deployment.yaml
-task-manager-session-deployment.yaml
-taskmanager-query-state-service.yaml
-</code></pre></div><p>after this is done you should be able to check for the deployments:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  flink kubectl get deployments
-NAME                READY   UP-TO-DATE   AVAILABLE   AGE
-flink-jobmanager    1/1     <span style="color:#bd93f9">1</span>            <span style="color:#bd93f9">1</span>           20h
-flink-taskmanager   2/2     <span style="color:#bd93f9">2</span>            <span style="color:#bd93f9">2</span>           20h
-</code></pre></div><p>and for the services:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  flink kubectl get svc
-NAME                            TYPE           CLUSTER-IP       EXTERNAL-IP                       PORT<span style="color:#ff79c6">(</span>S<span style="color:#ff79c6">)</span>                                        AGE
-flink-jobmanager                LoadBalancer   172.20.96.2      &lt;none&gt;                            6123:30750/TCP,6124:30768/TCP,8081:32587/TCP   16h
-flink-jobmanager-rest           NodePort       172.20.186.224   &lt;none&gt;                            8081:30081/TCP                                 16h
-flink-taskmanager-query-state   NodePort       172.20.178.170   &lt;none&gt;                            6125:30025/TCP                                 16h
-kubernetes                      ClusterIP      172.20.0.1       &lt;none&gt;                            443/TCP                                        17h
-</code></pre></div><p>You will notice currently there is no ALB set, so we will modify the <code>jobmanager-service.yaml</code> and set it to be</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">spec</span>:
-  <span style="color:#ff79c6">type</span>: LoadBalancer
-</code></pre></div><p>and that&rsquo;s all folks, run <code>kubectl get svc</code> and you will see the endpoint of the ALB created.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>flink-configuration-configmap.yaml
+</span></span><span style="display:flex;"><span>jobmanager-rest-service.yaml
+</span></span><span style="display:flex;"><span>jobmanager-service.yaml
+</span></span><span style="display:flex;"><span>jobmanager-session-deployment.yaml
+</span></span><span style="display:flex;"><span>task-manager-session-deployment.yaml
+</span></span><span style="display:flex;"><span>taskmanager-query-state-service.yaml
+</span></span></code></pre></div><p>after this is done you should be able to check for the deployments:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>➜  flink kubectl get deployments
+</span></span><span style="display:flex;"><span>NAME                READY   UP-TO-DATE   AVAILABLE   AGE
+</span></span><span style="display:flex;"><span>flink-jobmanager    1/1     <span style="color:#bd93f9">1</span>            <span style="color:#bd93f9">1</span>           20h
+</span></span><span style="display:flex;"><span>flink-taskmanager   2/2     <span style="color:#bd93f9">2</span>            <span style="color:#bd93f9">2</span>           20h
+</span></span></code></pre></div><p>and for the services:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>➜  flink kubectl get svc
+</span></span><span style="display:flex;"><span>NAME                            TYPE           CLUSTER-IP       EXTERNAL-IP                       PORT<span style="color:#ff79c6">(</span>S<span style="color:#ff79c6">)</span>                                        AGE
+</span></span><span style="display:flex;"><span>flink-jobmanager                LoadBalancer   172.20.96.2      &lt;none&gt;                            6123:30750/TCP,6124:30768/TCP,8081:32587/TCP   16h
+</span></span><span style="display:flex;"><span>flink-jobmanager-rest           NodePort       172.20.186.224   &lt;none&gt;                            8081:30081/TCP                                 16h
+</span></span><span style="display:flex;"><span>flink-taskmanager-query-state   NodePort       172.20.178.170   &lt;none&gt;                            6125:30025/TCP                                 16h
+</span></span><span style="display:flex;"><span>kubernetes                      ClusterIP      172.20.0.1       &lt;none&gt;                            443/TCP                                        17h
+</span></span></code></pre></div><p>You will notice currently there is no ALB set, so we will modify the <code>jobmanager-service.yaml</code> and set it to be</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">type</span>: LoadBalancer
+</span></span></code></pre></div><p>and that&rsquo;s all folks, run <code>kubectl get svc</code> and you will see the endpoint of the ALB created.</p>
 
   </article>
 </section>
@@ -235,7 +235,7 @@ kubernetes                      ClusterIP      172.20.0.1       &lt;none&gt;    
       
         ©
         
-        2021
+        2022
          sysrex 
       
       
@@ -250,7 +250,7 @@ kubernetes                      ClusterIP      172.20.0.1       &lt;none&gt;    
 
     
       
-      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      <script src="/js/dark-mode.min.1d139a81392167c6a37135df59f9fd95747abba988ba33c1a557c573776cb197.js"></script>
     
 
     

@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -124,38 +124,38 @@
     </header>
 
     <p>In Go, it&rsquo;s dead simple to get the value from an environment variable:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">fmt.<span style="color:#50fa7b">Println</span>(os.<span style="color:#50fa7b">Getenv</span>(<span style="color:#f1fa8c">&#34;HOME&#34;</span>))
-</code></pre></div><p>But, sometimes you have default values&hellip; so you would have to do something
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>fmt.<span style="color:#50fa7b">Println</span>(os.<span style="color:#50fa7b">Getenv</span>(<span style="color:#f1fa8c">&#34;HOME&#34;</span>))
+</span></span></code></pre></div><p>But, sometimes you have default values&hellip; so you would have to do something
 like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">home <span style="color:#ff79c6">:=</span> os.<span style="color:#50fa7b">Getenv</span>(<span style="color:#f1fa8c">&#34;HOME&#34;</span>)
-<span style="color:#ff79c6">if</span> home <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;&#34;</span> {
-  home = <span style="color:#f1fa8c">&#34;THE DEFAULT HOME&#34;</span>
-}
-fmt.<span style="color:#50fa7b">Println</span>(home)
-</code></pre></div><p>If you need those values in a lot of places, you would end up creating a
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>home <span style="color:#ff79c6">:=</span> os.<span style="color:#50fa7b">Getenv</span>(<span style="color:#f1fa8c">&#34;HOME&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> home <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;&#34;</span> {
+</span></span><span style="display:flex;"><span>  home = <span style="color:#f1fa8c">&#34;THE DEFAULT HOME&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>fmt.<span style="color:#50fa7b">Println</span>(home)
+</span></span></code></pre></div><p>If you need those values in a lot of places, you would end up creating a
 function for each one or something like that.</p>
 <p>I found this to be extremely boring.</p>
 <p>So, I created a small lib that let me do this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ff79c6">package</span> main
-
-<span style="color:#ff79c6">import</span> (
-    <span style="color:#f1fa8c">&#34;fmt&#34;</span>
-
-    <span style="color:#f1fa8c">&#34;github.com/caarlos0/env&#34;</span>
-)
-
-<span style="color:#8be9fd;font-style:italic">type</span> Config <span style="color:#8be9fd;font-style:italic">struct</span> {
-    Home         <span style="color:#8be9fd">string</span> <span style="color:#f1fa8c">`env:&#34;HOME&#34;`</span>
-    Port         <span style="color:#8be9fd">int</span>    <span style="color:#f1fa8c">`env:&#34;PORT&#34; envDefault:&#34;3000&#34;`</span>
-    IsProduction <span style="color:#8be9fd">bool</span>   <span style="color:#f1fa8c">`env:&#34;PRODUCTION&#34;`</span>
-}
-
-<span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">main</span>() {
-    cfg <span style="color:#ff79c6">:=</span> Config{}
-    env.<span style="color:#50fa7b">Parse</span>(<span style="color:#ff79c6">&amp;</span>cfg)
-    fmt.<span style="color:#50fa7b">Println</span>(cfg)
-}
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#ff79c6">package</span> main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#34;github.com/caarlos0/env&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">type</span> Config <span style="color:#8be9fd;font-style:italic">struct</span> {
+</span></span><span style="display:flex;"><span>    Home         <span style="color:#8be9fd">string</span> <span style="color:#f1fa8c">`env:&#34;HOME&#34;`</span>
+</span></span><span style="display:flex;"><span>    Port         <span style="color:#8be9fd">int</span>    <span style="color:#f1fa8c">`env:&#34;PORT&#34; envDefault:&#34;3000&#34;`</span>
+</span></span><span style="display:flex;"><span>    IsProduction <span style="color:#8be9fd">bool</span>   <span style="color:#f1fa8c">`env:&#34;PRODUCTION&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">func</span> <span style="color:#50fa7b">main</span>() {
+</span></span><span style="display:flex;"><span>    cfg <span style="color:#ff79c6">:=</span> Config{}
+</span></span><span style="display:flex;"><span>    env.<span style="color:#50fa7b">Parse</span>(<span style="color:#ff79c6">&amp;</span>cfg)
+</span></span><span style="display:flex;"><span>    fmt.<span style="color:#50fa7b">Println</span>(cfg)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
   </article>
 </section>
 
@@ -172,7 +172,7 @@ function for each one or something like that.</p>
       
         ©
         
-        2021
+        2022
          sysrex 
       
       
@@ -187,7 +187,7 @@ function for each one or something like that.</p>
 
     
       
-      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      <script src="/js/dark-mode.min.1d139a81392167c6a37135df59f9fd95747abba988ba33c1a557c573776cb197.js"></script>
     
 
     

@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -153,82 +153,82 @@
 <p>All of this should obviously be done securely so that the private key is not displayed to the public. And fortunately, Travis CI Client supports encryption, enabling us to do exactly that. Let’s install the Travis client2, typing gem install travis.</p>
 <p>Encryption keypair configuration
 We can now generate a dedicated RSA keypair (in case of problem, easier to revoke), by cd’ing to the project’s directory and running ssh-keygen:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">$ cd &lt;my-blog-project&gt;
-$ ssh-keygen -t rsa -b 4096 -C &#39;build@travis-ci.org&#39; -f ./deploy_rsa</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>$ cd &lt;my-blog-project&gt;
+</span></span><span style="display:flex;"><span>$ ssh-keygen -t rsa -b 4096 -C &#39;build@travis-ci.org&#39; -f ./deploy_rsa</span></span></code></pre></div>
 <p>This creates the private key: deploy_rsa and the public key: deploy_rsa.pub. Be careful! The private key should never be published openly. Don’t commit anything yet to your git repository.</p>
 <p>We can now encrypt the private key using the Travis CI Client, after having first logged into Travis:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">$ travis login --org
-$ travis encrypt-file deploy_rsa --add</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>$ travis login --org
+</span></span><span style="display:flex;"><span>$ travis encrypt-file deploy_rsa --add</span></span></code></pre></div>
 <p>The Travis client encrypted the deploy_rsa private key into the file deploy_rsa.enc. Thanks to the -add option, it added at the same time a decryption key, stored as an environment variable, to the .travis.yml file of the project, with some other lines which will decrypt it during the run.</p>
 <p>We copy now the public key to the hosting web server and delete it from the local computer, as well as the unencrypted version of the private key:</p>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">$ ssh-copy-id -i deploy_rsa.pub &lt;deploy-user&gt;@&lt;web-server-host&gt;
-$ rm deploy_rsa deploy_rsa.pub</code></pre></div>
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>$ ssh-copy-id -i deploy_rsa.pub &lt;deploy-user&gt;@&lt;web-server-host&gt;
+</span></span><span style="display:flex;"><span>$ rm deploy_rsa deploy_rsa.pub</span></span></code></pre></div>
 We then commit the encrypted private key deploy_rsa.enc to the git repository:</p>
-<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">$ git add deploy_rsa.enc
-$ git commit -m &#34;Add private key&#34;
-$ git push</code></pre></div>
+<p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>$ git add deploy_rsa.enc
+</span></span><span style="display:flex;"><span>$ git commit -m &#34;Add private key&#34;
+</span></span><span style="display:flex;"><span>$ git push</span></span></code></pre></div>
 Finally, we edit .travis.yml, moving the decryption line from the before_install: section to the before_deploy: section, and adding decrypting commands as follows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">before_deploy</span>:
-  - openssl aes-256-cbc -K $encrypted_&lt;...&gt;_key -iv $encrypted_&lt;...&gt;_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
-  - eval &#34;$(ssh-agent -s)&#34;
-  - chmod 600 /tmp/deploy_rsa
-  - ssh-add /tmp/deploy_rsa
-  - echo -e &#34;Host ${DEPLOY_HOST}\n\tStrictHostKeyChecking no\n&#34; &gt;&gt; ~/.ssh/config</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">before_deploy</span>:
+</span></span><span style="display:flex;"><span>  - openssl aes-256-cbc -K $encrypted_&lt;...&gt;_key -iv $encrypted_&lt;...&gt;_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+</span></span><span style="display:flex;"><span>  - eval &#34;$(ssh-agent -s)&#34;
+</span></span><span style="display:flex;"><span>  - chmod 600 /tmp/deploy_rsa
+</span></span><span style="display:flex;"><span>  - ssh-add /tmp/deploy_rsa
+</span></span><span style="display:flex;"><span>  - echo -e &#34;Host ${DEPLOY_HOST}\n\tStrictHostKeyChecking no\n&#34; &gt;&gt; ~/.ssh/config</span></span></code></pre></div>
 <p>This ensures that the private key is decrypted and loaded into memory before the deploy is done. The last line permits that the deploy process doesn’t hang waiting for user input.</p>
 <p>Deployment configuration
 We’re now ready to setup the deployment, which will be done with rsync.</p>
 <p>As a security measure, we’d like to keep secret the web hosting server, the user used to do the deployment and the directory where the website resides. We encrypt these as environment variables using the Travis client, just like we did before with the private key.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">$ travis encrypt DEPLOY_HOST=&lt;web-server-host&gt; --add
-$ travis encrypt DEPLOY_USER=&lt;deploy-user&gt; --add
-$ travis encrypt DEPLOY_DIRECTORY=&lt;deploy-directory&gt; --add</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>$ travis encrypt DEPLOY_HOST=&lt;web-server-host&gt; --add
+</span></span><span style="display:flex;"><span>$ travis encrypt DEPLOY_USER=&lt;deploy-user&gt; --add
+</span></span><span style="display:flex;"><span>$ travis encrypt DEPLOY_DIRECTORY=&lt;deploy-directory&gt; --add</span></span></code></pre></div>
 <p>These commands will add three new lines to the env.global: section of your .travis.yml file, beginning with - secure: followed by a long string of random looking ASCII characters.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">env</span>:
-  <span style="color:#ff79c6">global</span>:
-    - PRODUCTION=true
-    - HUGO_RELEASE=0.59.0
-    - <span style="color:#ff79c6">secure</span>: &lt;long string of random looking ASCII chars&gt;
-    - <span style="color:#ff79c6">secure</span>: &lt;another long ASCII string&gt;
-    - <span style="color:#ff79c6">secure</span>: &lt;and another long ASCII string&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">env</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">global</span>:
+</span></span><span style="display:flex;"><span>    - PRODUCTION=true
+</span></span><span style="display:flex;"><span>    - HUGO_RELEASE=0.59.0
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">secure</span>: &lt;long string of random looking ASCII chars&gt;
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">secure</span>: &lt;another long ASCII string&gt;
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">secure</span>: &lt;and another long ASCII string&gt;</span></span></code></pre></div>
 <p>We’re now ready to add at the end of .travis.yml the commands to transfer the website data to the web hosting server:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">deploy</span>:
-  <span style="color:#ff79c6">provider</span>: script
-  <span style="color:#ff79c6">skip-cleanup</span>: <span style="color:#ff79c6">true</span>
-  <span style="color:#ff79c6">script</span>: rsync -av --quiet --delete-after ${TRAVIS_BUILD_DIR}/public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
-  <span style="color:#ff79c6">on</span>:
-    <span style="color:#ff79c6">branch</span>: master</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">deploy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">provider</span>: script
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">skip-cleanup</span>: <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">script</span>: rsync -av --quiet --delete-after ${TRAVIS_BUILD_DIR}/public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">on</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">branch</span>: master</span></span></code></pre></div>
 <p>The option skip-cleanup keeps the result of the build before the transfer. The &ndash;delete-after part cleans the directory before we copy the new version of the site we just built.</p>
 <h2 id="if-everything-went-smooth-you-should-have-the-following-travisyml-file">If everything went smooth, you should have the following travis.yml file:</h2>
 <ul>
 <li>Note that I am pulling a submodule via git for the code-portofolio theme from here: <a href="https://github.com/naro143/hugo-coder-portfolio">(Hugo Coder Portofolio Theme)</a>. You can use whichever team you wish just change the values.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">dist</span>: xenial
-<span style="color:#ff79c6">sudo</span>: required
-<span style="color:#ff79c6">install</span>:
-  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linux-64bit.deb
-  - sudo dpkg -i /tmp/hugo.deb
-<span style="color:#ff79c6">script</span>:
-  - git clone https://github.com/naro143/hugo-coder-portfolio themes/coder-portfolio
-  - rm -rf public 2&gt; /dev/null
-  - hugo --config config.toml
-<span style="color:#ff79c6">before_deploy</span>:
-  - openssl aes-256-cbc -K $encrypted_a6c8ec7e25bd_key -iv $encrypted_a6c8ec7e25bd_iv -in deploy/deploy_rsa.enc -out /tmp/deploy_rsa -d
-  - eval &#34;$(ssh-agent -s)&#34;
-  - chmod 600 /tmp/deploy_rsa
-  - ssh-add /tmp/deploy_rsa
-  - echo -e &#34;Host ${DEPLOY_HOST}\n\tStrictHostKeyChecking no\n&#34; &gt;&gt; ~/.ssh/config
-<span style="color:#ff79c6">deploy</span>:
-  <span style="color:#ff79c6">provider</span>: script
-  <span style="color:#ff79c6">skip-cleanup</span>: <span style="color:#ff79c6">true</span>
-  <span style="color:#ff79c6">script</span>: rsync -av --quiet --delete-after ${TRAVIS_BUILD_DIR}/public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
-  <span style="color:#ff79c6">on</span>:
-    <span style="color:#ff79c6">branch</span>: master
-<span style="color:#ff79c6">env</span>:
-  <span style="color:#ff79c6">global</span>:
-  - PRODUCTION=true
-  - HUGO_RELEASE=0.59.0
-  - <span style="color:#ff79c6">secure</span>: &lt;generated by travis gem&gt;
-  - <span style="color:#ff79c6">secure</span>: &lt;generated by travis gem&gt;
-  - <span style="color:#ff79c6">secure</span>: &lt;generated by travis gem&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">dist</span>: xenial
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">sudo</span>: required
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">install</span>:
+</span></span><span style="display:flex;"><span>  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linux-64bit.deb
+</span></span><span style="display:flex;"><span>  - sudo dpkg -i /tmp/hugo.deb
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">script</span>:
+</span></span><span style="display:flex;"><span>  - git clone https://github.com/naro143/hugo-coder-portfolio themes/coder-portfolio
+</span></span><span style="display:flex;"><span>  - rm -rf public 2&gt; /dev/null
+</span></span><span style="display:flex;"><span>  - hugo --config config.toml
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">before_deploy</span>:
+</span></span><span style="display:flex;"><span>  - openssl aes-256-cbc -K $encrypted_a6c8ec7e25bd_key -iv $encrypted_a6c8ec7e25bd_iv -in deploy/deploy_rsa.enc -out /tmp/deploy_rsa -d
+</span></span><span style="display:flex;"><span>  - eval &#34;$(ssh-agent -s)&#34;
+</span></span><span style="display:flex;"><span>  - chmod 600 /tmp/deploy_rsa
+</span></span><span style="display:flex;"><span>  - ssh-add /tmp/deploy_rsa
+</span></span><span style="display:flex;"><span>  - echo -e &#34;Host ${DEPLOY_HOST}\n\tStrictHostKeyChecking no\n&#34; &gt;&gt; ~/.ssh/config
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">deploy</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">provider</span>: script
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">skip-cleanup</span>: <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">script</span>: rsync -av --quiet --delete-after ${TRAVIS_BUILD_DIR}/public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">on</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">branch</span>: master
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">env</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">global</span>:
+</span></span><span style="display:flex;"><span>  - PRODUCTION=true
+</span></span><span style="display:flex;"><span>  - HUGO_RELEASE=0.59.0
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">secure</span>: &lt;generated by travis gem&gt;
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">secure</span>: &lt;generated by travis gem&gt;
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">secure</span>: &lt;generated by travis gem&gt;</span></span></code></pre></div>
 <p>This is just an improvement with personal notes from:
 <a href="https://blog.martignoni.net/2019/03/deploy-your-hugo-site/">(Blog Martinoni.net)</a></p>
 
@@ -259,7 +259,7 @@ $ travis encrypt DEPLOY_DIRECTORY=&lt;deploy-directory&gt; --add</code></pre></d
       
         ©
         
-        2021
+        2022
          sysrex 
       
       
@@ -274,7 +274,7 @@ $ travis encrypt DEPLOY_DIRECTORY=&lt;deploy-directory&gt; --add</code></pre></d
 
     
       
-      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      <script src="/js/dark-mode.min.1d139a81392167c6a37135df59f9fd95747abba988ba33c1a557c573776cb197.js"></script>
     
 
     

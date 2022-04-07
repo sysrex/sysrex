@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -127,78 +127,78 @@
 <p>In this example we&rsquo;ll be deploying the <em>production</em> branch but it can be whatever branch name you want, and our site name will be called <em>foo</em>.</p>
 <h2 id="on-the-server">On the server</h2>
 <p>Initialize an empty git repo. This will act as the mediator.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p /opt/git/foo.git
-<span style="color:#8be9fd;font-style:italic">cd</span> /opt/git/tracfone.git
-git init --bare <span style="color:#6272a4"># no source files, only version control</span>
-</code></pre></div><p>Create a <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks"><code>post-receive</code></a> hook which gets called after a <em>push</em> is complete.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /opt/git/foo.git/hooks/post-receive
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">#!/bin/bash
-</span><span style="color:#ff79c6"></span>
-<span style="color:#8be9fd;font-style:italic">SITE_NAME</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Foo&#34;</span>
-<span style="color:#8be9fd;font-style:italic">SITE_PATH</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/var/www/foo.com&#34;</span>
-<span style="color:#8be9fd;font-style:italic">BRANCH</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;production&#34;</span>
-
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** </span><span style="color:#8be9fd;font-style:italic">$SITE_NAME</span><span style="color:#f1fa8c"> [post-receive] hook received.&#34;</span>
-
-<span style="color:#ff79c6">while</span> <span style="color:#8be9fd;font-style:italic">read</span> oldrev newrev ref
-<span style="color:#ff79c6">do</span>
-  <span style="color:#8be9fd;font-style:italic">branch_received</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">`</span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#8be9fd;font-style:italic">$ref</span> | cut -d/ -f3<span style="color:#f1fa8c">`</span>
-
-  <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Received [</span><span style="color:#8be9fd;font-style:italic">$branch_received</span><span style="color:#f1fa8c">] branch.&#34;</span>
-
-  <span style="color:#6272a4"># Making sure we received the branch we want.</span>
-  <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> <span style="color:#8be9fd;font-style:italic">$branch_received</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$BRANCH</span> <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
-    <span style="color:#8be9fd;font-style:italic">cd</span> <span style="color:#8be9fd;font-style:italic">$SITE_PATH</span>
-
-    <span style="color:#6272a4"># Unset to use current working directory.</span>
-    <span style="color:#8be9fd;font-style:italic">unset</span> GIT_DIR
-
-    <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Pulling changes.&#34;</span>
-    git pull origin <span style="color:#8be9fd;font-style:italic">$BRANCH</span>
-
-    <span style="color:#6272a4"># Instead of pulling we can also do a checkout.</span>
-    : <span style="color:#f1fa8c">&#39;
-</span><span style="color:#f1fa8c">    echo &#34;**** Checking out branch.&#34;
-</span><span style="color:#f1fa8c">    GIT_WORK_TREE=$SITE_PATH git checkout -f $BRANCH
-</span><span style="color:#f1fa8c">    &#39;</span>
-
-    <span style="color:#6272a4"># Or we can also do a fetch and reset.</span>
-    : <span style="color:#f1fa8c">&#39;
-</span><span style="color:#f1fa8c">    echo &#34;**** Fetching and reseting.&#34;
-</span><span style="color:#f1fa8c">    git fetch --all
-</span><span style="color:#f1fa8c">    git reset --hard origin/$BRANCH
-</span><span style="color:#f1fa8c">    &#39;</span>
-
-  <span style="color:#ff79c6">else</span>
-    <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Invalid branch, aborting.&#34;</span>
-    <span style="color:#8be9fd;font-style:italic">exit</span> <span style="color:#bd93f9">0</span>
-
-  <span style="color:#ff79c6">fi</span>
-<span style="color:#ff79c6">done</span>
-
-<span style="color:#6272a4"># [Restart/reload webserver stuff here]</span>
-
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Done.&#34;</span>
-
-<span style="color:#8be9fd;font-style:italic">exec</span> git-update-server-info
-</code></pre></div><p>(<a href="https://gist.github.com/miguelmota/9595095">hook gist</a>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p /opt/git/foo.git
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> /opt/git/tracfone.git
+</span></span><span style="display:flex;"><span>git init --bare <span style="color:#6272a4"># no source files, only version control</span>
+</span></span></code></pre></div><p>Create a <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks"><code>post-receive</code></a> hook which gets called after a <em>push</em> is complete.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim /opt/git/foo.git/hooks/post-receive
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#ff79c6"></span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">SITE_NAME</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Foo&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">SITE_PATH</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;/var/www/foo.com&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">BRANCH</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;production&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** </span><span style="color:#8be9fd;font-style:italic">$SITE_NAME</span><span style="color:#f1fa8c"> [post-receive] hook received.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">while</span> <span style="color:#8be9fd;font-style:italic">read</span> oldrev newrev ref
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">branch_received</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">`</span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#8be9fd;font-style:italic">$ref</span> | cut -d/ -f3<span style="color:#f1fa8c">`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Received [</span><span style="color:#8be9fd;font-style:italic">$branch_received</span><span style="color:#f1fa8c">] branch.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4"># Making sure we received the branch we want.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> <span style="color:#8be9fd;font-style:italic">$branch_received</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$BRANCH</span> <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">cd</span> <span style="color:#8be9fd;font-style:italic">$SITE_PATH</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># Unset to use current working directory.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">unset</span> GIT_DIR
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Pulling changes.&#34;</span>
+</span></span><span style="display:flex;"><span>    git pull origin <span style="color:#8be9fd;font-style:italic">$BRANCH</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># Instead of pulling we can also do a checkout.</span>
+</span></span><span style="display:flex;"><span>    : <span style="color:#f1fa8c">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    echo &#34;**** Checking out branch.&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    GIT_WORK_TREE=$SITE_PATH git checkout -f $BRANCH
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># Or we can also do a fetch and reset.</span>
+</span></span><span style="display:flex;"><span>    : <span style="color:#f1fa8c">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    echo &#34;**** Fetching and reseting.&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    git fetch --all
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    git reset --hard origin/$BRANCH
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c">    &#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">else</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Invalid branch, aborting.&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">exit</span> <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># [Restart/reload webserver stuff here]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;**** Done.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">exec</span> git-update-server-info
+</span></span></code></pre></div><p>(<a href="https://gist.github.com/miguelmota/9595095">hook gist</a>)</p>
 <p>Make sure to make the hook executable.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod u+rwx /opt/git/foo.git/hooks/post-receive
-</code></pre></div><h2 id="on-the-client">On the client</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod u+rwx /opt/git/foo.git/hooks/post-receive
+</span></span></code></pre></div><h2 id="on-the-client">On the client</h2>
 <p>Add the remote url.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote add production ssh://&lt;username@&lt;server ip&gt;/opt/git/foo.git
-</code></pre></div><p>Push the <em>production</em> branch.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push production +production:refs/heads/production
-
-<span style="color:#6272a4"># Afterwards you can simply do</span>
-git push production
-</code></pre></div><p>It&rsquo;s also possible to deploy to multiple servers, just add the remote urls in <code>.git/config</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">[</span>remote <span style="color:#f1fa8c">&#34;production&#34;</span><span style="color:#ff79c6">]</span>
-  <span style="color:#8be9fd;font-style:italic">url</span> <span style="color:#ff79c6">=</span> ssh://&lt;username&gt;@&lt;server <span style="color:#bd93f9">1</span> ip&gt;/opt/git/foo.git
-  <span style="color:#8be9fd;font-style:italic">url</span> <span style="color:#ff79c6">=</span> ssh://&lt;username&gt;@&lt;server <span style="color:#bd93f9">2</span> ip&gt;/opt/git/foo.git
-</code></pre></div><p>By default git will push all branches to the remotes but we can have it push the current branch only.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global push.default current
-</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add production ssh://&lt;username@&lt;server ip&gt;/opt/git/foo.git
+</span></span></code></pre></div><p>Push the <em>production</em> branch.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push production +production:refs/heads/production
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># Afterwards you can simply do</span>
+</span></span><span style="display:flex;"><span>git push production
+</span></span></code></pre></div><p>It&rsquo;s also possible to deploy to multiple servers, just add the remote urls in <code>.git/config</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">[</span>remote <span style="color:#f1fa8c">&#34;production&#34;</span><span style="color:#ff79c6">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">url</span> <span style="color:#ff79c6">=</span> ssh://&lt;username&gt;@&lt;server <span style="color:#bd93f9">1</span> ip&gt;/opt/git/foo.git
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">url</span> <span style="color:#ff79c6">=</span> ssh://&lt;username&gt;@&lt;server <span style="color:#bd93f9">2</span> ip&gt;/opt/git/foo.git
+</span></span></code></pre></div><p>By default git will push all branches to the remotes but we can have it push the current branch only.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global push.default current
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
 <p>Git hooks can help automate your deployment process. Checkout the list of client and server-side <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks">Git hooks</a> available.</p>
 
   </article>
@@ -217,7 +217,7 @@ git push production
       
         ©
         
-        2021
+        2022
          sysrex 
       
       
@@ -232,7 +232,7 @@ git push production
 
     
       
-      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      <script src="/js/dark-mode.min.1d139a81392167c6a37135df59f9fd95747abba988ba33c1a557c573776cb197.js"></script>
     
 
     

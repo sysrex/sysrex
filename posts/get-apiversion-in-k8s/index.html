@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -150,32 +150,32 @@
 <p>The format is <code>api_group/version</code> (unless you are working with resource in the core API group, in which case you omit the <code>api_group</code> portion).</p>
 <h2 id="lets-find-the-api-group">Let&rsquo;s find the api group</h2>
 <p>We will run <code>kubectl api-resources</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">➜  ~ kubectl api-resources
-NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
-bindings                                                                      <span style="color:#8be9fd;font-style:italic">true</span>         Binding
-componentstatuses                 cs                                          <span style="color:#8be9fd;font-style:italic">false</span>        ComponentStatus
-configmaps                        cm                                          <span style="color:#8be9fd;font-style:italic">true</span>         ConfigMap
-endpoints                         ep                                          <span style="color:#8be9fd;font-style:italic">true</span>         Endpoints
-events                            ev                                          <span style="color:#8be9fd;font-style:italic">true</span>         Event
-limitranges                       limits                                      <span style="color:#8be9fd;font-style:italic">true</span>         LimitRange
-namespaces                        ns                                          <span style="color:#8be9fd;font-style:italic">false</span>        Namespace
-nodes                             no                                          <span style="color:#8be9fd;font-style:italic">false</span>        Node
-persistentvolumeclaims            pvc                                         <span style="color:#8be9fd;font-style:italic">true</span>         PersistentVolumeClaim
-persistentvolumes                 pv                                          <span style="color:#8be9fd;font-style:italic">false</span>        PersistentVolume
-pods                              po                                          <span style="color:#8be9fd;font-style:italic">true</span>         Pod
-</code></pre></div><p><em>Output truncated to avoid the really long output</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>➜  ~ kubectl api-resources
+</span></span><span style="display:flex;"><span>NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
+</span></span><span style="display:flex;"><span>bindings                                                                      <span style="color:#8be9fd;font-style:italic">true</span>         Binding
+</span></span><span style="display:flex;"><span>componentstatuses                 cs                                          <span style="color:#8be9fd;font-style:italic">false</span>        ComponentStatus
+</span></span><span style="display:flex;"><span>configmaps                        cm                                          <span style="color:#8be9fd;font-style:italic">true</span>         ConfigMap
+</span></span><span style="display:flex;"><span>endpoints                         ep                                          <span style="color:#8be9fd;font-style:italic">true</span>         Endpoints
+</span></span><span style="display:flex;"><span>events                            ev                                          <span style="color:#8be9fd;font-style:italic">true</span>         Event
+</span></span><span style="display:flex;"><span>limitranges                       limits                                      <span style="color:#8be9fd;font-style:italic">true</span>         LimitRange
+</span></span><span style="display:flex;"><span>namespaces                        ns                                          <span style="color:#8be9fd;font-style:italic">false</span>        Namespace
+</span></span><span style="display:flex;"><span>nodes                             no                                          <span style="color:#8be9fd;font-style:italic">false</span>        Node
+</span></span><span style="display:flex;"><span>persistentvolumeclaims            pvc                                         <span style="color:#8be9fd;font-style:italic">true</span>         PersistentVolumeClaim
+</span></span><span style="display:flex;"><span>persistentvolumes                 pv                                          <span style="color:#8be9fd;font-style:italic">false</span>        PersistentVolume
+</span></span><span style="display:flex;"><span>pods                              po                                          <span style="color:#8be9fd;font-style:italic">true</span>         Pod
+</span></span></code></pre></div><p><em>Output truncated to avoid the really long output</em></p>
 <p>In the third column, <code>APIGROUP</code>. If, for example, you&rsquo;re creating a manifest for a new <code>Deployment</code> you could <code>grep</code> the output of <code>kubectl api-resources</code> and see that the API group is <code>apps</code>.</p>
 <h2 id="glets-find-the-api-group-version">GLet&rsquo;s find the API group version</h2>
 <p>Because we now know the <code>APIGROUP</code> we will just get the version by using grep.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ kubectl api-versions | grep -E <span style="color:#f1fa8c">&#34;^apps/&#34;</span>
-apps/v1
-</code></pre></div><p>The result is the version we need.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ kubectl api-versions | grep -E <span style="color:#f1fa8c">&#34;^apps/&#34;</span>
+</span></span><span style="display:flex;"><span>apps/v1
+</span></span></code></pre></div><p>The result is the version we need.</p>
 <h2 id="result">Result</h2>
 <p>We are now ready to put the <code>apiVersion</code> for the <code>Deployment</code> in the cluster.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#ff79c6">kind</span>: Deployment
-<span style="color:#ff79c6">apiVersion</span>: apps/v1
-...
-</code></pre></div><p>No more guessing the API version!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">kind</span>: Deployment
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">apiVersion</span>: apps/v1
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>No more guessing the API version!</p>
 
       </div>
 
@@ -204,7 +204,7 @@ apps/v1
       
         ©
         
-        2021
+        2022
          sysrex 
       
       
@@ -219,7 +219,7 @@ apps/v1
 
     
       
-      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      <script src="/js/dark-mode.min.1d139a81392167c6a37135df59f9fd95747abba988ba33c1a557c573776cb197.js"></script>
     
 
     

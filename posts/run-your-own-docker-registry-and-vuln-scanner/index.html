@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
   </head>
 
   
@@ -152,53 +152,53 @@
 I knew that&rsquo;s what I wanted to build.</p>
 <p><img src="/images/reg.png" alt="Registry"></p>
 <p>So here&rsquo;s my unpolished docker-compose file (I still have to review it for security and probably add nginx as container)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
-<span style="color:#ff79c6">version</span>: <span style="color:#f1fa8c">&#39;3&#39;</span>
-<span style="color:#ff79c6">services</span>:
-
-  <span style="color:#ff79c6">postgres</span>:
-    <span style="color:#ff79c6">container_name</span>: clair_postgres
-    <span style="color:#ff79c6">image</span>: postgres:latest
-    <span style="color:#ff79c6">restart</span>: always
-    <span style="color:#ff79c6">environment</span>:
-      <span style="color:#ff79c6">POSTGRES_PASSWORD</span>: <span style="color:#f1fa8c">&#34;Password!&#34;</span>
-      <span style="color:#ff79c6">POSTGRES_USER</span>: <span style="color:#f1fa8c">&#34;clair&#34;</span>
-      <span style="color:#ff79c6">POSTGRES_DB</span>: <span style="color:#f1fa8c">&#34;clair&#34;</span>
-    <span style="color:#ff79c6">volumes</span>:
-      - /mnt/HC_Volume_7546280/data/postgres/:/var/lib/postgresql/data:rw
-
-  <span style="color:#ff79c6">clair</span>:
-    <span style="color:#ff79c6">container_name</span>: clair
-    <span style="color:#ff79c6">image</span>: quay.io/coreos/clair:latest
-    <span style="color:#ff79c6">ports</span>:
-    - <span style="color:#f1fa8c">&#34;6060:6060&#34;</span>
-    <span style="color:#ff79c6">restart</span>: always
-    <span style="color:#ff79c6">depends_on</span>:
-      - postgres
-    <span style="color:#ff79c6">volumes</span>:
-      - /tmp:/tmp
-      - /mnt/HC_Volume_7546280/data/clair_config/:/config/:ro
-    <span style="color:#ff79c6">command</span>: [--log-level=debug, --config, /config/config.yaml]
-
-  <span style="color:#ff79c6">registry</span>:
-    <span style="color:#ff79c6">restart</span>: always
-    <span style="color:#ff79c6">image</span>: registry:2
-    <span style="color:#ff79c6">ports</span>:
-    - <span style="color:#f1fa8c">&#34;5000:5000&#34;</span>
-    <span style="color:#ff79c6">environment</span>:
-      <span style="color:#ff79c6">REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY</span>: /data
-    <span style="color:#ff79c6">volumes</span>:
-      - /mnt/HC_Volume_7546280/data:/data
-
-  <span style="color:#ff79c6">reg</span>:
-    <span style="color:#ff79c6">restart</span>: always
-    <span style="color:#ff79c6">depends_on</span>:
-      - registry
-    <span style="color:#ff79c6">image</span>: r.viaops.com/reg:lastest
-    <span style="color:#ff79c6">ports</span>:
-    - <span style="color:#f1fa8c">&#34;8080:8080&#34;</span>
-    <span style="color:#ff79c6">command</span>: <span style="color:#f1fa8c">&#34;server --clair http://r.viaops.com:6060 -r r.viaops.com&#34;</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">version</span>: <span style="color:#f1fa8c">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">services</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">postgres</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">container_name</span>: clair_postgres
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">image</span>: postgres:latest
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">restart</span>: always
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">POSTGRES_PASSWORD</span>: <span style="color:#f1fa8c">&#34;Password!&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">POSTGRES_USER</span>: <span style="color:#f1fa8c">&#34;clair&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">POSTGRES_DB</span>: <span style="color:#f1fa8c">&#34;clair&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">volumes</span>:
+</span></span><span style="display:flex;"><span>      - /mnt/HC_Volume_7546280/data/postgres/:/var/lib/postgresql/data:rw
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">clair</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">container_name</span>: clair
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">image</span>: quay.io/coreos/clair:latest
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">ports</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f1fa8c">&#34;6060:6060&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">restart</span>: always
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">depends_on</span>:
+</span></span><span style="display:flex;"><span>      - postgres
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">volumes</span>:
+</span></span><span style="display:flex;"><span>      - /tmp:/tmp
+</span></span><span style="display:flex;"><span>      - /mnt/HC_Volume_7546280/data/clair_config/:/config/:ro
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">command</span>: [--log-level=debug, --config, /config/config.yaml]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">registry</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">restart</span>: always
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">image</span>: registry:2
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">ports</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f1fa8c">&#34;5000:5000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY</span>: /data
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">volumes</span>:
+</span></span><span style="display:flex;"><span>      - /mnt/HC_Volume_7546280/data:/data
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">reg</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">restart</span>: always
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">depends_on</span>:
+</span></span><span style="display:flex;"><span>      - registry
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">image</span>: r.viaops.com/reg:lastest
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">ports</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f1fa8c">&#34;8080:8080&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">command</span>: <span style="color:#f1fa8c">&#34;server --clair http://r.viaops.com:6060 -r r.viaops.com&#34;</span>
+</span></span></code></pre></div>
       </div>
 
 
@@ -226,7 +226,7 @@ I knew that&rsquo;s what I wanted to build.</p>
       
         ©
         
-        2021
+        2022
          sysrex 
       
       
@@ -241,7 +241,7 @@ I knew that&rsquo;s what I wanted to build.</p>
 
     
       
-      <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      <script src="/js/dark-mode.min.1d139a81392167c6a37135df59f9fd95747abba988ba33c1a557c573776cb197.js"></script>
     
 
     
