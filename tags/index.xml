@@ -133,14 +133,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>CVE</title>
-      <link>https://www.sysrex.tech/tags/cve/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sysrex.tech/tags/cve/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
