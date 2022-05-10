@@ -18,7 +18,7 @@ author = "sysrex" # Author's name.
 info = "SITE RELIABILITY ENGINEER" # Author's job title or info.
 description = "geeky blog" # Site description.
 keywords = "aws, kubernetes,sre" # Site keywords.
-avatarurl = "images/alex.png" # Contain the path of the optionnal avatar in the static folder.
+avatarurl = "images/xsre.png" # Contain the path of the optionnal avatar in the static folder.
 
 footercontent = "I hope you enjoyed it." # Add footer content
 fixedbarContent = "Do you want to send me an email?→" # Add fixedbar content
