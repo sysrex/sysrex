@@ -34,7 +34,7 @@ type: page
 
 ## Hardware
 * 2 x [LG 27" Ultrafine 5k](https://www.apple.com/uk/shop/product/HMUB2B/A/lg-ultrafine-5k-display)
-* Apple MacBook Pro 14" 2021 Ten Core with 10GB RAM
+* Apple MacBook Pro 14" 2021 Ten Core with 16GB RAM
 * Apple Keyboard
 * Apple mouse
 * Apple AirPods
@@ -48,18 +48,18 @@ type: page
 
 ## Weapons of choice
 * [LensApp](https://k8slens.dev)
-* [JetBrains Goland](https://www.jetbrains.com/go/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [Neovim](https://github.com/neovim/neovim)
 
 ## Software
-* [Gmail](https://gmail.com)
+* [Outlook](https://outlook.live.com)
 * [Omnifocus](https://www.omnigroup.com/omnifocus/)
 * [Notion](https://www.notion.so/)
 * [Slack](https://slack.com/)
 * [iTerm 2](https://iterm2.com/)
 * [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)
 * [SF Mono](https://developer.apple.com/fonts/)
-* [Bitwarden](https://bitwarden.com/)
+* [1Password](https://1password.com/)
 * [Docker](https://www.docker.com/)
 * [Bartender](https://www.macbartender.com/)
 * [Brew](https://brew.sh/)
