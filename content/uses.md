@@ -44,7 +44,7 @@ type: page
 
 ## Office Setup
 * [Dota Secret Labs Chair](https://secretlab.co.uk/collections/titan-series?utm_source=google&utm_medium=cpc&utm_content=dota2_chair&utm_campaign=uk-s-generic-exact&gclid=CjwKCAiA17P9BRB2EiwAMvwNyBKh-v1gdynkLkTqhytsiG9KTe643XokN7heqArkrOlCNOX_gY4a7RoCDy0QAvD_BwE#titan_2020-dota2)
-* Flexispot Standing Desk
+* [Flexispot Standing Desk](https://flexispot.co.uk/adjustable-standing-desk-pro-series.html)
 
 ## Weapons of choice
 * [LensApp](https://k8slens.dev)
