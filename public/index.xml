@@ -6,7 +6,25 @@
     <description>Recent content on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Jan 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Aug 2021 09:12:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubectl Cheat Sheet</title>
+      <link>https://www.sysrex.tech/kubernetes/kubectl-cheat-sheet/</link>
+      <pubDate>Thu, 12 Aug 2021 09:12:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/kubernetes/kubectl-cheat-sheet/</guid>
+      <description>Kubectl Cheat Sheet</description>
+    </item>
+    
+    <item>
+      <title>K3s Raspberry pi</title>
+      <link>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</link>
+      <pubDate>Mon, 12 Apr 2021 09:16:40 +0100</pubDate>
+      
+      <guid>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</guid>
+      <description>Installing Kubernetes K3s on Raspberry Pi Cluster</description>
+    </item>
+    
     <item>
       <title>Go pointers</title>
       <link>https://www.sysrex.tech/golang/go-pointers/</link>
@@ -31,7 +49,7 @@
       <pubDate>Tue, 20 Oct 2020 19:12:38 +0100</pubDate>
       
       <guid>https://www.sysrex.tech/uses/</guid>
-      <description>Hardware  2 x LG 27&amp;quot; Ultrafine 5k Apple MacBook Pro 16&amp;quot; 2020 Octa Core with 32GB RAM Apple Keyboard Apple mouse Apple AirPods Jabra Evolve 30 II Apple iPad Pro 11&amp;quot; + Magic Pen Apple iPhone XR 64GB  Office Setup  Dota Secret Labs Chair Ikea Alex / Linnmon  Weapons of choice  LensApp JetBrains Goland Neovim  Software  Gmail Omnifocus Notion Slack iTerm 2 OhMyZsh SF Mono Bitwarden Docker Bartender Brew Dash  Most of my day goes to  AWS Kubernetes Argo CD Istio  </description>
+      <description>Hardware  2 x LG 27&amp;quot; Ultrafine 5k Apple MacBook Pro 14&amp;quot; 2021 Ten Core with 16GB RAM Apple Keyboard Apple mouse Apple AirPods Jabra Evolve 30 II Apple iPad Pro 11&amp;quot; + Magic Pen Apple iPhone 12 Pro Max 256GB  Office Setup  Dota Secret Labs Chair Flexispot Standing Desk  Weapons of choice  LensApp Visual Studio Code Neovim  Software  Outlook Omnifocus Notion Slack iTerm 2 OhMyZsh SF Mono 1Password Docker Bartender Brew Dash  Most of my day goes to  AWS Kubernetes Argo CD Istio  </description>
     </item>
     
     <item>
@@ -87,7 +105,7 @@
       <guid>https://www.sysrex.tech/golang/golang-env-structs/</guid>
       <description>In Go, it&amp;rsquo;s dead simple to get the value from an environment variable:
 fmt.Println(os.Getenv(&amp;#34;HOME&amp;#34;)) But, sometimes you have default values&amp;hellip; so you would have to do something like this:
-home := os.Getenv(&amp;#34;HOME&amp;#34;) if home == &amp;#34;&amp;#34; { home = &amp;#34;THE DEFAULT HOME&amp;#34; } fmt.Println(home) If you need those values in a lot of places, you would end up creating a function for each one or something like that.
+home := os.Getenv(&amp;#34;HOME&amp;#34;) if home == &amp;#34;&amp;#34; {  home = &amp;#34;THE DEFAULT HOME&amp;#34; } fmt.Println(home) If you need those values in a lot of places, you would end up creating a function for each one or something like that.
 I found this to be extremely boring.</description>
     </item>
     
@@ -189,7 +207,7 @@ I found this to be extremely boring.</description>
       <guid>https://www.sysrex.tech/posts/nodejs-deploy-with-nginx/</guid>
       <description>In this tutorial I will show how to install and configure Node.js and Nginx on you Ubuntu server.
 Installing Dependencies The only dependency we really need is the build-essential package in order to be able to compile the Node.js source code.
-# Make sure to download the latest repos. sudo apt-get update # Required to run `make` command. sudo apt-get install build-essential # If you need to use https. sudo apt-get install libssl-dev # My favorite text editor.</description>
+# Make sure to download the latest repos. sudo apt-get update  # Required to run `make` command. sudo apt-get install build-essential  # If you need to use https.</description>
     </item>
     
     <item>
@@ -210,15 +228,6 @@ Installing Dependencies The only dependency we really need is the build-essentia
       <description>Having to type in a password in order to SSH into your server every single time is tedious and not the way to go. I will show you how to set up SSH keys so that you can elimate an extra step from your workflow.
 Generating keys On your local maching, generate a new SSH key with the command:
 # Generate new key. ssh-keygen -t rsa When asked for the file to save the key in, enter:</description>
-    </item>
-    
-    <item>
-      <title>Recent reported vulnerabilites</title>
-      <link>https://www.sysrex.tech/posts/vulnerabilities/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sysrex.tech/posts/vulnerabilities/</guid>
-      <description>&lt;p&gt;List of recently reported vulnerabilties. Last update can be spotted by the date.&lt;/p&gt;</description>
     </item>
     
   </channel>

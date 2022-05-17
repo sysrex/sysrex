@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.sysrex.tech/kubernetes/kubectl-cheat-sheet/</loc>
+    <lastmod>2021-08-12T09:12:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/tags/kubernetes/</loc>
+    <lastmod>2021-08-12T09:12:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/kubernetes/</loc>
+    <lastmod>2021-08-12T09:12:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/</loc>
+    <lastmod>2021-08-12T09:12:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/tags/</loc>
+    <lastmod>2021-08-12T09:12:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</loc>
+    <lastmod>2021-04-12T09:16:40+01:00</lastmod>
+  </url><url>
     <loc>https://www.sysrex.tech/golang/go-pointers/</loc>
     <lastmod>2021-01-07T10:31:42+01:00</lastmod>
   </url><url>
@@ -9,12 +27,6 @@
     <lastmod>2021-01-07T10:31:42+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/golang/</loc>
-    <lastmod>2021-01-07T10:31:42+01:00</lastmod>
-  </url><url>
-    <loc>https://www.sysrex.tech/</loc>
-    <lastmod>2021-01-07T10:31:42+01:00</lastmod>
-  </url><url>
-    <loc>https://www.sysrex.tech/tags/</loc>
     <lastmod>2021-01-07T10:31:42+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/golang/installing-go-on-mac/</loc>
@@ -53,13 +65,7 @@
     <loc>https://www.sysrex.tech/tags/eks/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.tech/kubernetes/</loc>
-    <lastmod>2020-08-15T12:31:40+01:00</lastmod>
-  </url><url>
     <loc>https://www.sysrex.tech/posts/get-apiversion-in-k8s/</loc>
-    <lastmod>2020-06-12T19:19:40+01:00</lastmod>
-  </url><url>
-    <loc>https://www.sysrex.tech/tags/kubernetes/</loc>
     <lastmod>2020-06-12T19:19:40+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</loc>
@@ -126,11 +132,5 @@
     <lastmod>2011-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/categories/</loc>
-  </url><url>
-    <loc>https://www.sysrex.tech/tags/cve/</loc>
-  </url><url>
-    <loc>https://www.sysrex.tech/posts/vulnerabilities/</loc>
-  </url><url>
-    <loc>https://www.sysrex.tech/categories/thoughts/</loc>
   </url>
 </urlset>
