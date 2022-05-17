@@ -146,34 +146,34 @@
 
       <div>
         
-        <div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#007f7f">#cloud-config</span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">groups</span>:
+        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#6272a4">#cloud-config</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">groups</span>:
 </span></span><span style="display:flex;"><span>  - docker
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">users</span>:
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">users</span>:
 </span></span><span style="display:flex;"><span>  - default
-</span></span><span style="display:flex;"><span>  <span style="color:#007f7f"># the docker service account</span>
-</span></span><span style="display:flex;"><span>  - <span style="font-weight:bold">name</span>: docker-service
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">groups</span>: docker
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">package_upgrade</span>: <span style="color:#fff;font-weight:bold">true</span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">packages</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4"># the docker service account</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">name</span>: docker-service
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">groups</span>: docker
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">package_upgrade</span>: <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">packages</span>:
 </span></span><span style="display:flex;"><span>  - apt-transport-https
 </span></span><span style="display:flex;"><span>  - ca-certificates
 </span></span><span style="display:flex;"><span>  - curl
 </span></span><span style="display:flex;"><span>  - gnupg-agent
 </span></span><span style="display:flex;"><span>  - software-properties-common
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">runcmd</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#007f7f"># install docker following the guide: https://docs.docker.com/install/linux/docker-ce/debian/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">runcmd</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4"># install docker following the guide: https://docs.docker.com/install/linux/docker-ce/debian/</span>
 </span></span><span style="display:flex;"><span>  - curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 </span></span><span style="display:flex;"><span>  - sudo add-apt-repository &#34;deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable&#34;
 </span></span><span style="display:flex;"><span>  - sudo apt-get -y update
 </span></span><span style="display:flex;"><span>  - sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 </span></span><span style="display:flex;"><span>  - sudo systemctl enable docker
-</span></span><span style="display:flex;"><span>  <span style="color:#007f7f"># install docker-compose following the guide: https://docs.docker.com/compose/install/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4"># install docker-compose following the guide: https://docs.docker.com/compose/install/</span>
 </span></span><span style="display:flex;"><span>  - sudo curl -L &#34;https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)&#34; -o /usr/local/bin/docker-compose
 </span></span><span style="display:flex;"><span>  - sudo chmod +x /usr/local/bin/docker-compose
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">power_state</span>:
-</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">mode</span>: reboot
-</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">message</span>: Restarting after installing docker &amp; docker-compose
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">power_state</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">mode</span>: reboot
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">message</span>: Restarting after installing docker &amp; docker-compose
 </span></span></code></pre></div>
       </div>
 

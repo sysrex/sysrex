@@ -132,43 +132,43 @@ Minimize the use of imperative commands</p>
 <p>You should learn how to use these commands, but they shouldn’t be a regular part of your prod workflows. That will lead to a flaky system.</p>
 <p>Basic Getting of Details</p>
 <p>You can k get any Kubernetes API Resource.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods
 </span></span><span style="display:flex;"><span>$ k get nodes
 </span></span><span style="display:flex;"><span>$ k get services
 </span></span></code></pre></div><h1 id="you-can-sort-too">You can sort too</h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods --sort-by=.status.startTime
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods --sort-by<span style="color:#ff79c6">=</span>.status.startTime
 </span></span></code></pre></div><h1 id="get-with-a-label-selector">Get with a label selector</h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods -l app=kombucha-service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods -l <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span>kombucha-service
 </span></span></code></pre></div><h1 id="watch-over-time">Watch over time</h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods -l app=kombucha-service --watch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get pods -l <span style="color:#8be9fd;font-style:italic">app</span><span style="color:#ff79c6">=</span>kombucha-service --watch
 </span></span></code></pre></div><h1 id="view-the-events">View the events</h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get events
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k get events
 </span></span></code></pre></div><h1 id="describe-the-pod">Describe the pod</h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k describe pod &lt;pod-name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k describe pod &lt;pod-name&gt;
 </span></span></code></pre></div><p>Describing the pod can help you figure out why it crashed. Perhaps you’re trying to inject a config map that doesn’t exist into its environment.</p>
 <p>Furthermore, they often have abbreviations. To see what resources you can get and their abbreviations, use the api-resources command. This is helpful as well with custom resources.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k api-resources
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k api-resources
 </span></span><span style="display:flex;"><span>NAME                              SHORTNAMES          APIGROUP                       NAMESPACED   KIND
-</span></span><span style="display:flex;"><span>bindings                                                                             <span style="color:#fff;font-weight:bold">true</span>         Binding
-</span></span><span style="display:flex;"><span>componentstatuses                 cs                                                 <span style="color:#fff;font-weight:bold">false</span>        ComponentStatus
-</span></span><span style="display:flex;"><span>configmaps                        cm                                                 <span style="color:#fff;font-weight:bold">true</span>         ConfigMap
-</span></span><span style="display:flex;"><span>endpoints                         ep                                                 <span style="color:#fff;font-weight:bold">true</span>         Endpoints
-</span></span><span style="display:flex;"><span>events                            ev                                                 <span style="color:#fff;font-weight:bold">true</span>         Event
-</span></span><span style="display:flex;"><span>limitranges                       limits                                             <span style="color:#fff;font-weight:bold">true</span>         LimitRange
+</span></span><span style="display:flex;"><span>bindings                                                                             <span style="color:#8be9fd;font-style:italic">true</span>         Binding
+</span></span><span style="display:flex;"><span>componentstatuses                 cs                                                 <span style="color:#8be9fd;font-style:italic">false</span>        ComponentStatus
+</span></span><span style="display:flex;"><span>configmaps                        cm                                                 <span style="color:#8be9fd;font-style:italic">true</span>         ConfigMap
+</span></span><span style="display:flex;"><span>endpoints                         ep                                                 <span style="color:#8be9fd;font-style:italic">true</span>         Endpoints
+</span></span><span style="display:flex;"><span>events                            ev                                                 <span style="color:#8be9fd;font-style:italic">true</span>         Event
+</span></span><span style="display:flex;"><span>limitranges                       limits                                             <span style="color:#8be9fd;font-style:italic">true</span>         LimitRange
 </span></span><span style="display:flex;"><span>.
 </span></span><span style="display:flex;"><span>.
 </span></span><span style="display:flex;"><span>.
-</span></span><span style="display:flex;"><span>csidrivers                                            storage.k8s.io                 <span style="color:#fff;font-weight:bold">false</span>        CSIDriver
-</span></span><span style="display:flex;"><span>csinodes                                              storage.k8s.io                 <span style="color:#fff;font-weight:bold">false</span>        CSINode
-</span></span><span style="display:flex;"><span>storageclasses                    sc                  storage.k8s.io                 <span style="color:#fff;font-weight:bold">false</span>        StorageClass
-</span></span><span style="display:flex;"><span>volumeattachments                                     storage.k8s.io                 <span style="color:#fff;font-weight:bold">false</span>        VolumeAttachment
+</span></span><span style="display:flex;"><span>csidrivers                                            storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        CSIDriver
+</span></span><span style="display:flex;"><span>csinodes                                              storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        CSINode
+</span></span><span style="display:flex;"><span>storageclasses                    sc                  storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        StorageClass
+</span></span><span style="display:flex;"><span>volumeattachments                                     storage.k8s.io                 <span style="color:#8be9fd;font-style:italic">false</span>        VolumeAttachment
 </span></span></code></pre></div><p>If you’re unsure what some resource is, use k explain.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k explain deployment
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ k explain deployment
 </span></span><span style="display:flex;"><span>KIND:     Deployment
 </span></span><span style="display:flex;"><span>VERSION:  apps/v1
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>DESCRIPTION:
-</span></span><span style="display:flex;"><span>Deployment enables declarative updates <span style="color:#fff;font-weight:bold">for</span> Pods and ReplicaSets.
+</span></span><span style="display:flex;"><span>Deployment enables declarative updates <span style="color:#ff79c6">for</span> Pods and ReplicaSets.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>FIELDS:
 </span></span><span style="display:flex;"><span>apiVersion	&lt;string&gt;
@@ -194,11 +194,11 @@ Minimize the use of imperative commands</p>
 </span></span></code></pre></div><p>Troubleshooting
 Getting Logs</p>
 <h1 id="follow-the-logs-of-a-pod">Follow the logs of a pod</h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs -f &lt;pod-name&gt; -c &lt;container-name&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs -f &lt;pod-name&gt; -c &lt;container-name&gt;
 </span></span></code></pre></div><h1 id="for-only-the-tail-use---tailn">For only the tail, use <code>--tail=n</code></h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs &lt;pod-name&gt; -c &lt;container-name&gt; --tail=50
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs &lt;pod-name&gt; -c &lt;container-name&gt; --tail=50
 </span></span></code></pre></div><h1 id="multiple-pods-at-once">Multiple pods at once</h1>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs -l foo=bar
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ k logs -l foo=bar
 </span></span></code></pre></div><p>⭐ Debugging DNS and Services</p>
 <p>This first tip is in the Debugging DNS Resolution article in the docs, but here is a quick imperative command to get the same result.</p>
 <h1 id="run-a-pod-with-dns-debugging-utilities">Run a pod with DNS debugging utilities</h1>
