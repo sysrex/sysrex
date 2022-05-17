@@ -6,7 +6,7 @@ defaultcontentlanguage = "en" # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
 
-pygmentsstyle = "cobalt2"
+pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsuseclasses = false
