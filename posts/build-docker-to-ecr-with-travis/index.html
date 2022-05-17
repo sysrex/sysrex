@@ -59,7 +59,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.98.0" />
+    <meta name="generator" content="Hugo 0.99.0" />
   </head>
 
   
@@ -147,61 +147,61 @@
       <div>
         
         <p>You will need an AWS IAM Policy for the Travis user that looks pretty much like this <em>I strongly suggest you use a different user for this</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;Version&#34;</span>: <span style="color:#f1fa8c">&#34;2012-10-17&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&#34;Statement&#34;</span>: [
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">&#34;Version&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">&#34;Statement&#34;</span>: [
 </span></span><span style="display:flex;"><span>        {
-</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Sid&#34;</span>: <span style="color:#f1fa8c">&#34;VisualEditor0&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Effect&#34;</span>: <span style="color:#f1fa8c">&#34;Allow&#34;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Action&#34;</span>: [
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:PutLifecyclePolicy&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:GetLifecyclePolicyPreview&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:CreateRepository&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:GetDownloadUrlForLayer&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:GetAuthorizationToken&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:ListTagsForResource&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:UploadLayerPart&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:ListImages&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:DeleteLifecyclePolicy&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:DeleteRepository&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:PutImage&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:UntagResource&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:SetRepositoryPolicy&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:BatchGetImage&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:CompleteLayerUpload&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:DescribeImages&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:TagResource&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:DescribeRepositories&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:StartLifecyclePolicyPreview&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:InitiateLayerUpload&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:BatchCheckLayerAvailability&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:GetRepositoryPolicy&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f1fa8c">&#34;ecr:GetLifecyclePolicy&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="font-weight:bold">&#34;Sid&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;VisualEditor0&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="font-weight:bold">&#34;Effect&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="font-weight:bold">&#34;Action&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:PutLifecyclePolicy&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:GetLifecyclePolicyPreview&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:CreateRepository&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:GetDownloadUrlForLayer&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:GetAuthorizationToken&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:ListTagsForResource&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:UploadLayerPart&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:ListImages&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:DeleteLifecyclePolicy&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:DeleteRepository&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:PutImage&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:UntagResource&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:SetRepositoryPolicy&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:BatchGetImage&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:CompleteLayerUpload&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:DescribeImages&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:TagResource&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:DescribeRepositories&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:StartLifecyclePolicyPreview&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:InitiateLayerUpload&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:BatchCheckLayerAvailability&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:GetRepositoryPolicy&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#0ff;font-weight:bold">&#34;ecr:GetLifecyclePolicy&#34;</span>
 </span></span><span style="display:flex;"><span>            ],
-</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&#34;Resource&#34;</span>: <span style="color:#f1fa8c">&#34;*&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="font-weight:bold">&#34;Resource&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;*&#34;</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    ]
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>Next you will encrypt the created credentials in the .travis.yml file</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>travis encrypt <span style="color:#8be9fd;font-style:italic">AWS_ACCESS_KEY_ID</span><span style="color:#ff79c6">=</span>super_secret --add
-</span></span><span style="display:flex;"><span>travis encrypt <span style="color:#8be9fd;font-style:italic">AWS_SECRET_ACCESS_KEY</span><span style="color:#ff79c6">=</span>super_secret --add</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>travis encrypt AWS_ACCESS_KEY_ID=super_secret --add
+</span></span><span style="display:flex;"><span>travis encrypt AWS_SECRET_ACCESS_KEY=super_secret --add</span></span></code></pre></div>
 <p>Then your travis file should look like this</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ff79c6">dist</span>: xenial
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">language</span>: minimal
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">services</span>:
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="font-weight:bold">dist</span>: xenial
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">language</span>: minimal
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">services</span>:
 </span></span><span style="display:flex;"><span>  - docker
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">before_install</span>:
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">before_install</span>:
 </span></span><span style="display:flex;"><span>  - pip install --user awscli
 </span></span><span style="display:flex;"><span>  - export PATH=$PATH:$HOME/.local/bin
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">script</span>:
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">script</span>:
 </span></span><span style="display:flex;"><span>  - eval $(aws ecr get-login --no-include-email --region us-east-1)
 </span></span><span style="display:flex;"><span>  - make build-production
 </span></span><span style="display:flex;"><span>  - make push-image
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">env</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">global</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">secure</span>: &lt;your encrypted key&gt;
-</span></span><span style="display:flex;"><span>  - <span style="color:#ff79c6">secure</span>: &lt;your encrypted key&gt;</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">env</span>:
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">global</span>:
+</span></span><span style="display:flex;"><span>  - <span style="font-weight:bold">secure</span>: &lt;your encrypted key&gt;
+</span></span><span style="display:flex;"><span>  - <span style="font-weight:bold">secure</span>: &lt;your encrypted key&gt;</span></span></code></pre></div>
 
       </div>
 
