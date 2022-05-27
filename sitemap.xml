@@ -17,19 +17,25 @@
     <loc>https://www.sysrex.tech/tags/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
+    <loc>https://www.sysrex.tech/golang/go-slices/</loc>
+    <lastmod>2021-06-07T10:31:42+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/tags/golang/</loc>
+    <lastmod>2021-06-07T10:31:42+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/golang/</loc>
+    <lastmod>2021-06-07T10:31:42+01:00</lastmod>
+  </url><url>
     <loc>https://www.sysrex.tech/kubernetes/k3s-raspberry-pi/</loc>
     <lastmod>2021-04-12T09:16:40+01:00</lastmod>
+  </url><url>
+    <loc>https://www.sysrex.tech/golang/go-maps/</loc>
+    <lastmod>2021-02-07T10:31:42+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/golang/go-pointers/</loc>
     <lastmod>2021-01-07T10:31:42+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.tech/tags/golang/</loc>
-    <lastmod>2021-01-07T10:31:42+01:00</lastmod>
-  </url><url>
-    <loc>https://www.sysrex.tech/golang/</loc>
-    <lastmod>2021-01-07T10:31:42+01:00</lastmod>
-  </url><url>
-    <loc>https://www.sysrex.tech/golang/installing-go-on-mac/</loc>
+    <loc>https://www.sysrex.tech/golang/go-install-on-mac/</loc>
     <lastmod>2021-01-04T14:16:40+01:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/uses/</loc>
@@ -71,7 +77,7 @@
     <loc>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</loc>
     <lastmod>2020-06-11T09:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.tech/golang/golang-env-structs/</loc>
+    <loc>https://www.sysrex.tech/golang/go-env-structs/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.sysrex.tech/golang/go-variables/</loc>
