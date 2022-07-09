@@ -67,7 +67,7 @@
       <pubDate>Tue, 20 Oct 2020 19:12:38 +0100</pubDate>
       
       <guid>https://www.sysrex.tech/uses/</guid>
-      <description>Hardware  2 x LG 27&amp;quot; Ultrafine 5k Apple MacBook Pro 14&amp;quot; 2021 Ten Core with 16GB RAM Apple Keyboard Apple mouse Apple AirPods Jabra Evolve 30 II Apple iPad Pro 11&amp;quot; + Magic Pen Apple iPhone 12 Pro Max 256GB  Office Setup  Dota Secret Labs Chair Flexispot Standing Desk  Weapons of choice  LensApp Visual Studio Code Neovim  Software  Outlook Omnifocus Notion Slack iTerm 2 OhMyZsh SF Mono 1Password Docker Bartender Brew Dash  Most of my day goes to  AWS Kubernetes Argo CD Istio  </description>
+      <description> Hardware 2 x LG 27&amp;quot; Ultrafine 5k Apple MacBook Pro 14&amp;quot; 2021 Ten Core with 16GB RAM Apple Keyboard Apple mouse Apple AirPods Jabra Evolve 30 II Apple iPad Pro 11&amp;quot; + Magic Pen Apple iPhone 12 Pro Max 256GB Office Setup Dota Secret Labs Chair Flexispot Standing Desk Weapons of choice LensApp Visual Studio Code Neovim Software Outlook Omnifocus Notion Slack iTerm 2 OhMyZsh SF Mono 1Password Docker Bartender Brew Dash Most of my day goes to AWS Kubernetes Argo CD Istio </description>
     </item>
     
     <item>
@@ -123,7 +123,7 @@
       <guid>https://www.sysrex.tech/golang/go-env-structs/</guid>
       <description>In Go, it&amp;rsquo;s dead simple to get the value from an environment variable:
 fmt.Println(os.Getenv(&amp;#34;HOME&amp;#34;)) But, sometimes you have default values&amp;hellip; so you would have to do something like this:
-home := os.Getenv(&amp;#34;HOME&amp;#34;) if home == &amp;#34;&amp;#34; {  home = &amp;#34;THE DEFAULT HOME&amp;#34; } fmt.Println(home) If you need those values in a lot of places, you would end up creating a function for each one or something like that.
+home := os.Getenv(&amp;#34;HOME&amp;#34;) if home == &amp;#34;&amp;#34; { home = &amp;#34;THE DEFAULT HOME&amp;#34; } fmt.Println(home) If you need those values in a lot of places, you would end up creating a function for each one or something like that.
 I found this to be extremely boring.</description>
     </item>
     
@@ -225,7 +225,7 @@ I found this to be extremely boring.</description>
       <guid>https://www.sysrex.tech/posts/nodejs-deploy-with-nginx/</guid>
       <description>In this tutorial I will show how to install and configure Node.js and Nginx on you Ubuntu server.
 Installing Dependencies The only dependency we really need is the build-essential package in order to be able to compile the Node.js source code.
-# Make sure to download the latest repos. sudo apt-get update  # Required to run `make` command. sudo apt-get install build-essential  # If you need to use https.</description>
+# Make sure to download the latest repos. sudo apt-get update # Required to run `make` command. sudo apt-get install build-essential # If you need to use https. sudo apt-get install libssl-dev # My favorite text editor.</description>
     </item>
     
     <item>

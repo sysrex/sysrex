@@ -123,7 +123,7 @@
       <guid>https://www.sysrex.tech/posts/nodejs-deploy-with-nginx/</guid>
       <description>In this tutorial I will show how to install and configure Node.js and Nginx on you Ubuntu server.
 Installing Dependencies The only dependency we really need is the build-essential package in order to be able to compile the Node.js source code.
-# Make sure to download the latest repos. sudo apt-get update  # Required to run `make` command. sudo apt-get install build-essential  # If you need to use https.</description>
+# Make sure to download the latest repos. sudo apt-get update # Required to run `make` command. sudo apt-get install build-essential # If you need to use https. sudo apt-get install libssl-dev # My favorite text editor.</description>
     </item>
     
     <item>
