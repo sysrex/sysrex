@@ -15,14 +15,14 @@ googleAnalytics = "UA-179970173-1"
 
 [params] # theme parameters
 author = "sysrex" # Author's name.
-info = "SITE RELIABILITY ENGINEER" # Author's job title or info.
-description = "geeky blog" # Site description.
+info = "AWS/K8s/Go" # Author's job title or info.
+description = "notes for future self" # Site description.
 keywords = "aws, kubernetes,sre" # Site keywords.
 avatarurl = "images/xsre.png" # Contain the path of the optionnal avatar in the static folder.
 
 footercontent = "I hope you enjoyed it." # Add footer content
 fixedbarContent = "Do you want to send me an email?→" # Add fixedbar content
-fixedbarContentAfter = "Write to→mail at sysrex.tech" # Add fixedbar content after click
+fixedbarContentAfter = "Write to→mail at sysrex.com" # Add fixedbar content after click
 
 # Whether you want to hide copyright and credits in the footer.
 hideCredits = false
