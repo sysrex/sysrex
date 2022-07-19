@@ -18,8 +18,8 @@ type aboutme struct {
 
 func main() {
     var alex aboutme
-    alex.languages: ["Golang", "Python"]
-    alex.hobbies: ["Coding", "Reading"]
+    alex.languages: ["Golang"]
+    alex.hobbies: ["Coding"]
     alex.funFact: "The first computer virus was created in 1983!"
 
     fmt.Prinln(alex)
@@ -55,7 +55,7 @@ func main() {
             <img height="64px" src="https://cdn.svgporn.com/logos/prometheus.svg">
           </td>
           <td width="25%" align="center">
-            <span>𝗚rafana</span><br><br><br>
+            <span>Grafana</span><br><br><br>
             <img height="64px" src="https://cdn.svgporn.com/logos/grafana.svg">
           </td>
           <td width="25%" align="center">
