@@ -48,13 +48,13 @@ type: page
 
 ## Weapons of choice
 * [LensApp](https://k8slens.dev)
-* [Visual Studio Code](https://code.visualstudio.com/)
+* [Intellij Idea Ultimate](https://www.jetbrains.com/idea//)
 * [Neovim](https://github.com/neovim/neovim)
 
 ## Software
 * [Outlook](https://outlook.live.com)
-* [Omnifocus](https://www.omnigroup.com/omnifocus/)
-* [Notion](https://www.notion.so/)
+* [GoodTask](https://goodtaskapp.com/)
+* [Bear](https://bear.app//)
 * [Slack](https://slack.com/)
 * [iTerm 2](https://iterm2.com/)
 * [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)
