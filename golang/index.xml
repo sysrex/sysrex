@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golangs on sysrex</title>
-    <link>https://www.sysrex.tech/golang/</link>
+    <link>https://www.sysrex.com/golang/</link>
     <description>Recent content in Golangs on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Jun 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Jun 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://www.sysrex.com/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go slices</title>
-      <link>https://www.sysrex.tech/golang/go-slices/</link>
+      <link>https://www.sysrex.com/golang/go-slices/</link>
       <pubDate>Mon, 07 Jun 2021 10:31:42 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/golang/go-slices/</guid>
+      <guid>https://www.sysrex.com/golang/go-slices/</guid>
       <description>Just a small overview of the go slices</description>
     </item>
     
     <item>
       <title>Go maps</title>
-      <link>https://www.sysrex.tech/golang/go-maps/</link>
+      <link>https://www.sysrex.com/golang/go-maps/</link>
       <pubDate>Sun, 07 Feb 2021 10:31:42 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/golang/go-maps/</guid>
+      <guid>https://www.sysrex.com/golang/go-maps/</guid>
       <description>Just a small overview of the go maps</description>
     </item>
     
     <item>
       <title>Go pointers</title>
-      <link>https://www.sysrex.tech/golang/go-pointers/</link>
+      <link>https://www.sysrex.com/golang/go-pointers/</link>
       <pubDate>Thu, 07 Jan 2021 10:31:42 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/golang/go-pointers/</guid>
+      <guid>https://www.sysrex.com/golang/go-pointers/</guid>
       <description>Just a small overview of the go pointers</description>
     </item>
     
     <item>
       <title>Install go on mac</title>
-      <link>https://www.sysrex.tech/golang/go-install-on-mac/</link>
+      <link>https://www.sysrex.com/golang/go-install-on-mac/</link>
       <pubDate>Mon, 04 Jan 2021 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/golang/go-install-on-mac/</guid>
+      <guid>https://www.sysrex.com/golang/go-install-on-mac/</guid>
       <description>Installing and setup golang on mac Big Sur</description>
     </item>
     
     <item>
       <title>Parse environment variables to structs in Go</title>
-      <link>https://www.sysrex.tech/golang/go-env-structs/</link>
+      <link>https://www.sysrex.com/golang/go-env-structs/</link>
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.sysrex.tech/golang/go-env-structs/</guid>
+      <guid>https://www.sysrex.com/golang/go-env-structs/</guid>
       <description>In Go, it&amp;rsquo;s dead simple to get the value from an environment variable:
 fmt.Println(os.Getenv(&amp;#34;HOME&amp;#34;)) But, sometimes you have default values&amp;hellip; so you would have to do something like this:
 home := os.Getenv(&amp;#34;HOME&amp;#34;) if home == &amp;#34;&amp;#34; { home = &amp;#34;THE DEFAULT HOME&amp;#34; } fmt.Println(home) If you need those values in a lot of places, you would end up creating a function for each one or something like that.
@@ -57,10 +57,10 @@ I found this to be extremely boring.</description>
     
     <item>
       <title>Go variables</title>
-      <link>https://www.sysrex.tech/golang/go-variables/</link>
+      <link>https://www.sysrex.com/golang/go-variables/</link>
       <pubDate>Mon, 01 Jun 2020 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/golang/go-variables/</guid>
+      <guid>https://www.sysrex.com/golang/go-variables/</guid>
       <description>Just a small overview of the go variables</description>
     </item>
     

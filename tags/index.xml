@@ -2,134 +2,134 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on sysrex</title>
-    <link>https://www.sysrex.tech/tags/</link>
+    <link>https://www.sysrex.com/tags/</link>
     <description>Recent content in Tags on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Aug 2021 09:12:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Aug 2021 09:12:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes</title>
-      <link>https://www.sysrex.tech/tags/kubernetes/</link>
+      <link>https://www.sysrex.com/tags/kubernetes/</link>
       <pubDate>Thu, 12 Aug 2021 09:12:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/kubernetes/</guid>
+      <guid>https://www.sysrex.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://www.sysrex.tech/tags/golang/</link>
+      <link>https://www.sysrex.com/tags/golang/</link>
       <pubDate>Mon, 07 Jun 2021 10:31:42 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/golang/</guid>
+      <guid>https://www.sysrex.com/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>https://www.sysrex.tech/tags/docker/</link>
+      <link>https://www.sysrex.com/tags/docker/</link>
       <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/docker/</guid>
+      <guid>https://www.sysrex.com/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>scanner</title>
-      <link>https://www.sysrex.tech/tags/scanner/</link>
+      <link>https://www.sysrex.com/tags/scanner/</link>
       <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/scanner/</guid>
+      <guid>https://www.sysrex.com/tags/scanner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>configs</title>
-      <link>https://www.sysrex.tech/tags/configs/</link>
+      <link>https://www.sysrex.com/tags/configs/</link>
       <pubDate>Tue, 13 Oct 2020 11:42:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/configs/</guid>
+      <guid>https://www.sysrex.com/tags/configs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>https://www.sysrex.tech/tags/aws/</link>
+      <link>https://www.sysrex.com/tags/aws/</link>
       <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/aws/</guid>
+      <guid>https://www.sysrex.com/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Big Data</title>
-      <link>https://www.sysrex.tech/tags/big-data/</link>
+      <link>https://www.sysrex.com/tags/big-data/</link>
       <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/big-data/</guid>
+      <guid>https://www.sysrex.com/tags/big-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EKS</title>
-      <link>https://www.sysrex.tech/tags/eks/</link>
+      <link>https://www.sysrex.com/tags/eks/</link>
       <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/eks/</guid>
+      <guid>https://www.sysrex.com/tags/eks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Terraform</title>
-      <link>https://www.sysrex.tech/tags/terraform/</link>
+      <link>https://www.sysrex.com/tags/terraform/</link>
       <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/terraform/</guid>
+      <guid>https://www.sysrex.com/tags/terraform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://www.sysrex.tech/tags/hugo/</link>
+      <link>https://www.sysrex.com/tags/hugo/</link>
       <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/hugo/</guid>
+      <guid>https://www.sysrex.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Travis</title>
-      <link>https://www.sysrex.tech/tags/travis/</link>
+      <link>https://www.sysrex.com/tags/travis/</link>
       <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/travis/</guid>
+      <guid>https://www.sysrex.com/tags/travis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>https://www.sysrex.tech/tags/code/</link>
+      <link>https://www.sysrex.com/tags/code/</link>
       <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/code/</guid>
+      <guid>https://www.sysrex.com/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jenkins</title>
-      <link>https://www.sysrex.tech/tags/jenkins/</link>
+      <link>https://www.sysrex.com/tags/jenkins/</link>
       <pubDate>Fri, 19 Jan 2018 09:22:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/jenkins/</guid>
+      <guid>https://www.sysrex.com/tags/jenkins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://www.sysrex.tech/tags/linux/</link>
+      <link>https://www.sysrex.com/tags/linux/</link>
       <pubDate>Sat, 04 Aug 2012 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/tags/linux/</guid>
+      <guid>https://www.sysrex.com/tags/linux/</guid>
       <description></description>
     </item>
     

@@ -2,125 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on sysrex</title>
-    <link>https://www.sysrex.tech/posts/</link>
+    <link>https://www.sysrex.com/posts/</link>
     <description>Recent content in Posts on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2020 11:57:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Oct 2020 11:57:40 +0100</lastBuildDate><atom:link href="https://www.sysrex.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running your own docker registry</title>
-      <link>https://www.sysrex.tech/posts/run-your-own-docker-registry-and-vuln-scanner/</link>
+      <link>https://www.sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/</link>
       <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/run-your-own-docker-registry-and-vuln-scanner/</guid>
+      <guid>https://www.sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/</guid>
       <description>How to run your own docker registry with clair vulnerability scanner</description>
     </item>
     
     <item>
       <title>Cloud init script to install docker and docker compose debian 10</title>
-      <link>https://www.sysrex.tech/posts/cloud-init-docker-and-compose-debian/</link>
+      <link>https://www.sysrex.com/posts/cloud-init-docker-and-compose-debian/</link>
       <pubDate>Tue, 13 Oct 2020 11:42:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/cloud-init-docker-and-compose-debian/</guid>
+      <guid>https://www.sysrex.com/posts/cloud-init-docker-and-compose-debian/</guid>
       <description>Cloud init script to install docker and docker compose on debian 10</description>
     </item>
     
     <item>
       <title>Get the apiVersion in Kubernetes</title>
-      <link>https://www.sysrex.tech/posts/get-apiversion-in-k8s/</link>
+      <link>https://www.sysrex.com/posts/get-apiversion-in-k8s/</link>
       <pubDate>Fri, 12 Jun 2020 19:19:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/get-apiversion-in-k8s/</guid>
+      <guid>https://www.sysrex.com/posts/get-apiversion-in-k8s/</guid>
       <description>How to get the apiVersion in Kubernetes</description>
     </item>
     
     <item>
       <title>Jenkins on debian 10</title>
-      <link>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</link>
+      <link>https://www.sysrex.com/posts/install-jenkins-debian-buster/</link>
       <pubDate>Thu, 11 Jun 2020 09:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/install-jenkins-debian-buster/</guid>
+      <guid>https://www.sysrex.com/posts/install-jenkins-debian-buster/</guid>
       <description>Install Jenkins on debian 10 buster</description>
     </item>
     
     <item>
       <title>Adding aws credentials to lens ide</title>
-      <link>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</link>
+      <link>https://www.sysrex.com/posts/adding-aws-credentials-lens-ide/</link>
       <pubDate>Wed, 15 Jan 2020 20:11:30 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/adding-aws-credentials-lens-ide/</guid>
+      <guid>https://www.sysrex.com/posts/adding-aws-credentials-lens-ide/</guid>
       <description>How to add aws credentials to lens ide</description>
     </item>
     
     <item>
       <title>Terraform with Remote S3 and Locking state</title>
-      <link>https://www.sysrex.tech/posts/terraform-remote-s3/</link>
+      <link>https://www.sysrex.com/posts/terraform-remote-s3/</link>
       <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/terraform-remote-s3/</guid>
+      <guid>https://www.sysrex.com/posts/terraform-remote-s3/</guid>
       <description>Terraform with AWS and remote state bucket</description>
     </item>
     
     <item>
       <title>Deploy Hugo with Travis on a VPS</title>
-      <link>https://www.sysrex.tech/posts/deploy-hugo-travis/</link>
+      <link>https://www.sysrex.com/posts/deploy-hugo-travis/</link>
       <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/deploy-hugo-travis/</guid>
+      <guid>https://www.sysrex.com/posts/deploy-hugo-travis/</guid>
       <description>How to deploy a hugo cms with travis on a vps from Github</description>
     </item>
     
     <item>
       <title>EC2 backup with lambda</title>
-      <link>https://www.sysrex.tech/posts/ec2backup-python-lambda/</link>
+      <link>https://www.sysrex.com/posts/ec2backup-python-lambda/</link>
       <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/ec2backup-python-lambda/</guid>
+      <guid>https://www.sysrex.com/posts/ec2backup-python-lambda/</guid>
       <description>Create ec2 backup with lambda and python functions</description>
     </item>
     
     <item>
       <title>Build docker to ECR with travis</title>
-      <link>https://www.sysrex.tech/posts/build-docker-to-ecr-with-travis/</link>
+      <link>https://www.sysrex.com/posts/build-docker-to-ecr-with-travis/</link>
       <pubDate>Thu, 07 Feb 2019 14:19:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/build-docker-to-ecr-with-travis/</guid>
+      <guid>https://www.sysrex.com/posts/build-docker-to-ecr-with-travis/</guid>
       <description>How to build docker containers and deploy them to ECR with Travis CI</description>
     </item>
     
     <item>
       <title>Jenkins declarative pipeline</title>
-      <link>https://www.sysrex.tech/posts/jenkins-declarative-pipeline-example/</link>
+      <link>https://www.sysrex.com/posts/jenkins-declarative-pipeline-example/</link>
       <pubDate>Fri, 19 Jan 2018 09:22:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/jenkins-declarative-pipeline-example/</guid>
+      <guid>https://www.sysrex.com/posts/jenkins-declarative-pipeline-example/</guid>
       <description>Jenkins declarative pipeline example</description>
     </item>
     
     <item>
       <title>Adding swap to ec2</title>
-      <link>https://www.sysrex.tech/posts/add-swap-ec2/</link>
+      <link>https://www.sysrex.com/posts/add-swap-ec2/</link>
       <pubDate>Fri, 04 Mar 2016 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/add-swap-ec2/</guid>
+      <guid>https://www.sysrex.com/posts/add-swap-ec2/</guid>
       <description>How to add swap to an EC2 instance</description>
     </item>
     
     <item>
       <title>Deployment with Git</title>
-      <link>https://www.sysrex.tech/posts/deploy-with-git/</link>
+      <link>https://www.sysrex.com/posts/deploy-with-git/</link>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/deploy-with-git/</guid>
+      <guid>https://www.sysrex.com/posts/deploy-with-git/</guid>
       <description>A Git hook allows you to execute custom scripts when an action occurs, such as when a commit or push is performed. Before I discovered git hooks, my deployment process consisted of pushing changes to my remote repository, SSH&amp;rsquo;ing into the server, navigating to the site directory, pulling the changes, and restarting the webserver. It wasn&amp;rsquo;t efficient at all and a waste of time doing that several times a day. I&amp;rsquo;ll explain how to set up a simple git hook making the deployment process a bit more effortless, but first I want to give credit to this how-to article which got me started.</description>
     </item>
     
     <item>
       <title>Node.js and Nginx on Ubuntu</title>
-      <link>https://www.sysrex.tech/posts/nodejs-deploy-with-nginx/</link>
+      <link>https://www.sysrex.com/posts/nodejs-deploy-with-nginx/</link>
       <pubDate>Thu, 26 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/nodejs-deploy-with-nginx/</guid>
+      <guid>https://www.sysrex.com/posts/nodejs-deploy-with-nginx/</guid>
       <description>In this tutorial I will show how to install and configure Node.js and Nginx on you Ubuntu server.
 Installing Dependencies The only dependency we really need is the build-essential package in order to be able to compile the Node.js source code.
 # Make sure to download the latest repos. sudo apt-get update # Required to run `make` command. sudo apt-get install build-essential # If you need to use https. sudo apt-get install libssl-dev # My favorite text editor.</description>
@@ -128,19 +128,19 @@ Installing Dependencies The only dependency we really need is the build-essentia
     
     <item>
       <title>Checking your internet connection with speedtest-cli </title>
-      <link>https://www.sysrex.tech/posts/using-speedtest-cli-linuxservers/</link>
+      <link>https://www.sysrex.com/posts/using-speedtest-cli-linuxservers/</link>
       <pubDate>Sat, 04 Aug 2012 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/using-speedtest-cli-linuxservers/</guid>
+      <guid>https://www.sysrex.com/posts/using-speedtest-cli-linuxservers/</guid>
       <description>Using speedtest-cli on linux debian headless</description>
     </item>
     
     <item>
       <title>Set up SSH keys</title>
-      <link>https://www.sysrex.tech/posts/set-up-ssh-keys/</link>
+      <link>https://www.sysrex.com/posts/set-up-ssh-keys/</link>
       <pubDate>Fri, 30 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://www.sysrex.tech/posts/set-up-ssh-keys/</guid>
+      <guid>https://www.sysrex.com/posts/set-up-ssh-keys/</guid>
       <description>Having to type in a password in order to SSH into your server every single time is tedious and not the way to go. I will show you how to set up SSH keys so that you can elimate an extra step from your workflow.
 Generating keys On your local maching, generate a new SSH key with the command:
 # Generate new key. ssh-keygen -t rsa When asked for the file to save the key in, enter:</description>
