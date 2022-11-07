@@ -11,8 +11,6 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 pygmentsuseclasses = false
 
-# googleAnalytics = "UA-179970173-1"
-
 [params] # theme parameters
 author = "sysrex" # Author's name.
 info = "AWS/K8s/Go" # Author's job title or info.
