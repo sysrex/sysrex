@@ -1,4 +1,4 @@
-baseurl = "https://www.sysrex.com" # Hostname (and path) to the root.
+baseurl = "https://sysrex.com" # Hostname (and path) to the root.
 title = "sysrex" # Site title.
 theme = "hugo-coder" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
