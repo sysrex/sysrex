@@ -2,141 +2,141 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.sysrex.com/kubernetes/kubectl-cheat-sheet/</loc>
+    <loc>https://sysrex.com/kubernetes/kubectl-cheat-sheet/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/kubernetes/</loc>
+    <loc>https://sysrex.com/tags/kubernetes/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/kubernetes/</loc>
+    <loc>https://sysrex.com/kubernetes/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/</loc>
+    <loc>https://sysrex.com/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/</loc>
+    <loc>https://sysrex.com/tags/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/golang/go-slices/</loc>
+    <loc>https://sysrex.com/golang/go-slices/</loc>
     <lastmod>2021-06-07T10:31:42+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/golang/</loc>
+    <loc>https://sysrex.com/tags/golang/</loc>
     <lastmod>2021-06-07T10:31:42+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/golang/</loc>
+    <loc>https://sysrex.com/golang/</loc>
     <lastmod>2021-06-07T10:31:42+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/kubernetes/k3s-raspberry-pi/</loc>
+    <loc>https://sysrex.com/kubernetes/k3s-raspberry-pi/</loc>
     <lastmod>2021-04-12T09:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/golang/go-maps/</loc>
+    <loc>https://sysrex.com/golang/go-maps/</loc>
     <lastmod>2021-02-07T10:31:42+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/golang/go-pointers/</loc>
+    <loc>https://sysrex.com/golang/go-pointers/</loc>
     <lastmod>2021-01-07T10:31:42+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/golang/go-install-on-mac/</loc>
+    <loc>https://sysrex.com/golang/go-install-on-mac/</loc>
     <lastmod>2021-01-04T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/uses/</loc>
+    <loc>https://sysrex.com/uses/</loc>
     <lastmod>2020-10-20T19:12:38+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/docker/</loc>
+    <loc>https://sysrex.com/tags/docker/</loc>
     <lastmod>2020-10-16T11:57:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/</loc>
+    <loc>https://sysrex.com/posts/</loc>
     <lastmod>2020-10-16T11:57:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/</loc>
+    <loc>https://sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/</loc>
     <lastmod>2020-10-16T11:57:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/scanner/</loc>
+    <loc>https://sysrex.com/tags/scanner/</loc>
     <lastmod>2020-10-16T11:57:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/cloud-init-docker-and-compose-debian/</loc>
+    <loc>https://sysrex.com/posts/cloud-init-docker-and-compose-debian/</loc>
     <lastmod>2020-10-13T11:42:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/configs/</loc>
+    <loc>https://sysrex.com/tags/configs/</loc>
     <lastmod>2020-10-13T11:42:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/aws/</loc>
+    <loc>https://sysrex.com/tags/aws/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/big-data/</loc>
+    <loc>https://sysrex.com/tags/big-data/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/kubernetes/deploy-apache-flink-aws-eks-alb/</loc>
+    <loc>https://sysrex.com/kubernetes/deploy-apache-flink-aws-eks-alb/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/eks/</loc>
+    <loc>https://sysrex.com/tags/eks/</loc>
     <lastmod>2020-08-15T12:31:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/get-apiversion-in-k8s/</loc>
+    <loc>https://sysrex.com/posts/get-apiversion-in-k8s/</loc>
     <lastmod>2020-06-12T19:19:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/install-jenkins-debian-buster/</loc>
+    <loc>https://sysrex.com/posts/install-jenkins-debian-buster/</loc>
     <lastmod>2020-06-11T09:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/golang/go-env-structs/</loc>
+    <loc>https://sysrex.com/golang/go-env-structs/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/golang/go-variables/</loc>
+    <loc>https://sysrex.com/golang/go-variables/</loc>
     <lastmod>2020-06-01T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/adding-aws-credentials-lens-ide/</loc>
+    <loc>https://sysrex.com/posts/adding-aws-credentials-lens-ide/</loc>
     <lastmod>2020-01-15T20:11:30+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/terraform/</loc>
+    <loc>https://sysrex.com/tags/terraform/</loc>
     <lastmod>2019-11-04T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/terraform-remote-s3/</loc>
+    <loc>https://sysrex.com/posts/terraform-remote-s3/</loc>
     <lastmod>2019-11-04T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/kubernetes/create-eks-cluster-with-assume-role/</loc>
+    <loc>https://sysrex.com/kubernetes/create-eks-cluster-with-assume-role/</loc>
     <lastmod>2019-08-02T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/deploy-hugo-travis/</loc>
+    <loc>https://sysrex.com/posts/deploy-hugo-travis/</loc>
     <lastmod>2019-04-16T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/hugo/</loc>
+    <loc>https://sysrex.com/tags/hugo/</loc>
     <lastmod>2019-04-16T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/travis/</loc>
+    <loc>https://sysrex.com/tags/travis/</loc>
     <lastmod>2019-04-16T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/code/</loc>
+    <loc>https://sysrex.com/tags/code/</loc>
     <lastmod>2019-04-11T19:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/ec2backup-python-lambda/</loc>
+    <loc>https://sysrex.com/posts/ec2backup-python-lambda/</loc>
     <lastmod>2019-04-11T19:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/build-docker-to-ecr-with-travis/</loc>
+    <loc>https://sysrex.com/posts/build-docker-to-ecr-with-travis/</loc>
     <lastmod>2019-02-07T14:19:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/jenkins/</loc>
+    <loc>https://sysrex.com/tags/jenkins/</loc>
     <lastmod>2018-01-19T09:22:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/jenkins-declarative-pipeline-example/</loc>
+    <loc>https://sysrex.com/posts/jenkins-declarative-pipeline-example/</loc>
     <lastmod>2018-01-19T09:22:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/add-swap-ec2/</loc>
+    <loc>https://sysrex.com/posts/add-swap-ec2/</loc>
     <lastmod>2016-03-04T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/deploy-with-git/</loc>
+    <loc>https://sysrex.com/posts/deploy-with-git/</loc>
     <lastmod>2014-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/nodejs-deploy-with-nginx/</loc>
+    <loc>https://sysrex.com/posts/nodejs-deploy-with-nginx/</loc>
     <lastmod>2013-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/using-speedtest-cli-linuxservers/</loc>
+    <loc>https://sysrex.com/posts/using-speedtest-cli-linuxservers/</loc>
     <lastmod>2012-08-04T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/tags/linux/</loc>
+    <loc>https://sysrex.com/tags/linux/</loc>
     <lastmod>2012-08-04T14:16:40+01:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/posts/set-up-ssh-keys/</loc>
+    <loc>https://sysrex.com/posts/set-up-ssh-keys/</loc>
     <lastmod>2011-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.sysrex.com/categories/</loc>
+    <loc>https://sysrex.com/categories/</loc>
   </url>
 </urlset>

@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on sysrex</title>
-    <link>https://www.sysrex.com/tags/golang/</link>
+    <link>https://sysrex.com/tags/golang/</link>
     <description>Recent content in Golang on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Jun 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://www.sysrex.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Jun 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go slices</title>
-      <link>https://www.sysrex.com/golang/go-slices/</link>
+      <link>https://sysrex.com/golang/go-slices/</link>
       <pubDate>Mon, 07 Jun 2021 10:31:42 +0100</pubDate>
       
-      <guid>https://www.sysrex.com/golang/go-slices/</guid>
+      <guid>https://sysrex.com/golang/go-slices/</guid>
       <description>Just a small overview of the go slices</description>
     </item>
     
     <item>
       <title>Go maps</title>
-      <link>https://www.sysrex.com/golang/go-maps/</link>
+      <link>https://sysrex.com/golang/go-maps/</link>
       <pubDate>Sun, 07 Feb 2021 10:31:42 +0100</pubDate>
       
-      <guid>https://www.sysrex.com/golang/go-maps/</guid>
+      <guid>https://sysrex.com/golang/go-maps/</guid>
       <description>Just a small overview of the go maps</description>
     </item>
     
     <item>
       <title>Go pointers</title>
-      <link>https://www.sysrex.com/golang/go-pointers/</link>
+      <link>https://sysrex.com/golang/go-pointers/</link>
       <pubDate>Thu, 07 Jan 2021 10:31:42 +0100</pubDate>
       
-      <guid>https://www.sysrex.com/golang/go-pointers/</guid>
+      <guid>https://sysrex.com/golang/go-pointers/</guid>
       <description>Just a small overview of the go pointers</description>
     </item>
     
     <item>
       <title>Install go on mac</title>
-      <link>https://www.sysrex.com/golang/go-install-on-mac/</link>
+      <link>https://sysrex.com/golang/go-install-on-mac/</link>
       <pubDate>Mon, 04 Jan 2021 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.com/golang/go-install-on-mac/</guid>
+      <guid>https://sysrex.com/golang/go-install-on-mac/</guid>
       <description>Installing and setup golang on mac Big Sur</description>
     </item>
     
     <item>
       <title>Go variables</title>
-      <link>https://www.sysrex.com/golang/go-variables/</link>
+      <link>https://sysrex.com/golang/go-variables/</link>
       <pubDate>Mon, 01 Jun 2020 14:16:40 +0100</pubDate>
       
-      <guid>https://www.sysrex.com/golang/go-variables/</guid>
+      <guid>https://sysrex.com/golang/go-variables/</guid>
       <description>Just a small overview of the go variables</description>
     </item>
     
