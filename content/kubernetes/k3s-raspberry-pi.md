@@ -64,6 +64,4 @@ worker2   Ready    <none>   11h   v1.19.9+k3s1
 worker5   Ready    <none>   11h   v1.19.9+k3s1
 worker6   Ready    <none>   11h   v1.19.9+k3s1
 ```
-
-
 Have fun!
