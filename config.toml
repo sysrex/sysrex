@@ -13,9 +13,9 @@ pygmentsuseclasses = false
 
 [params] # theme parameters
 author = "sysrex" # Author's name.
-info = "AWS/K8s/Go" # Author's job title or info.
+info = "barely sufficient" # Author's job title or info.
 description = "notes for future self" # Site description.
-keywords = "aws, kubernetes,sre" # Site keywords.
+keywords = "aws, kubernetes, sre, devops, golang" # Site keywords.
 avatarurl = "images/xsre.png" # Contain the path of the optionnal avatar in the static folder.
 
 footercontent = "I hope you enjoyed it." # Add footer content
