@@ -35,7 +35,7 @@ pods                              po                                          tr
 
 In the third column, `APIGROUP`. If, for example, you're creating a manifest for a new `Deployment` you could `grep` the output of `kubectl api-resources` and see that the API group is `apps`.
 
-## GLet's find the API group version
+## Let's find the API group version
 
 Because we now know the `APIGROUP` we will just get the version by using grep.
 
