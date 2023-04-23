@@ -162,7 +162,7 @@
 </span></span><span style="display:flex;"><span>pods                              po                                          <span style="color:#8be9fd;font-style:italic">true</span>         Pod
 </span></span></code></pre></div><p><em>Output truncated to avoid the really long output</em></p>
 <p>In the third column, <code>APIGROUP</code>. If, for example, you&rsquo;re creating a manifest for a new <code>Deployment</code> you could <code>grep</code> the output of <code>kubectl api-resources</code> and see that the API group is <code>apps</code>.</p>
-<h2 id="glets-find-the-api-group-version">GLet&rsquo;s find the API group version</h2>
+<h2 id="lets-find-the-api-group-version">Let&rsquo;s find the API group version</h2>
 <p>Because we now know the <code>APIGROUP</code> we will just get the version by using grep.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ kubectl api-versions | grep -E <span style="color:#f1fa8c">&#34;^apps/&#34;</span>
 </span></span><span style="display:flex;"><span>apps/v1
