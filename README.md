@@ -79,11 +79,11 @@
 
 #### 📜 My recent blog posts
 
+- [Sending Docker Logs to Scaleway Cockpit Loki with Promtail](https://sysrex.com/posts/send-docker-logs-with-promtail/) (1 year ago)
 - [Running your own docker registry](https://sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/) (2 years ago)
 - [Cloud init script to install docker and docker compose debian 10](https://sysrex.com/posts/cloud-init-docker-and-compose-debian/) (2 years ago)
 - [Get the apiVersion in Kubernetes](https://sysrex.com/posts/get-apiversion-in-k8s/) (3 years ago)
 - [Jenkins on debian 10](https://sysrex.com/posts/install-jenkins-debian-buster/) (3 years ago)
-- [Adding aws credentials to lens ide](https://sysrex.com/posts/adding-aws-credentials-lens-ide/) (3 years ago)
 
 ---
 
