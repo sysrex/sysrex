@@ -69,11 +69,11 @@
 #### 🔨 My recent Pull Requests
 
 
+- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (today)
 - [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 month ago)
 - [Changed the BSR folder name to match the chain id](https://github.com/celestiaorg/networks/pull/322) on [celestiaorg/networks](https://github.com/celestiaorg/networks) (1 month ago)
 - [Sysrex bootstrappers](https://github.com/celestiaorg/orchestrator-relayer/pull/346) on [celestiaorg/orchestrator-relayer](https://github.com/celestiaorg/orchestrator-relayer) (1 month ago)
 - [Update reusable_dockerfile_pipeline.yml](https://github.com/celestiaorg/.github/pull/58) on [celestiaorg/.github](https://github.com/celestiaorg/.github) (2 months ago)
-- [V07.0.0 rc](https://github.com/sysrex/celestia-node/pull/7) on [sysrex/celestia-node](https://github.com/sysrex/celestia-node) (4 months ago)
 
 ---
 
