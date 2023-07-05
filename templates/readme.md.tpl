@@ -70,6 +70,13 @@
 
 ---
 
+#### 📜 My recent blog posts
+{{range rss "https://.../posts/index.xml" 5}}
+- [{{.Title}}]({{.URL}}) ({{humanize .PublishedAt}})
+{{- end}}
+
+---
+
 #### 📊 GitHub Stats
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=sysrex&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
