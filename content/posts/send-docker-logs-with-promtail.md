@@ -45,7 +45,7 @@ networks:
     name: app
 ```
 
-Create your promtail configuration file in `config/promtail.yaml`
+2. Create your promtail configuration file in `config/promtail.yaml`
 
 ```yaml
 # https://grafana.com/docs/loki/latest/clients/promtail/configuration/
@@ -78,8 +78,7 @@ scrape_configs:
         target_label: 'job'
 ```
 
-Add the logging=promtail label to containers that need to be enabled for logging.
-Configure Grafana Promtail to scrape logs from containers with the logging=promtail label.
+3. Add the logging=promtail label to containers that need to be enabled for logging. Configure Grafana Promtail to scrape logs from containers with the logging=promtail label.
 
 
 Enjoy!
