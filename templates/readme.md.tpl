@@ -71,7 +71,7 @@
 ---
 
 #### 📜 My recent blog posts
-{{range rss "https://.../posts/index.xml" 5}}
+{{range rss "https://sysrex.com/posts/index.xml" 5}}
 - [{{.Title}}]({{.URL}}) ({{humanize .PublishedAt}})
 {{- end}}
 
