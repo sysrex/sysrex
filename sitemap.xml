@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sysrex.com/tags/devops/</loc>
+    <lastmod>2022-03-04T14:16:40+01:00</lastmod>
+  </url><url>
+    <loc>https://sysrex.com/posts/</loc>
+    <lastmod>2022-03-04T14:16:40+01:00</lastmod>
+  </url><url>
+    <loc>https://sysrex.com/posts/send-docker-logs-with-promtail/</loc>
+    <lastmod>2022-03-04T14:16:40+01:00</lastmod>
+  </url><url>
+    <loc>https://sysrex.com/</loc>
+    <lastmod>2022-03-04T14:16:40+01:00</lastmod>
+  </url><url>
+    <loc>https://sysrex.com/tags/</loc>
+    <lastmod>2022-03-04T14:16:40+01:00</lastmod>
+  </url><url>
     <loc>https://sysrex.com/kubernetes/kubectl-cheat-sheet/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
@@ -9,12 +24,6 @@
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
     <loc>https://sysrex.com/kubernetes/</loc>
-    <lastmod>2021-08-12T09:12:40+01:00</lastmod>
-  </url><url>
-    <loc>https://sysrex.com/</loc>
-    <lastmod>2021-08-12T09:12:40+01:00</lastmod>
-  </url><url>
-    <loc>https://sysrex.com/tags/</loc>
     <lastmod>2021-08-12T09:12:40+01:00</lastmod>
   </url><url>
     <loc>https://sysrex.com/golang/go-slices/</loc>
@@ -42,9 +51,6 @@
     <lastmod>2020-10-20T19:12:38+01:00</lastmod>
   </url><url>
     <loc>https://sysrex.com/tags/docker/</loc>
-    <lastmod>2020-10-16T11:57:40+01:00</lastmod>
-  </url><url>
-    <loc>https://sysrex.com/posts/</loc>
     <lastmod>2020-10-16T11:57:40+01:00</lastmod>
   </url><url>
     <loc>https://sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/</loc>
