@@ -177,7 +177,9 @@
 </span></span><span style="display:flex;"><span><span style="color:#ff79c6">networks</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">app</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">name</span>: app
-</span></span></code></pre></div><p>Create your promtail configuration file in <code>config/promtail.yaml</code></p>
+</span></span></code></pre></div><ol start="2">
+<li>Create your promtail configuration file in <code>config/promtail.yaml</code></li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#6272a4"># https://grafana.com/docs/loki/latest/clients/promtail/configuration/</span>
 </span></span><span style="display:flex;"><span><span style="color:#6272a4"># https://docs.docker.com/engine/api/v1.41/#operation/ContainerList</span>
 </span></span><span style="display:flex;"><span><span style="color:#ff79c6">server</span>:
@@ -206,8 +208,9 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">target_label</span>: <span style="color:#f1fa8c">&#39;logstream&#39;</span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#ff79c6">source_labels</span>: [<span style="color:#f1fa8c">&#39;__meta_docker_container_label_logging_jobname&#39;</span>]
 </span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">target_label</span>: <span style="color:#f1fa8c">&#39;job&#39;</span>
-</span></span></code></pre></div><p>Add the logging=promtail label to containers that need to be enabled for logging.
-Configure Grafana Promtail to scrape logs from containers with the logging=promtail label.</p>
+</span></span></code></pre></div><ol start="3">
+<li>Add the logging=promtail label to containers that need to be enabled for logging. Configure Grafana Promtail to scrape logs from containers with the logging=promtail label.</li>
+</ol>
 <p>Enjoy!</p>
 
       </div>
