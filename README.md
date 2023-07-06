@@ -37,8 +37,8 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (1 day ago)
-- [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (1 month ago)
+- [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (1 day ago)
+- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (2 days ago)
 - [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (1 month ago)
 - [celestiaorg/orchestrator-relayer](https://github.com/celestiaorg/orchestrator-relayer) - Go implementation of the QGB orchestrator and relayer (1 month ago)
 - [celestiaorg/terraform-module-scw-k8s](https://github.com/celestiaorg/terraform-module-scw-k8s) - Terraform Module for Kubernetes Clusters built in Scaleway (2 months ago)
@@ -48,8 +48,8 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.1](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.1) (1 day ago)
-- [celestiaorg/celestia-node @ v0.11.0-rc6](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc6) (5 days ago)
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.1](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.1) (2 days ago)
+- [celestiaorg/celestia-node @ v0.11.0-rc6](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc6) (6 days ago)
 - [testground/infra @ v0.7.1](https://github.com/testground/infra/releases/tag/v0.7.1) (1 month ago)
 - [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (1 month ago)
 
@@ -69,7 +69,7 @@
 #### 🔨 My recent Pull Requests
 
 
-- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (today)
+- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 day ago)
 - [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 month ago)
 - [Changed the BSR folder name to match the chain id](https://github.com/celestiaorg/networks/pull/322) on [celestiaorg/networks](https://github.com/celestiaorg/networks) (1 month ago)
 - [Sysrex bootstrappers](https://github.com/celestiaorg/orchestrator-relayer/pull/346) on [celestiaorg/orchestrator-relayer](https://github.com/celestiaorg/orchestrator-relayer) (1 month ago)
