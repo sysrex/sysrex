@@ -37,11 +37,11 @@
 #### 👷 Check out what I'm currently working on
 
 
+- [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (today)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Page (today)
 - [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (1 day ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (2 days ago)
 - [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (1 month ago)
-- [celestiaorg/orchestrator-relayer](https://github.com/celestiaorg/orchestrator-relayer) - Go implementation of the QGB orchestrator and relayer (1 month ago)
 
 ---
 
@@ -50,6 +50,7 @@
 
 - [celestiaorg/celestia-node @ v0.11.0-rc7](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc7) (today)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.1](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.1) (2 days ago)
+- [rollkit/local-celestia-devnet @ v0.11.0-rc5.1](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc5.1) (1 week ago)
 - [testground/infra @ v0.7.1](https://github.com/testground/infra/releases/tag/v0.7.1) (1 month ago)
 - [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (1 month ago)
 
