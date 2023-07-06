@@ -49,14 +49,6 @@
 
 ---
 
-#### ⭐ Recent Stars
-
-{{ range recentStars 5 }}
-- **[{{ .Repo.Name }}]({{ .Repo.URL }})**{{ with .Repo.Description }} - {{ . }}{{ end }} ({{ humanize .StarredAt }})
-{{- end }}
-
----
-
 #### 🔨 My recent Pull Requests
 
 {{range recentPullRequests 5}}
@@ -65,9 +57,24 @@
 
 ---
 
+#### ⭐ Recent Stars
+
+{{ range recentStars 5 }}
+- **[{{ .Repo.Name }}]({{ .Repo.URL }})**{{ with .Repo.Description }} - {{ . }}{{ end }} ({{ humanize .StarredAt }})
+{{- end }}
+
+---
+
 #### 📜 My recent blog posts
 {{range rss "https://sysrex.com/posts/index.xml" 5}}
 - [{{.Title}}]({{.URL}}) ({{humanize .PublishedAt}})
+{{- end}}
+
+---
+
+{{range literalClubCurrentlyReading 5}}
+- {{.Title}} - {{.Subtitle}} - {{.Description}} - https://literal.club/sysrex/book/{{.Slug}}
+  {{- range .Authors }}{{ .Name }}{{ end }}
 {{- end}}
 
 ---
