@@ -55,17 +55,6 @@
 
 ---
 
-#### ⭐ Recent Stars
-
-
-- **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (2 weeks ago)
-- **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (1 month ago)
-- **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (3 months ago)
-- **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (5 months ago)
-- **[nberlette/gitpod-enhanced](https://github.com/nberlette/gitpod-enhanced)** - Turbocharge your Gitpod Workspaces with my custom built version of gitpod/workspace-full. (9 months ago)
-
----
-
 #### 🔨 My recent Pull Requests
 
 
@@ -74,6 +63,17 @@
 - [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 day ago)
 - [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 month ago)
 - [Changed the BSR folder name to match the chain id](https://github.com/celestiaorg/networks/pull/322) on [celestiaorg/networks](https://github.com/celestiaorg/networks) (1 month ago)
+
+---
+
+#### ⭐ Recent Stars
+
+
+- **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (2 weeks ago)
+- **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (1 month ago)
+- **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (3 months ago)
+- **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (5 months ago)
+- **[nberlette/gitpod-enhanced](https://github.com/nberlette/gitpod-enhanced)** - Turbocharge your Gitpod Workspaces with my custom built version of gitpod/workspace-full. (9 months ago)
 
 ---
 
