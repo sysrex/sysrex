@@ -15,7 +15,7 @@ pygmentsuseclasses = false
 author = "sysrex" # Author's name.
 info = "barely sufficient" # Author's job title or info.
 description = "barely sufficient" # Site description.
-keywords = "aws, kubernetes, sre, devops, golang" # Site keywords.
+keywords = "aws, kubernetes, sre, devops, golang, blockchain" # Site keywords.
 avatarurl = "images/xsre.png" # Contain the path of the optionnal avatar in the static folder.
 
 footercontent = "I hope you enjoyed it." # Add footer content
