@@ -35,8 +35,6 @@ services:
       - /var/lib/docker/containers:/var/lib/docker/containers:ro
       - /var/run/docker.sock:/var/run/docker.sock
     command: -config.file=/etc/promtail/docker-config.yaml
-    depends_on:
-      - loki
     networks:
       - app
 
@@ -81,4 +79,4 @@ scrape_configs:
 3. Add the logging=promtail label to containers that need to be enabled for logging. Configure Grafana Promtail to scrape logs from containers with the logging=promtail label.
 
 
-Enjoy!
+*Enjoy!*
