@@ -72,13 +72,6 @@
 
 ---
 
-{{range literalClubCurrentlyReading 5}}
-- {{.Title}} - {{.Subtitle}} - {{.Description}} - https://literal.club/sysrex/book/{{.Slug}}
-  {{- range .Authors }}{{ .Name }}{{ end }}
-{{- end}}
-
----
-
 #### 📊 GitHub Stats
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=sysrex&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
