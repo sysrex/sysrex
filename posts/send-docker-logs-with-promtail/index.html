@@ -169,8 +169,6 @@
 </span></span><span style="display:flex;"><span>      - /var/lib/docker/containers:/var/lib/docker/containers:ro
 </span></span><span style="display:flex;"><span>      - /var/run/docker.sock:/var/run/docker.sock
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">command</span>: -config.file=/etc/promtail/docker-config.yaml
-</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">depends_on</span>:
-</span></span><span style="display:flex;"><span>      - loki
 </span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">networks</span>:
 </span></span><span style="display:flex;"><span>      - app
 </span></span><span style="display:flex;"><span>
@@ -211,7 +209,7 @@
 </span></span></code></pre></div><ol start="3">
 <li>Add the logging=promtail label to containers that need to be enabled for logging. Configure Grafana Promtail to scrape logs from containers with the logging=promtail label.</li>
 </ol>
-<p>Enjoy!</p>
+<p><em>Enjoy!</em></p>
 
       </div>
 
