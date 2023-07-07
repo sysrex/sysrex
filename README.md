@@ -48,9 +48,9 @@
 #### 🚀 Latest releases I've contributed to
 
 
+- [rollkit/local-celestia-devnet @ v0.11.0-rc6](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc6) (today)
 - [celestiaorg/celestia-node @ v0.11.0-rc7](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc7) (1 day ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.1](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.1) (3 days ago)
-- [rollkit/local-celestia-devnet @ v0.11.0-rc5.1](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc5.1) (1 week ago)
 - [testground/infra @ v0.7.1](https://github.com/testground/infra/releases/tag/v0.7.1) (1 month ago)
 - [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (1 month ago)
 
