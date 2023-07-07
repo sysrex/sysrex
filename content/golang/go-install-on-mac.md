@@ -1,6 +1,6 @@
 ---
 title: "Install go on mac"
-date: 2021-01-04T14:16:40+01:00
+date: 2023-07-04T14:16:40+01:00
 tags: ["Golang"]
 summary: "Installing and setup golang on mac Big Sur"
 draft: false
@@ -17,7 +17,7 @@ Then we check the installation:
 
 ```zsh
 $ /usr/local/go/bin/go version
- go version go1.15.6 darwin/amd64
+ go version go1.20.2 darwin/amd64
 ```
 
 # Setting up GOPATH and GOBIN
@@ -37,7 +37,7 @@ Now let's check out installation
 
 ```zsh
 $ go version
-go version go1.15.6 darwin/amd64
+go version go1.20.2 darwin/amd64
 
 $ go env GOPATH
 /Users/user/go
