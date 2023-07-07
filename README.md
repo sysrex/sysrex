@@ -37,10 +37,10 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (today)
-- [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Page (today)
-- [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (1 day ago)
-- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (2 days ago)
+- [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (1 day ago)
+- [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Page (1 day ago)
+- [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (2 days ago)
+- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (3 days ago)
 - [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (1 month ago)
 
 ---
@@ -48,8 +48,8 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-node @ v0.11.0-rc7](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc7) (today)
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.1](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.1) (2 days ago)
+- [celestiaorg/celestia-node @ v0.11.0-rc7](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc7) (1 day ago)
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.1](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.1) (3 days ago)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc5.1](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc5.1) (1 week ago)
 - [testground/infra @ v0.7.1](https://github.com/testground/infra/releases/tag/v0.7.1) (1 month ago)
 - [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (1 month ago)
@@ -59,9 +59,9 @@
 #### 🔨 My recent Pull Requests
 
 
-- [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (today)
-- [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (today)
-- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 day ago)
+- [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (1 day ago)
+- [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (1 day ago)
+- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (2 days ago)
 - [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 month ago)
 - [Changed the BSR folder name to match the chain id](https://github.com/celestiaorg/networks/pull/322) on [celestiaorg/networks](https://github.com/celestiaorg/networks) (1 month ago)
 
