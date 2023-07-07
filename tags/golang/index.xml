@@ -6,7 +6,16 @@
     <description>Recent content in Golang on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Jun 2021 10:31:42 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jul 2023 14:16:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install go on mac</title>
+      <link>https://sysrex.com/golang/go-install-on-mac/</link>
+      <pubDate>Tue, 04 Jul 2023 14:16:40 +0100</pubDate>
+      
+      <guid>https://sysrex.com/golang/go-install-on-mac/</guid>
+      <description>Installing and setup golang on mac Big Sur</description>
+    </item>
+    
     <item>
       <title>Go slices</title>
       <link>https://sysrex.com/golang/go-slices/</link>
@@ -32,15 +41,6 @@
       
       <guid>https://sysrex.com/golang/go-pointers/</guid>
       <description>Just a small overview of the go pointers</description>
-    </item>
-    
-    <item>
-      <title>Install go on mac</title>
-      <link>https://sysrex.com/golang/go-install-on-mac/</link>
-      <pubDate>Mon, 04 Jan 2021 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/golang/go-install-on-mac/</guid>
-      <description>Installing and setup golang on mac Big Sur</description>
     </item>
     
     <item>

@@ -6,7 +6,16 @@
     <description>Recent content on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Mar 2022 14:16:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jul 2023 14:16:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install go on mac</title>
+      <link>https://sysrex.com/golang/go-install-on-mac/</link>
+      <pubDate>Tue, 04 Jul 2023 14:16:40 +0100</pubDate>
+      
+      <guid>https://sysrex.com/golang/go-install-on-mac/</guid>
+      <description>Installing and setup golang on mac Big Sur</description>
+    </item>
+    
     <item>
       <title>Sending Docker Logs to Scaleway Cockpit Loki with Promtail</title>
       <link>https://sysrex.com/posts/send-docker-logs-with-promtail/</link>
@@ -59,15 +68,6 @@
       
       <guid>https://sysrex.com/golang/go-pointers/</guid>
       <description>Just a small overview of the go pointers</description>
-    </item>
-    
-    <item>
-      <title>Install go on mac</title>
-      <link>https://sysrex.com/golang/go-install-on-mac/</link>
-      <pubDate>Mon, 04 Jan 2021 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/golang/go-install-on-mac/</guid>
-      <description>Installing and setup golang on mac Big Sur</description>
     </item>
     
     <item>
