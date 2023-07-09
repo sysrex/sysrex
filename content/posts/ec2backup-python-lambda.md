@@ -25,7 +25,7 @@ We want our function to be able to:
 
 - Write access to CloudWatch Logs
 
-{{< highlight json >}}
+```json
 
 {
    "Version": "2012-10-17",
@@ -56,7 +56,7 @@ We want our function to be able to:
    ]
 }
 
-{{< /highlight >}}
+```
 
 ### Tagging
 
@@ -72,7 +72,7 @@ Now, navigate to the AWS Lambda Management Console. Then select Create Function 
 
 ### Python 3.6 script to be added to the function, gist here: [(Github)](https://gist.github.com/sysrex/f07d012797c681f69410150e094c7296)
 
-{{< highlight python >}}
+```python
 
 import collections
 import datetime
@@ -187,7 +187,7 @@ def lambda_handler(event, context):
   return
 
 
-{{< /highlight >}}
+```
 
 
 
