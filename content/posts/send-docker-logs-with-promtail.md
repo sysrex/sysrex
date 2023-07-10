@@ -56,7 +56,7 @@ positions:
   filename: /tmp/positions.yaml
 
 clients:
-  - url: http://api_key:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@https://logs.cockpit.fr-par.scw.cloud/loki/api/v1/push/loki/api/v1/push
+  - url: http://api_key:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@https://logs.cockpit.fr-par.scw.cloud/loki/api/v1/push/
 
 scrape_configs:
   - job_name: flog_scrape
