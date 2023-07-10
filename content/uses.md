@@ -33,12 +33,11 @@ type: page
 </style>
 
 ## Hardware
-* 2 x [LG 27" Ultrafine 5k](https://www.apple.com/uk/shop/product/HMUB2B/A/lg-ultrafine-5k-display)
+* [LG 27" Ultrafine 5k](https://www.apple.com/uk/shop/product/HMUB2B/A/lg-ultrafine-5k-display)
 * Apple MacBook Pro 14" 2021 Ten Core with 16GB RAM
 * Apple Keyboard
 * Apple mouse
-* Apple AirPods
-* [Jabra Evolve 30 II](https://www.jabra.co.uk/supportpages/jabra-evolve-30-ii#/#5399-823-389)
+* Apple AirPods Pro
 * Apple iPad Pro 11" + Magic Pen
 * Apple iPhone 12 Pro Max 256GB
 
@@ -48,25 +47,25 @@ type: page
 
 ## Weapons of choice
 * [LensApp](https://k8slens.dev)
-* [Intellij Idea Ultimate](https://www.jetbrains.com/idea//)
+* [Goland](https://www.jetbrains.com/go/)
 * [Neovim](https://github.com/neovim/neovim)
 
 ## Software
 * [Outlook](https://outlook.live.com)
 * [GoodTask](https://goodtaskapp.com/)
-* [Bear](https://bear.app//)
+* [Notion](https://notion.so//)
 * [Slack](https://slack.com/)
-* [iTerm 2](https://iterm2.com/)
+* [Warp](https://iterm2.dev/)
 * [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)
 * [SF Mono](https://developer.apple.com/fonts/)
 * [1Password](https://1password.com/)
 * [Docker](https://www.docker.com/)
 * [Bartender](https://www.macbartender.com/)
 * [Brew](https://brew.sh/)
-* [Dash](https://kapeli.com/dash)
+* [Dash](https://kapeli.coms/dash)
 
 ## Most of my day goes to
 * [AWS](https://aws.amazon.com)
 * [Kubernetes](https://kubernetes.io/)
 * [Argo CD](https://argoproj.github.io/argo-cd/)
-* [Istio](https://istio.io/)
+* [Golang](https://go.dev/)
