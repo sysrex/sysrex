@@ -6,6 +6,9 @@ summary: "Cloud init script to install docker and docker compose on debian 10"
 draft: false
 ---
 
+
+### Whatever provider we use, the following init script will install docker and docker compose on the instance readily available.
+
 ```yaml
 #cloud-config
 groups:
