@@ -63,7 +63,7 @@ travis encrypt AWS_SECRET_ACCESS_KEY=super_secret --add
 Then your travis file should look like this
 
 
-{{<highlight yaml>}}
+```yaml
 
 dist: xenial
 language: minimal
@@ -83,4 +83,4 @@ env:
   - secure: <your encrypted key>
 
 
-{{</highlight>}}
+```
