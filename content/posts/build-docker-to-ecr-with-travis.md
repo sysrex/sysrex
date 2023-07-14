@@ -8,7 +8,7 @@ draft: false
 
 You will need an AWS IAM Policy for the Travis user that looks pretty much like this _I strongly suggest you use a different user for this_
 
-{{<highlight json>}}
+```json
 
 {
     "Version": "2012-10-17",
@@ -46,19 +46,17 @@ You will need an AWS IAM Policy for the Travis user that looks pretty much like 
     ]
 }
 
-{{</highlight>}}
-
+```
 
 Next you will encrypt the created credentials in the .travis.yml file
 
 
-{{<highlight bash>}}
+```bash
 
 travis encrypt AWS_ACCESS_KEY_ID=super_secret --add
 travis encrypt AWS_SECRET_ACCESS_KEY=super_secret --add
 
-{{</highlight>}}
-
+```
 
 Then your travis file should look like this
 
