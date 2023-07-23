@@ -48,8 +48,8 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (3 days ago)
-- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (4 days ago)
+- [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (4 days ago)
+- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (5 days ago)
 - [celestiaorg/celestia-node @ v0.11.0-rc8](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8) (1 week ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (1 week ago)
 - [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (2 months ago)
