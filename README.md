@@ -48,8 +48,8 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (4 days ago)
-- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (5 days ago)
+- [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (5 days ago)
+- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (6 days ago)
 - [celestiaorg/celestia-node @ v0.11.0-rc8](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8) (1 week ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (1 week ago)
 - [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (2 months ago)
@@ -71,10 +71,10 @@
 
 
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (1 month ago)
-- **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (1 month ago)
+- **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (2 months ago)
 - **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (3 months ago)
 - **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (5 months ago)
-- **[nberlette/gitpod-enhanced](https://github.com/nberlette/gitpod-enhanced)** - Turbocharge your Gitpod Workspaces with my custom built version of gitpod/workspace-full. (9 months ago)
+- **[nberlette/gitpod-enhanced](https://github.com/nberlette/gitpod-enhanced)** - Turbocharge your Gitpod Workspaces with my custom built version of gitpod/workspace-full. (10 months ago)
 
 ---
 
