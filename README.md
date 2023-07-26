@@ -40,7 +40,7 @@
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (2 weeks ago)
 - [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (2 weeks ago)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Page (2 weeks ago)
-- [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (2 weeks ago)
+- [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (3 weeks ago)
 - [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (1 month ago)
 
 ---
@@ -48,7 +48,7 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (6 days ago)
+- [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (1 week ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (1 week ago)
 - [celestiaorg/celestia-node @ v0.11.0-rc8](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8) (1 week ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (2 weeks ago)
@@ -62,7 +62,7 @@
 - [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (2 weeks ago)
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (2 weeks ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (2 weeks ago)
-- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (2 weeks ago)
+- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (3 weeks ago)
 - [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 month ago)
 
 ---
