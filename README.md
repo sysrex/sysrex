@@ -70,11 +70,11 @@
 #### ⭐ Recent Stars
 
 
+- **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (today)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (1 month ago)
 - **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (2 months ago)
 - **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (3 months ago)
 - **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (5 months ago)
-- **[nberlette/gitpod-enhanced](https://github.com/nberlette/gitpod-enhanced)** - Turbocharge your Gitpod Workspaces with my custom built version of gitpod/workspace-full. (10 months ago)
 
 ---
 
