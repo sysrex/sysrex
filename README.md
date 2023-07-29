@@ -41,7 +41,7 @@
 - [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (3 weeks ago)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Page (3 weeks ago)
 - [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (3 weeks ago)
-- [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (1 month ago)
+- [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (2 months ago)
 
 ---
 
@@ -63,17 +63,17 @@
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (3 weeks ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (3 weeks ago)
 - [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (3 weeks ago)
-- [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 month ago)
+- [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (2 months ago)
 
 ---
 
 #### ⭐ Recent Stars
 
 
-- **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (2 days ago)
+- **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (3 days ago)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (1 month ago)
 - **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (2 months ago)
-- **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (3 months ago)
+- **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (4 months ago)
 - **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (5 months ago)
 
 ---
