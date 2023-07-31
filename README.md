@@ -39,7 +39,7 @@
 
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (2 weeks ago)
 - [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (3 weeks ago)
-- [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Page (3 weeks ago)
+- [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Site (3 weeks ago)
 - [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (3 weeks ago)
 - [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (2 months ago)
 
