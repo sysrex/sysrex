@@ -37,7 +37,7 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (2 weeks ago)
+- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (3 weeks ago)
 - [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (3 weeks ago)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Site (3 weeks ago)
 - [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (3 weeks ago)
@@ -49,9 +49,9 @@
 
 
 - [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (1 week ago)
-- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (1 week ago)
+- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (2 weeks ago)
 - [celestiaorg/celestia-node @ v0.11.0-rc8](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8) (2 weeks ago)
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (2 weeks ago)
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (3 weeks ago)
 - [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (2 months ago)
 
 ---
@@ -59,7 +59,7 @@
 #### 🔨 My recent Pull Requests
 
 
-- [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (2 weeks ago)
+- [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (3 weeks ago)
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (3 weeks ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (3 weeks ago)
 - [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (3 weeks ago)
@@ -70,17 +70,17 @@
 #### ⭐ Recent Stars
 
 
-- **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (5 days ago)
+- **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (6 days ago)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (1 month ago)
 - **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (2 months ago)
 - **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (4 months ago)
-- **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (5 months ago)
+- **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (6 months ago)
 
 ---
 
 #### 📜 My recent blog posts
 
-- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (4 months ago)
+- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (5 months ago)
 - [Sending Docker Logs to Scaleway Cockpit Loki with Promtail](https://sysrex.com/posts/send-docker-logs-with-promtail/) (1 year ago)
 - [Running your own docker registry](https://sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/) (2 years ago)
 - [Cloud init script to install docker and docker compose debian 10](https://sysrex.com/posts/cloud-init-docker-and-compose-debian/) (2 years ago)
