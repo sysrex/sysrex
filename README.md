@@ -26,22 +26,22 @@
 ---
 
 #### 👨‍💻 Repositories I created recently
+- **[sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy)** - Docker Nginx Ip2Proxy
 - **[sysrex/tf-testground](https://github.com/sysrex/tf-testground)**
 - **[sysrex/goninja.dev](https://github.com/sysrex/goninja.dev)** - goninja.dev website
 - **[sysrex/chessalex](https://github.com/sysrex/chessalex)**
 - **[sysrex/k8sops](https://github.com/sysrex/k8sops)**
-- **[sysrex/xsre-tech](https://github.com/sysrex/xsre-tech)**
 
 ---
 
 #### 👷 Check out what I'm currently working on
 
 
+- [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (today)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (4 weeks ago)
 - [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (1 month ago)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Site (1 month ago)
 - [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (1 month ago)
-- [celestiaorg/networks](https://github.com/celestiaorg/networks) -  (2 months ago)
 
 ---
 
