@@ -37,7 +37,7 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (3 weeks ago)
+- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (4 weeks ago)
 - [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (1 month ago)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Site (1 month ago)
 - [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (1 month ago)
@@ -48,18 +48,18 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-node @ v0.11.0-rc9](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc9) (today)
+- [celestiaorg/celestia-node @ v0.11.0-rc9](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc9) (1 day ago)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (2 weeks ago)
-- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (2 weeks ago)
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (3 weeks ago)
-- [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (2 months ago)
+- [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (3 weeks ago)
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (4 weeks ago)
+- [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (3 months ago)
 
 ---
 
 #### 🔨 My recent Pull Requests
 
 
-- [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (3 weeks ago)
+- [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (4 weeks ago)
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (1 month ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (1 month ago)
 - [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (1 month ago)
