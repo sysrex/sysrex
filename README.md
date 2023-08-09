@@ -37,7 +37,7 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (1 day ago)
+- [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (today)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (4 weeks ago)
 - [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (1 month ago)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Site (1 month ago)
