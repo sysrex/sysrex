@@ -26,22 +26,22 @@
 ---
 
 #### 👨‍💻 Repositories I created recently
+- **[sysrex/posthook](https://github.com/sysrex/posthook)** - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs
+- **[sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync)** - Github Issues to Notion Projects Sync
 - **[sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy)** - Docker Nginx Ip2Proxy
 - **[sysrex/tf-testground](https://github.com/sysrex/tf-testground)**
 - **[sysrex/goninja.dev](https://github.com/sysrex/goninja.dev)** - goninja.dev website
-- **[sysrex/chessalex](https://github.com/sysrex/chessalex)**
-- **[sysrex/k8sops](https://github.com/sysrex/k8sops)**
 
 ---
 
 #### 👷 Check out what I'm currently working on
 
 
+- [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (today)
+- [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (today)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (6 days ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (1 month ago)
-- [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) - Docker image exposing celestia-node devnet for CI and local development (1 month ago)
 - [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Site (1 month ago)
-- [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) - Celestia Data Availability Nodes (1 month ago)
 
 ---
 
