@@ -70,11 +70,11 @@
 #### ⭐ Recent Stars
 
 
+- **[pulumi/pulumi](https://github.com/pulumi/pulumi)** - Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀 (today)
 - **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (3 weeks ago)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (1 month ago)
 - **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (2 months ago)
 - **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (4 months ago)
-- **[gbrayhan/microservices-go](https://github.com/gbrayhan/microservices-go)** - Golang Microservice Boilerplate using MySQL, Docker and Swagger, API REST. Gin Go and GORM with pagination and implementation of a Clean Architecture. (6 months ago)
 
 ---
 
