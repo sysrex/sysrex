@@ -37,7 +37,7 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (6 days ago)
+- [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (today)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (6 days ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (1 week ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (1 month ago)
