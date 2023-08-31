@@ -48,7 +48,7 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-node @ v0.11.0-rc8-arabica-improvements](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8-arabica-improvements) (5 days ago)
+- [celestiaorg/celestia-node @ v0.11.0-rc8-arabica-improvements](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc8-arabica-improvements) (6 days ago)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (1 month ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (1 month ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (1 month ago)
@@ -70,7 +70,7 @@
 #### ⭐ Recent Stars
 
 
-- **[pulumi/pulumi](https://github.com/pulumi/pulumi)** - Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀 (1 week ago)
+- **[pulumi/pulumi](https://github.com/pulumi/pulumi)** - Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀 (2 weeks ago)
 - **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (1 month ago)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (2 months ago)
 - **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (3 months ago)
@@ -80,7 +80,7 @@
 
 #### 📜 My recent blog posts
 
-- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (5 months ago)
+- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (6 months ago)
 - [Sending Docker Logs to Scaleway Cockpit Loki with Promtail](https://sysrex.com/posts/send-docker-logs-with-promtail/) (2 years ago)
 - [Running your own docker registry](https://sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/) (2 years ago)
 - [Cloud init script to install docker and docker compose debian 10](https://sysrex.com/posts/cloud-init-docker-and-compose-debian/) (2 years ago)
