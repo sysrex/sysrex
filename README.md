@@ -26,33 +26,33 @@
 ---
 
 #### 👨‍💻 Repositories I created recently
+- **[sysrex/opscontainer](https://github.com/sysrex/opscontainer)** - opscontainer for VSCode
 - **[sysrex/posthook](https://github.com/sysrex/posthook)** - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs
 - **[sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync)** - Github Issues to Notion Projects Sync
 - **[sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy)** - Docker Nginx Ip2Proxy
 - **[sysrex/tf-testground](https://github.com/sysrex/tf-testground)**
-- **[sysrex/goninja.dev](https://github.com/sysrex/goninja.dev)** - goninja.dev website
 
 ---
 
 #### 👷 Check out what I'm currently working on
 
 
+- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (today)
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (1 week ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (2 weeks ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (3 weeks ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (1 month ago)
-- [celestiaorg/docs](https://github.com/celestiaorg/docs) - Celestia Documentation Site (1 month ago)
 
 ---
 
 #### 🚀 Latest releases I've contributed to
 
 
+- [sysrex/opscontainer @ v0.0.1](https://github.com/sysrex/opscontainer/releases/tag/v0.0.1) (today)
 - [celestiaorg/celestia-node @ v0.11.0-rc10](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc10) (today)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (1 month ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (1 month ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (1 month ago)
-- [celestiaorg/orchestrator-relayer @ v0.3.0-app-v0.13.2-beta](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v0.3.0-app-v0.13.2-beta) (3 months ago)
 
 ---
 
