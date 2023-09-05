@@ -48,11 +48,11 @@
 #### 🚀 Latest releases I've contributed to
 
 
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.8.1](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.8.1) (today)
 - [sysrex/opscontainer @ v0.0.1](https://github.com/sysrex/opscontainer/releases/tag/v0.0.1) (5 days ago)
 - [celestiaorg/celestia-node @ v0.11.0-rc10](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc10) (5 days ago)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (1 month ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (1 month ago)
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-dev.2](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-dev.2) (1 month ago)
 
 ---
 
