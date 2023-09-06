@@ -37,10 +37,10 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (5 days ago)
+- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (6 days ago)
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (2 weeks ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (3 weeks ago)
-- [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (3 weeks ago)
+- [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (4 weeks ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (1 month ago)
 
 ---
@@ -48,10 +48,10 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.11](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.11) (today)
-- [celestiaorg/celestia-node @ v0.11.0-rc11](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc11) (today)
-- [sysrex/opscontainer @ v0.0.1](https://github.com/sysrex/opscontainer/releases/tag/v0.0.1) (5 days ago)
-- [rollkit/local-celestia-devnet @ v0.11.0-rc8](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc8) (1 month ago)
+- [rollkit/local-celestia-devnet @ v0.11.0-rc11](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc11) (1 day ago)
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.11](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.11) (1 day ago)
+- [celestiaorg/celestia-node @ v0.11.0-rc11](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0-rc11) (1 day ago)
+- [sysrex/opscontainer @ v0.0.1](https://github.com/sysrex/opscontainer/releases/tag/v0.0.1) (6 days ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.0.2](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.0.2) (1 month ago)
 
 ---
