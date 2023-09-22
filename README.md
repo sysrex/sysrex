@@ -37,7 +37,7 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (2 days ago)
+- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (3 days ago)
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (1 month ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (1 month ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (1 month ago)
@@ -48,10 +48,10 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/orchestrator-relayer @ v1.0.0-rc2](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc2) (today)
+- [celestiaorg/orchestrator-relayer @ v1.0.0-rc2](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc2) (1 day ago)
 - [celestiaorg/docs @ v0.11.0-rc13-celestia-node](https://github.com/celestiaorg/docs/releases/tag/v0.11.0-rc13-celestia-node) (1 week ago)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc12](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc12) (1 week ago)
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (1 week ago)
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (2 weeks ago)
 - [sysrex/opscontainer @ v0.0.1](https://github.com/sysrex/opscontainer/releases/tag/v0.0.1) (3 weeks ago)
 
 ---
@@ -73,7 +73,7 @@
 - **[pulumi/pulumi](https://github.com/pulumi/pulumi)** - Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀 (1 month ago)
 - **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (1 month ago)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (3 months ago)
-- **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (3 months ago)
+- **[PygameCoding/PythonTerminal](https://github.com/PygameCoding/PythonTerminal)** - Does what ever you want (4 months ago)
 - **[celestiaorg/devops](https://github.com/celestiaorg/devops)** (5 months ago)
 
 ---
