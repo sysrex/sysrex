@@ -48,7 +48,7 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/orchestrator-relayer @ v1.0.0-rc3](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc3) (2 days ago)
+- [celestiaorg/orchestrator-relayer @ v1.0.0-rc3](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc3) (3 days ago)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc12](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc12) (3 weeks ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (4 weeks ago)
 - [sysrex/opscontainer @ v0.0.1](https://github.com/sysrex/opscontainer/releases/tag/v0.0.1) (1 month ago)
