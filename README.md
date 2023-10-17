@@ -37,7 +37,7 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (3 weeks ago)
+- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (4 weeks ago)
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (1 month ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (2 months ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (2 months ago)
@@ -48,8 +48,8 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (today)
-- [celestiaorg/celestia-node @ v0.11.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0) (today)
+- [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (1 day ago)
+- [celestiaorg/celestia-node @ v0.11.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0) (1 day ago)
 - [celestiaorg/orchestrator-relayer @ v1.0.0-rc3](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc3) (1 week ago)
 - [rollkit/local-celestia-devnet @ v0.11.0-rc12](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0-rc12) (1 month ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (1 month ago)
