@@ -1,6 +1,6 @@
 ### Hi there
 
-#### I'm sysrex and barely sufficient ‍💻
+#### I'm just sysrex ‍💻
 
 ---
 
