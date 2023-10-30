@@ -37,7 +37,7 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (5 days ago)
+- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (6 days ago)
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (2 months ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (2 months ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (2 months ago)
@@ -48,10 +48,10 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/orchestrator-relayer @ v1.0.0-rc5](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc5) (2 days ago)
+- [celestiaorg/orchestrator-relayer @ v1.0.0-rc5](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc5) (3 days ago)
 - [rollkit/local-celestia-devnet @ v0.11.0](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.11.0) (1 week ago)
-- [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (1 week ago)
-- [celestiaorg/celestia-node @ v0.11.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0) (1 week ago)
+- [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (2 weeks ago)
+- [celestiaorg/celestia-node @ v0.11.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.11.0) (2 weeks ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (1 month ago)
 
 ---
@@ -80,7 +80,7 @@
 
 #### 📜 My recent blog posts
 
-- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (7 months ago)
+- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (8 months ago)
 - [Sending Docker Logs to Scaleway Cockpit Loki with Promtail](https://sysrex.com/posts/send-docker-logs-with-promtail/) (2 years ago)
 - [Running your own docker registry](https://sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/) (3 years ago)
 - [Cloud init script to install docker and docker compose debian 10](https://sysrex.com/posts/cloud-init-docker-and-compose-debian/) (3 years ago)
