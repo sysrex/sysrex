@@ -37,10 +37,10 @@
 #### 👷 Check out what I'm currently working on
 
 
-- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (1 week ago)
+- [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (2 weeks ago)
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (2 months ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (2 months ago)
-- [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (2 months ago)
+- [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (3 months ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (3 months ago)
 
 ---
@@ -48,11 +48,11 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [rollkit/local-celestia-devnet @ v0.12.0](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.0) (5 days ago)
-- [celestiaorg/celestia-node @ v0.12.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.12.0) (6 days ago)
+- [rollkit/local-celestia-devnet @ v0.12.0](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.0) (6 days ago)
+- [celestiaorg/celestia-node @ v0.12.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.12.0) (1 week ago)
 - [celestiaorg/orchestrator-relayer @ v1.0.0-rc5](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.0-rc5) (1 week ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (3 weeks ago)
-- [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (1 month ago)
+- [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (2 months ago)
 
 ---
 
@@ -70,8 +70,8 @@
 #### ⭐ Recent Stars
 
 
-- **[saml-dev/gome-assistant](https://github.com/saml-dev/gome-assistant)** - A library that lets you write all of your Home Assistant automations in Go! (3 days ago)
-- **[imba-tjd/rebase-upstream-action](https://github.com/imba-tjd/rebase-upstream-action)** - 🔃 Rebase your fork on upstream. (3 days ago)
+- **[saml-dev/gome-assistant](https://github.com/saml-dev/gome-assistant)** - A library that lets you write all of your Home Assistant automations in Go! (4 days ago)
+- **[imba-tjd/rebase-upstream-action](https://github.com/imba-tjd/rebase-upstream-action)** - 🔃 Rebase your fork on upstream. (4 days ago)
 - **[pulumi/pulumi](https://github.com/pulumi/pulumi)** - Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀 (2 months ago)
 - **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (3 months ago)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (4 months ago)
