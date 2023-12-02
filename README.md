@@ -48,8 +48,8 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-node @ v0.12.1-rc1](https://github.com/celestiaorg/celestia-node/releases/tag/v0.12.1-rc1) (1 day ago)
-- [rollkit/local-celestia-devnet @ v0.12.2](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.2) (4 days ago)
+- [celestiaorg/celestia-node @ v0.12.1-rc1](https://github.com/celestiaorg/celestia-node/releases/tag/v0.12.1-rc1) (2 days ago)
+- [rollkit/local-celestia-devnet @ v0.12.2](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.2) (5 days ago)
 - [celestiaorg/orchestrator-relayer @ v1.0.1](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.0.1) (1 week ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (1 month ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (2 months ago)
@@ -62,7 +62,7 @@
 - [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (4 months ago)
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (4 months ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (4 months ago)
-- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (4 months ago)
+- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (5 months ago)
 - [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (6 months ago)
 
 ---
