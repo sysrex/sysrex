@@ -50,7 +50,7 @@
 
 - [celestiaorg/orchestrator-relayer @ v1.1.0-rc1](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.1.0-rc1) (1 week ago)
 - [celestiaorg/celestia-node @ v0.12.1](https://github.com/celestiaorg/celestia-node/releases/tag/v0.12.1) (1 week ago)
-- [rollkit/local-celestia-devnet @ v0.12.2](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.2) (2 weeks ago)
+- [rollkit/local-celestia-devnet @ v0.12.2](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.2) (3 weeks ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (2 months ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (3 months ago)
 
@@ -74,7 +74,7 @@
 - **[imba-tjd/rebase-upstream-action](https://github.com/imba-tjd/rebase-upstream-action)** - 🔃 Rebase your fork on upstream. (1 month ago)
 - **[pulumi/pulumi](https://github.com/pulumi/pulumi)** - Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀 (4 months ago)
 - **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (4 months ago)
-- **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (5 months ago)
+- **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (6 months ago)
 
 ---
 
