@@ -41,16 +41,16 @@
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (4 months ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (4 months ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (5 months ago)
-- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (5 months ago)
+- [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (6 months ago)
 
 ---
 
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-node @ v0.13.0-rc1](https://github.com/celestiaorg/celestia-node/releases/tag/v0.13.0-rc1) (2 days ago)
-- [celestiaorg/orchestrator-relayer @ v1.1.0-rc2](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.1.0-rc2) (3 days ago)
-- [rollkit/local-celestia-devnet @ v0.12.5](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.5) (3 days ago)
+- [celestiaorg/celestia-node @ v0.13.0-rc1](https://github.com/celestiaorg/celestia-node/releases/tag/v0.13.0-rc1) (3 days ago)
+- [celestiaorg/orchestrator-relayer @ v1.1.0-rc2](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.1.0-rc2) (4 days ago)
+- [rollkit/local-celestia-devnet @ v0.12.5](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.5) (4 days ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (2 months ago)
 - [celestiaorg/celestia-helm-charts @ node-0.11.0-rc.12](https://github.com/celestiaorg/celestia-helm-charts/releases/tag/node-0.11.0-rc.12) (4 months ago)
 
@@ -59,7 +59,7 @@
 #### 🔨 My recent Pull Requests
 
 
-- [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (5 months ago)
+- [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (6 months ago)
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (6 months ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (6 months ago)
 - [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (6 months ago)
