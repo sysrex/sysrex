@@ -48,7 +48,7 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [rollkit/local-celestia-devnet @ v0.12.7](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.7) (3 days ago)
+- [rollkit/local-celestia-devnet @ v0.12.7](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.7) (4 days ago)
 - [celestiaorg/celestia-node @ v0.12.4](https://github.com/celestiaorg/celestia-node/releases/tag/v0.12.4) (1 week ago)
 - [celestiaorg/orchestrator-relayer @ v1.1.0](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.1.0) (2 weeks ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (3 months ago)
