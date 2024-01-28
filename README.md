@@ -48,7 +48,7 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [rollkit/local-celestia-devnet @ v0.12.7](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.7) (5 days ago)
+- [rollkit/local-celestia-devnet @ v0.12.7](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.7) (6 days ago)
 - [celestiaorg/celestia-node @ v0.12.4](https://github.com/celestiaorg/celestia-node/releases/tag/v0.12.4) (1 week ago)
 - [celestiaorg/orchestrator-relayer @ v1.1.0](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.1.0) (2 weeks ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (3 months ago)
@@ -80,7 +80,7 @@
 
 #### 📜 My recent blog posts
 
-- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (10 months ago)
+- [Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus](https://sysrex.com/posts/send-docker-metrics-scaleway/) (11 months ago)
 - [Sending Docker Logs to Scaleway Cockpit Loki with Promtail](https://sysrex.com/posts/send-docker-logs-with-promtail/) (2 years ago)
 - [Running your own docker registry](https://sysrex.com/posts/run-your-own-docker-registry-and-vuln-scanner/) (3 years ago)
 - [Cloud init script to install docker and docker compose debian 10](https://sysrex.com/posts/cloud-init-docker-and-compose-debian/) (3 years ago)
