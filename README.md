@@ -60,8 +60,8 @@
 
 
 - [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (6 months ago)
-- [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (6 months ago)
-- [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (6 months ago)
+- [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (7 months ago)
+- [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (7 months ago)
 - [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (7 months ago)
 - [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (8 months ago)
 
@@ -70,8 +70,8 @@
 #### ⭐ Recent Stars
 
 
-- **[saml-dev/gome-assistant](https://github.com/saml-dev/gome-assistant)** - A library that lets you write all of your Home Assistant automations in Go! (2 months ago)
-- **[imba-tjd/rebase-upstream-action](https://github.com/imba-tjd/rebase-upstream-action)** - 🔃 Rebase your fork on upstream. (2 months ago)
+- **[saml-dev/gome-assistant](https://github.com/saml-dev/gome-assistant)** - A library that lets you write all of your Home Assistant automations in Go! (3 months ago)
+- **[imba-tjd/rebase-upstream-action](https://github.com/imba-tjd/rebase-upstream-action)** - 🔃 Rebase your fork on upstream. (3 months ago)
 - **[pulumi/pulumi](https://github.com/pulumi/pulumi)** - Pulumi - Infrastructure as Code in any programming language. Build infrastructure intuitively on any cloud using familiar languages 🚀 (5 months ago)
 - **[cmwaters/cheaper-on-celestia](https://github.com/cmwaters/cheaper-on-celestia)** (6 months ago)
 - **[anywherelan/awl](https://github.com/anywherelan/awl)** - Securely connect your devices into a private network (7 months ago)
