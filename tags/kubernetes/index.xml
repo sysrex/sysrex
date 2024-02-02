@@ -6,42 +6,35 @@
     <description>Recent content in Kubernetes on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Aug 2021 09:12:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Aug 2021 09:12:40 +0100</lastBuildDate>
+    <atom:link href="https://sysrex.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubectl Cheat Sheet</title>
-      <link>https://sysrex.com/kubernetes/kubectl-cheat-sheet/</link>
+      <link>https://sysrex.com/devops/kubectl-cheat-sheet/</link>
       <pubDate>Thu, 12 Aug 2021 09:12:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/kubernetes/kubectl-cheat-sheet/</guid>
+      <guid>https://sysrex.com/devops/kubectl-cheat-sheet/</guid>
       <description>Kubectl Cheat Sheet</description>
     </item>
-    
     <item>
       <title>K3s Raspberry pi</title>
-      <link>https://sysrex.com/kubernetes/k3s-raspberry-pi/</link>
+      <link>https://sysrex.com/devops/k3s-raspberry-pi/</link>
       <pubDate>Mon, 12 Apr 2021 09:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/kubernetes/k3s-raspberry-pi/</guid>
+      <guid>https://sysrex.com/devops/k3s-raspberry-pi/</guid>
       <description>Installing Kubernetes K3s on Raspberry Pi Cluster</description>
     </item>
-    
     <item>
       <title>Get the apiVersion in Kubernetes</title>
-      <link>https://sysrex.com/posts/get-apiversion-in-k8s/</link>
+      <link>https://sysrex.com/devops/get-apiversion-in-k8s/</link>
       <pubDate>Fri, 12 Jun 2020 19:19:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/get-apiversion-in-k8s/</guid>
+      <guid>https://sysrex.com/devops/get-apiversion-in-k8s/</guid>
       <description>How to get the apiVersion in Kubernetes</description>
     </item>
-    
     <item>
       <title>Adding aws credentials to lens ide</title>
-      <link>https://sysrex.com/posts/adding-aws-credentials-lens-ide/</link>
+      <link>https://sysrex.com/devops/adding-aws-credentials-lens-ide/</link>
       <pubDate>Wed, 15 Jan 2020 20:11:30 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/adding-aws-credentials-lens-ide/</guid>
+      <guid>https://sysrex.com/devops/adding-aws-credentials-lens-ide/</guid>
       <description>How to add aws credentials to lens ide</description>
     </item>
-    
   </channel>
 </rss>

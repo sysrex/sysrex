@@ -6,15 +6,14 @@
     <description>Recent content in Travis on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Apr 2019 14:16:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/travis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Apr 2019 14:16:40 +0100</lastBuildDate>
+    <atom:link href="https://sysrex.com/tags/travis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy Hugo with Travis on a VPS</title>
-      <link>https://sysrex.com/posts/deploy-hugo-travis/</link>
+      <link>https://sysrex.com/devops/deploy-hugo-travis/</link>
       <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/deploy-hugo-travis/</guid>
+      <guid>https://sysrex.com/devops/deploy-hugo-travis/</guid>
       <description>How to deploy a hugo cms with travis on a vps from Github</description>
     </item>
-    
   </channel>
 </rss>

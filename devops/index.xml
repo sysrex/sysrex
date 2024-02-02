@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devops on sysrex</title>
+    <link>https://sysrex.com/devops/</link>
+    <description>Recent content in Devops on sysrex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Nov 2023 14:16:40 +0100</lastBuildDate>
+    <atom:link href="https://sysrex.com/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go SQL error “converting NULL to string is unsupported”</title>
+      <link>https://sysrex.com/devops/go-sql-error-converting-null-string-unsupported/</link>
+      <pubDate>Fri, 10 Nov 2023 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/go-sql-error-converting-null-string-unsupported/</guid>
+      <description>Go SQL error “converting NULL to string is unsupported”</description>
+    </item>
+    <item>
+      <title>Install go on mac</title>
+      <link>https://sysrex.com/devops/go-install-on-mac/</link>
+      <pubDate>Tue, 04 Jul 2023 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/go-install-on-mac/</guid>
+      <description>Installing and setup golang on mac Big Sur</description>
+    </item>
+    <item>
+      <title>Sending Docker Metrics to Scaleway Cockpit Loki with Prometheus</title>
+      <link>https://sysrex.com/devops/send-docker-metrics-scaleway/</link>
+      <pubDate>Sat, 04 Mar 2023 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/send-docker-metrics-scaleway/</guid>
+      <description>How to send docker metrics to Scaleway Cockpit Loki with Prometheus</description>
+    </item>
+    <item>
+      <title>Sending Docker Logs to Scaleway Cockpit Loki with Promtail</title>
+      <link>https://sysrex.com/devops/send-docker-logs-with-promtail/</link>
+      <pubDate>Fri, 04 Mar 2022 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/send-docker-logs-with-promtail/</guid>
+      <description>How to send docker logs to Scaleway Cockpit Loki with Promtail</description>
+    </item>
+    <item>
+      <title>Kubectl Cheat Sheet</title>
+      <link>https://sysrex.com/devops/kubectl-cheat-sheet/</link>
+      <pubDate>Thu, 12 Aug 2021 09:12:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/kubectl-cheat-sheet/</guid>
+      <description>Kubectl Cheat Sheet</description>
+    </item>
+    <item>
+      <title>Go slices</title>
+      <link>https://sysrex.com/devops/go-slices/</link>
+      <pubDate>Mon, 07 Jun 2021 10:31:42 +0100</pubDate>
+      <guid>https://sysrex.com/devops/go-slices/</guid>
+      <description>Just a small overview of the go slices</description>
+    </item>
+    <item>
+      <title>K3s Raspberry pi</title>
+      <link>https://sysrex.com/devops/k3s-raspberry-pi/</link>
+      <pubDate>Mon, 12 Apr 2021 09:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/k3s-raspberry-pi/</guid>
+      <description>Installing Kubernetes K3s on Raspberry Pi Cluster</description>
+    </item>
+    <item>
+      <title>Go maps</title>
+      <link>https://sysrex.com/devops/go-maps/</link>
+      <pubDate>Sun, 07 Feb 2021 10:31:42 +0100</pubDate>
+      <guid>https://sysrex.com/devops/go-maps/</guid>
+      <description>Just a small overview of the go maps</description>
+    </item>
+    <item>
+      <title>Go pointers</title>
+      <link>https://sysrex.com/devops/go-pointers/</link>
+      <pubDate>Thu, 07 Jan 2021 10:31:42 +0100</pubDate>
+      <guid>https://sysrex.com/devops/go-pointers/</guid>
+      <description>Just a small overview of the go pointers</description>
+    </item>
+    <item>
+      <title>Running your own docker registry</title>
+      <link>https://sysrex.com/devops/run-your-own-docker-registry-and-vuln-scanner/</link>
+      <pubDate>Fri, 16 Oct 2020 11:57:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/run-your-own-docker-registry-and-vuln-scanner/</guid>
+      <description>How to run your own docker registry with clair vulnerability scanner</description>
+    </item>
+    <item>
+      <title>Cloud init script to install docker and docker compose debian 10</title>
+      <link>https://sysrex.com/devops/cloud-init-docker-and-compose-debian/</link>
+      <pubDate>Tue, 13 Oct 2020 11:42:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/cloud-init-docker-and-compose-debian/</guid>
+      <description>Cloud init script to install docker and docker compose on debian 10</description>
+    </item>
+    <item>
+      <title>Deploy Apache Flink on AWS EKS</title>
+      <link>https://sysrex.com/devops/deploy-apache-flink-aws-eks-alb/</link>
+      <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/deploy-apache-flink-aws-eks-alb/</guid>
+      <description>How to deploy Apache Flink on AWS EKS with ALB ingress</description>
+    </item>
+    <item>
+      <title>Get the apiVersion in Kubernetes</title>
+      <link>https://sysrex.com/devops/get-apiversion-in-k8s/</link>
+      <pubDate>Fri, 12 Jun 2020 19:19:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/get-apiversion-in-k8s/</guid>
+      <description>How to get the apiVersion in Kubernetes</description>
+    </item>
+    <item>
+      <title>Jenkins on debian 10</title>
+      <link>https://sysrex.com/devops/install-jenkins-debian-buster/</link>
+      <pubDate>Thu, 11 Jun 2020 09:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/install-jenkins-debian-buster/</guid>
+      <description>Install Jenkins on debian 10 buster</description>
+    </item>
+    <item>
+      <title>Parse environment variables to structs in Go</title>
+      <link>https://sysrex.com/devops/go-env-structs/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://sysrex.com/devops/go-env-structs/</guid>
+      <description>In Go, it&amp;rsquo;s dead simple to get the value from an environment variable:&#xA;fmt.Println(os.Getenv(&amp;#34;HOME&amp;#34;)) But, sometimes you have default values&amp;hellip; so you would have to do something like this:&#xA;home := os.Getenv(&amp;#34;HOME&amp;#34;) if home == &amp;#34;&amp;#34; { home = &amp;#34;THE DEFAULT HOME&amp;#34; } fmt.Println(home) If you need those values in a lot of places, you would end up creating a function for each one or something like that.&#xA;I found this to be extremely boring.</description>
+    </item>
+    <item>
+      <title>Go variables</title>
+      <link>https://sysrex.com/devops/go-variables/</link>
+      <pubDate>Mon, 01 Jun 2020 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/go-variables/</guid>
+      <description>Just a small overview of the go variables</description>
+    </item>
+    <item>
+      <title>Adding aws credentials to lens ide</title>
+      <link>https://sysrex.com/devops/adding-aws-credentials-lens-ide/</link>
+      <pubDate>Wed, 15 Jan 2020 20:11:30 +0100</pubDate>
+      <guid>https://sysrex.com/devops/adding-aws-credentials-lens-ide/</guid>
+      <description>How to add aws credentials to lens ide</description>
+    </item>
+    <item>
+      <title>Terraform with Remote S3 and Locking state</title>
+      <link>https://sysrex.com/devops/terraform-remote-s3/</link>
+      <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/terraform-remote-s3/</guid>
+      <description>Terraform with AWS and remote state bucket</description>
+    </item>
+    <item>
+      <title>Create EKS Cluster with Role Assume</title>
+      <link>https://sysrex.com/devops/create-eks-cluster-with-assume-role/</link>
+      <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/create-eks-cluster-with-assume-role/</guid>
+      <description>How to create an EKS Cluster with role assume</description>
+    </item>
+    <item>
+      <title>Deploy Hugo with Travis on a VPS</title>
+      <link>https://sysrex.com/devops/deploy-hugo-travis/</link>
+      <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/deploy-hugo-travis/</guid>
+      <description>How to deploy a hugo cms with travis on a vps from Github</description>
+    </item>
+    <item>
+      <title>EC2 backup with lambda</title>
+      <link>https://sysrex.com/devops/ec2backup-python-lambda/</link>
+      <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/ec2backup-python-lambda/</guid>
+      <description>Create ec2 backup with lambda and python functions</description>
+    </item>
+    <item>
+      <title>Build docker to ECR with travis</title>
+      <link>https://sysrex.com/devops/build-docker-to-ecr-with-travis/</link>
+      <pubDate>Thu, 07 Feb 2019 14:19:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/build-docker-to-ecr-with-travis/</guid>
+      <description>How to build docker containers and deploy them to ECR with Travis CI</description>
+    </item>
+    <item>
+      <title>Jenkins declarative pipeline</title>
+      <link>https://sysrex.com/devops/jenkins-declarative-pipeline-example/</link>
+      <pubDate>Fri, 19 Jan 2018 09:22:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/jenkins-declarative-pipeline-example/</guid>
+      <description>Jenkins declarative pipeline example</description>
+    </item>
+    <item>
+      <title>Adding swap to ec2</title>
+      <link>https://sysrex.com/devops/add-swap-ec2/</link>
+      <pubDate>Fri, 04 Mar 2016 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/add-swap-ec2/</guid>
+      <description>How to add swap to an EC2 instance</description>
+    </item>
+    <item>
+      <title>Deployment with Git</title>
+      <link>https://sysrex.com/devops/deploy-with-git/</link>
+      <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>https://sysrex.com/devops/deploy-with-git/</guid>
+      <description>A Git hook allows you to execute custom scripts when an action occurs, such as when a commit or push is performed. Before I discovered git hooks, my deployment process consisted of pushing changes to my remote repository, SSH&amp;rsquo;ing into the server, navigating to the site directory, pulling the changes, and restarting the webserver. It wasn&amp;rsquo;t efficient at all and a waste of time doing that several times a day. I&amp;rsquo;ll explain how to set up a simple git hook making the deployment process a bit more effortless, but first I want to give credit to this how-to article which got me started.</description>
+    </item>
+    <item>
+      <title>Node.js and Nginx on Ubuntu</title>
+      <link>https://sysrex.com/devops/nodejs-deploy-with-nginx/</link>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>https://sysrex.com/devops/nodejs-deploy-with-nginx/</guid>
+      <description>In this tutorial I will show how to install and configure Node.js and Nginx on you Ubuntu server.&#xA;Installing Dependencies The only dependency we really need is the build-essential package in order to be able to compile the Node.js source code.&#xA;# Make sure to download the latest repos. sudo apt-get update # Required to run `make` command. sudo apt-get install build-essential # If you need to use https. sudo apt-get install libssl-dev # My favorite text editor.</description>
+    </item>
+    <item>
+      <title>Checking your internet connection with speedtest-cli </title>
+      <link>https://sysrex.com/devops/using-speedtest-cli-linuxservers/</link>
+      <pubDate>Sat, 04 Aug 2012 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/using-speedtest-cli-linuxservers/</guid>
+      <description>Using speedtest-cli on linux debian headless</description>
+    </item>
+    <item>
+      <title>Set up SSH keys</title>
+      <link>https://sysrex.com/devops/set-up-ssh-keys/</link>
+      <pubDate>Fri, 30 Sep 2011 00:00:00 +0000</pubDate>
+      <guid>https://sysrex.com/devops/set-up-ssh-keys/</guid>
+      <description>Having to type in a password in order to SSH into your server every single time is tedious and not the way to go. I will show you how to set up SSH keys so that you can elimate an extra step from your workflow.&#xA;Generating keys On your local maching, generate a new SSH key with the command:&#xA;# Generate new key. ssh-keygen -t rsa When asked for the file to save the key in, enter:</description>
+    </item>
+  </channel>
+</rss>

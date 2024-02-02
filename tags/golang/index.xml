@@ -6,51 +6,49 @@
     <description>Recent content in Golang on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Jul 2023 14:16:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Nov 2023 14:16:40 +0100</lastBuildDate>
+    <atom:link href="https://sysrex.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go SQL error “converting NULL to string is unsupported”</title>
+      <link>https://sysrex.com/devops/go-sql-error-converting-null-string-unsupported/</link>
+      <pubDate>Fri, 10 Nov 2023 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/devops/go-sql-error-converting-null-string-unsupported/</guid>
+      <description>Go SQL error “converting NULL to string is unsupported”</description>
+    </item>
     <item>
       <title>Install go on mac</title>
-      <link>https://sysrex.com/golang/go-install-on-mac/</link>
+      <link>https://sysrex.com/devops/go-install-on-mac/</link>
       <pubDate>Tue, 04 Jul 2023 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/golang/go-install-on-mac/</guid>
+      <guid>https://sysrex.com/devops/go-install-on-mac/</guid>
       <description>Installing and setup golang on mac Big Sur</description>
     </item>
-    
     <item>
       <title>Go slices</title>
-      <link>https://sysrex.com/golang/go-slices/</link>
+      <link>https://sysrex.com/devops/go-slices/</link>
       <pubDate>Mon, 07 Jun 2021 10:31:42 +0100</pubDate>
-      
-      <guid>https://sysrex.com/golang/go-slices/</guid>
+      <guid>https://sysrex.com/devops/go-slices/</guid>
       <description>Just a small overview of the go slices</description>
     </item>
-    
     <item>
       <title>Go maps</title>
-      <link>https://sysrex.com/golang/go-maps/</link>
+      <link>https://sysrex.com/devops/go-maps/</link>
       <pubDate>Sun, 07 Feb 2021 10:31:42 +0100</pubDate>
-      
-      <guid>https://sysrex.com/golang/go-maps/</guid>
+      <guid>https://sysrex.com/devops/go-maps/</guid>
       <description>Just a small overview of the go maps</description>
     </item>
-    
     <item>
       <title>Go pointers</title>
-      <link>https://sysrex.com/golang/go-pointers/</link>
+      <link>https://sysrex.com/devops/go-pointers/</link>
       <pubDate>Thu, 07 Jan 2021 10:31:42 +0100</pubDate>
-      
-      <guid>https://sysrex.com/golang/go-pointers/</guid>
+      <guid>https://sysrex.com/devops/go-pointers/</guid>
       <description>Just a small overview of the go pointers</description>
     </item>
-    
     <item>
       <title>Go variables</title>
-      <link>https://sysrex.com/golang/go-variables/</link>
+      <link>https://sysrex.com/devops/go-variables/</link>
       <pubDate>Mon, 01 Jun 2020 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/golang/go-variables/</guid>
+      <guid>https://sysrex.com/devops/go-variables/</guid>
       <description>Just a small overview of the go variables</description>
     </item>
-    
   </channel>
 </rss>

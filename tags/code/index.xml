@@ -6,15 +6,14 @@
     <description>Recent content in Code on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Apr 2019 19:16:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Apr 2019 19:16:40 +0100</lastBuildDate>
+    <atom:link href="https://sysrex.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EC2 backup with lambda</title>
-      <link>https://sysrex.com/posts/ec2backup-python-lambda/</link>
+      <link>https://sysrex.com/devops/ec2backup-python-lambda/</link>
       <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/ec2backup-python-lambda/</guid>
+      <guid>https://sysrex.com/devops/ec2backup-python-lambda/</guid>
       <description>Create ec2 backup with lambda and python functions</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,78 +6,70 @@
     <description>Recent content in AWS on sysrex</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Aug 2020 12:31:40 +0100</lastBuildDate><atom:link href="https://sysrex.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Aug 2020 12:31:40 +0100</lastBuildDate>
+    <atom:link href="https://sysrex.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy Apache Flink on AWS EKS</title>
-      <link>https://sysrex.com/kubernetes/deploy-apache-flink-aws-eks-alb/</link>
+      <link>https://sysrex.com/devops/deploy-apache-flink-aws-eks-alb/</link>
       <pubDate>Sat, 15 Aug 2020 12:31:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/kubernetes/deploy-apache-flink-aws-eks-alb/</guid>
+      <guid>https://sysrex.com/devops/deploy-apache-flink-aws-eks-alb/</guid>
       <description>How to deploy Apache Flink on AWS EKS with ALB ingress</description>
     </item>
-    
     <item>
       <title>Jenkins on debian 10</title>
-      <link>https://sysrex.com/posts/install-jenkins-debian-buster/</link>
+      <link>https://sysrex.com/devops/install-jenkins-debian-buster/</link>
       <pubDate>Thu, 11 Jun 2020 09:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/install-jenkins-debian-buster/</guid>
+      <guid>https://sysrex.com/devops/install-jenkins-debian-buster/</guid>
       <description>Install Jenkins on debian 10 buster</description>
     </item>
-    
     <item>
       <title>Adding aws credentials to lens ide</title>
-      <link>https://sysrex.com/posts/adding-aws-credentials-lens-ide/</link>
+      <link>https://sysrex.com/devops/adding-aws-credentials-lens-ide/</link>
       <pubDate>Wed, 15 Jan 2020 20:11:30 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/adding-aws-credentials-lens-ide/</guid>
+      <guid>https://sysrex.com/devops/adding-aws-credentials-lens-ide/</guid>
       <description>How to add aws credentials to lens ide</description>
     </item>
-    
     <item>
       <title>Terraform with Remote S3 and Locking state</title>
-      <link>https://sysrex.com/posts/terraform-remote-s3/</link>
+      <link>https://sysrex.com/devops/terraform-remote-s3/</link>
       <pubDate>Mon, 04 Nov 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/terraform-remote-s3/</guid>
+      <guid>https://sysrex.com/devops/terraform-remote-s3/</guid>
       <description>Terraform with AWS and remote state bucket</description>
     </item>
-    
     <item>
       <title>Create EKS Cluster with Role Assume</title>
-      <link>https://sysrex.com/kubernetes/create-eks-cluster-with-assume-role/</link>
+      <link>https://sysrex.com/devops/create-eks-cluster-with-assume-role/</link>
       <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/kubernetes/create-eks-cluster-with-assume-role/</guid>
+      <guid>https://sysrex.com/devops/create-eks-cluster-with-assume-role/</guid>
       <description>How to create an EKS Cluster with role assume</description>
     </item>
-    
     <item>
       <title>EC2 backup with lambda</title>
-      <link>https://sysrex.com/posts/ec2backup-python-lambda/</link>
+      <link>https://sysrex.com/devops/ec2backup-python-lambda/</link>
       <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/ec2backup-python-lambda/</guid>
+      <guid>https://sysrex.com/devops/ec2backup-python-lambda/</guid>
       <description>Create ec2 backup with lambda and python functions</description>
     </item>
-    
     <item>
       <title>Build docker to ECR with travis</title>
-      <link>https://sysrex.com/posts/build-docker-to-ecr-with-travis/</link>
+      <link>https://sysrex.com/devops/build-docker-to-ecr-with-travis/</link>
       <pubDate>Thu, 07 Feb 2019 14:19:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/build-docker-to-ecr-with-travis/</guid>
+      <guid>https://sysrex.com/devops/build-docker-to-ecr-with-travis/</guid>
       <description>How to build docker containers and deploy them to ECR with Travis CI</description>
     </item>
-    
     <item>
       <title>Adding swap to ec2</title>
-      <link>https://sysrex.com/posts/add-swap-ec2/</link>
+      <link>https://sysrex.com/devops/add-swap-ec2/</link>
       <pubDate>Fri, 04 Mar 2016 14:16:40 +0100</pubDate>
-      
-      <guid>https://sysrex.com/posts/add-swap-ec2/</guid>
+      <guid>https://sysrex.com/devops/add-swap-ec2/</guid>
       <description>How to add swap to an EC2 instance</description>
     </item>
-    
+    <item>
+      <title>Auto generate</title>
+      <link>https://sysrex.com/posts/test/</link>
+      <pubDate>Fri, 04 Mar 2016 14:16:40 +0100</pubDate>
+      <guid>https://sysrex.com/posts/test/</guid>
+      <description>How to add swap to an EC2 instance</description>
+    </item>
   </channel>
 </rss>
