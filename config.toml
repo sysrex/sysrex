@@ -56,15 +56,15 @@ url  = "posts"
 
 # Menu links
 [[menu.main]]
-name = "Golang"
+name = "DevOps"
 weight = 1
-url  = "golang"
+url  = "devops"
 
 # Menu links
 [[menu.main]]
-name = "Kubernetes"
+name = "Blockchain"
 weight = 1
-url  = "kubernetes"
+url  = "blockchain"
 
 # Menu links
 [[menu.main]]
