@@ -59,11 +59,11 @@
 #### 🔨 My recent Pull Requests
 
 
+- [Changes the deployment type from Stateful Set to Replica Set](https://github.com/celestiaorg/knuu/pull/240) on [celestiaorg/knuu](https://github.com/celestiaorg/knuu) (today)
+- [replace the stateful set with a replica set](https://github.com/sysrex/knuu/pull/1) on [sysrex/knuu](https://github.com/sysrex/knuu) (today)
 - [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (6 months ago)
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (7 months ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (7 months ago)
-- [chore(nodebuilder/p2p)! Upgrade to mocha-3](https://github.com/celestiaorg/celestia-node/pull/2432) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (7 months ago)
-- [feat(nodebuilder): add ip resolving capabilities to core.ip](https://github.com/celestiaorg/celestia-node/pull/2277) on [celestiaorg/celestia-node](https://github.com/celestiaorg/celestia-node) (8 months ago)
 
 ---
 
