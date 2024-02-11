@@ -39,7 +39,7 @@
 
 - [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (3 months ago)
 - [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (5 months ago)
-- [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (5 months ago)
+- [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (6 months ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (6 months ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (7 months ago)
 
@@ -48,7 +48,7 @@
 #### 🚀 Latest releases I've contributed to
 
 
-- [celestiaorg/celestia-node @ v0.13.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.13.0) (3 days ago)
+- [celestiaorg/celestia-node @ v0.13.0](https://github.com/celestiaorg/celestia-node/releases/tag/v0.13.0) (4 days ago)
 - [rollkit/local-celestia-devnet @ v0.12.7](https://github.com/rollkit/local-celestia-devnet/releases/tag/v0.12.7) (2 weeks ago)
 - [celestiaorg/orchestrator-relayer @ v1.1.0](https://github.com/celestiaorg/orchestrator-relayer/releases/tag/v1.1.0) (1 month ago)
 - [celestiaorg/terraform-module-scw-k8s @ v0.1.0](https://github.com/celestiaorg/terraform-module-scw-k8s/releases/tag/v0.1.0) (3 months ago)
@@ -59,8 +59,8 @@
 #### 🔨 My recent Pull Requests
 
 
-- [Changes the deployment type from Stateful Set to Replica Set](https://github.com/celestiaorg/knuu/pull/240) on [celestiaorg/knuu](https://github.com/celestiaorg/knuu) (5 days ago)
-- [replace the stateful set with a replica set](https://github.com/sysrex/knuu/pull/1) on [sysrex/knuu](https://github.com/sysrex/knuu) (5 days ago)
+- [Changes the deployment type from Stateful Set to Replica Set](https://github.com/celestiaorg/knuu/pull/240) on [celestiaorg/knuu](https://github.com/celestiaorg/knuu) (6 days ago)
+- [replace the stateful set with a replica set](https://github.com/sysrex/knuu/pull/1) on [sysrex/knuu](https://github.com/sysrex/knuu) (6 days ago)
 - [[WIP]Sysrex/add snyk integration](https://github.com/celestiaorg/celestia-helm-charts/pull/12) on [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) (7 months ago)
 - [bump version for node to rc7](https://github.com/celestiaorg/docs/pull/870) on [celestiaorg/docs](https://github.com/celestiaorg/docs) (7 months ago)
 - [Sysrex/update docker workflow version](https://github.com/rollkit/local-celestia-devnet/pull/49) on [rollkit/local-celestia-devnet](https://github.com/rollkit/local-celestia-devnet) (7 months ago)
