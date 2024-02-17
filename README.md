@@ -38,7 +38,7 @@
 
 
 - [sysrex/opscontainer](https://github.com/sysrex/opscontainer) - opscontainer for VSCode (3 months ago)
-- [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (5 months ago)
+- [sysrex/gh-notion-sync](https://github.com/sysrex/gh-notion-sync) - Github Issues to Notion Projects Sync (6 months ago)
 - [sysrex/posthook](https://github.com/sysrex/posthook) - A small docker image meant to execute posthook curl requests in docker-compose / k8s envs (6 months ago)
 - [sysrex/docker-nginx-ip2proxy](https://github.com/sysrex/docker-nginx-ip2proxy) - Docker Nginx Ip2Proxy (6 months ago)
 - [celestiaorg/celestia-helm-charts](https://github.com/celestiaorg/celestia-helm-charts) - Celestia Helm Charts (7 months ago)
