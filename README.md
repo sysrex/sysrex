@@ -13,8 +13,8 @@ I build distributed systems and blockchain infrastructure — with a focus on **
 
 **Blockchain & Protocols**
 
-![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=ethereum&logoColor=white)
 ![Celestia](https://img.shields.io/badge/Celestia-7B2D8B?style=flat&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=ethereum&logoColor=white)
 ![libp2p](https://img.shields.io/badge/libp2p-ED4E33?style=flat&logoColor=white)
 
 **Cryptography**
